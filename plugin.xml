@@ -47,7 +47,21 @@
 		<nom>affiche_enfants</nom>
 		<inclure>breves_pipelines.php</inclure>
 	</pipeline>
-						
+	<pipeline>
+		<nom>accueil_encours</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+
+	<pipeline>
+		<nom>objet_compte_enfants</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+	
+	<pipeline>
+		<nom>optimiser_base_disparus</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+							
 	<bouton id='breves' parent="bando_edition">
 		<icone>images/breve-16.png</icone>
 		<titre>icone_breves</titre>
@@ -59,5 +73,6 @@
 		<url>breves_edit</url>
 		<args>new=oui&amp;id_rubrique=@id_rubrique@</args>
 	</bouton>
-		
+
+	<utilise id='mots' />
 </plugin>
