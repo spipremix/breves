@@ -93,4 +93,116 @@ function breves_affiche_enfants($flux) {
 }
 
 
+
+
+/**
+ * Bloc sur les informations generales concernant chaque type d'objet
+ *
+ * @param string $texte
+ * @return string
+ */
+function breves_accueil_informations($texte){
+	include_spip('base/abstract_sql');
+
+	$q = sql_select("COUNT(*) AS cnt, statut", 'spip_breves', '', 'statut', '','', "COUNT(*)<>0");
+
+	$cpt = array();
+	$cpt2 = array();
+	$defaut = $where ? '0/' : '';
+	while($row = sql_fetch($q)) {
+	  $cpt[$row['statut']] = $row['cnt'];
+	  $cpt2[$row['statut']] = $defaut;
+	}
+ 
+	if ($cpt) {
+		if ($where) {
+			$q = sql_select("COUNT(*) AS cnt, statut", 'spip_breves', $where, "statut");
+			while($row = sql_fetch($q)) {
+				$r = $row['statut'];
+				$cpt2[$r] = intval($row['cnt']) . '/';
+			}
+		}
+		$texte .= "<div class='accueil_informations breves verdana1'>";
+		$texte .= afficher_plus_info(generer_url_ecrire("breves",""))."<b>"._T('info_breves_02')."</b>";
+		$texte .= "<ul style='margin:0px; padding-$spip_lang_left: 20px; margin-bottom: 5px;'>";
+		if (isset($cpt['prop'])) $texte .= "<li>"._T("texte_statut_attente_validation").": ".$cpt2['prop'].$cpt['prop'] . '</li>';
+		if (isset($cpt['publie'])) $texte .= "<li><b>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] . "</b>" .'</li>';
+		$texte .= "</ul>";
+		$texte .= "</div>";
+	}
+	return $texte;
+}
+
+
+/**
+ * Compter les breves dans une rubrique
+ * 
+ * @param array $flux
+ * @return array
+ */
+function breves_objet_compte_enfants($flux){
+	if ($flux['args']['objet']=='rubrique'
+	  AND $id_rubrique=intval($flux['args']['id_objet']))
+	  	$flux['data']['breve'] = sql_countsel('spip_breves', "id_rubrique=".intval($id_rubrique)." AND (statut='publie' OR statut='prop')");
+
+	return $flux;
+}
+
+
+/**
+ * Ajouter les breves a valider sur la page d'accueil 
+ *
+ * @param 
+ * @return 
+**/
+function breves_accueil_encours($flux){
+	$lister_objets = charger_fonction('lister_objets','inc');
+
+
+	$flux .= $lister_objets('breves', array(
+		'titre'=>afficher_plus_info(generer_url_ecrire('breves'))._T('info_breves_valider'),
+		'statut'=>array('prepa','prop'),
+		'par'=>'date_heure'));
+
+	return $flux;
+}
+
+
+
+/**
+ * Optimiser la base de donnee en supprimant les liens orphelins
+ *
+ * @param int $n
+ * @return int
+ */
+function breves_optimiser_base_disparus($flux){
+	$n = &$flux['data'];
+
+
+
+	# les breves qui sont dans une id_rubrique inexistante
+	$res = sql_select("B.id_breve AS id",
+		        "spip_breves AS B
+		        LEFT JOIN spip_rubriques AS R
+		          ON B.id_rubrique=R.id_rubrique",
+			"R.id_rubrique IS NULL
+		         AND B.maj < $mydate");
+
+	$n+= optimiser_sansref('spip_breves', 'id_breve', $res);
+
+
+	//
+	// Breves
+	//
+
+	sql_delete("spip_breves", "statut='refuse' AND maj < $mydate");
+
+
+	
+
+	return $flux;
+
+}
+
+
 ?>
