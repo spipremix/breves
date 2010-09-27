@@ -1,0 +1,49 @@
+<plugin>
+	<nom>Br&egrave;ves</nom>
+	<auteur>Collectif SPIP</auteur>
+	<version>1.0</version>
+	<version_base>1.0</version_base>
+	<install>base/breves_upgrade.php</install>
+	<etat>test</etat>
+	<description>Les br&egrave;ves sont des informations courtes, sans auteur.</description>
+	<prefix>breves</prefix>
+
+	<fonctions>public/breves.php</fonctions>
+
+
+	<pipeline>
+		<nom>configurer_liste_metas</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+	
+	<pipeline>
+		<nom>declarer_tables_interfaces</nom>
+		<inclure>base/breves.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>declarer_tables_objets_surnoms</nom>
+		<inclure>base/breves.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>declarer_tables_principales</nom>
+		<inclure>base/breves.php</inclure>
+	</pipeline>
+	
+	<pipeline>
+		<nom>autoriser</nom>
+		<inclure>breves_autoriser.php</inclure>
+	</pipeline>
+				
+	<bouton id='breves' parent="bando_edition">
+		<icone>images/breve-16.png</icone>
+		<titre>icone_breves</titre>
+	</bouton>
+	
+	<bouton id='breve_creer' parent="outils_rapides">
+		<icone>images/breve-new-16.png</icone>
+		<titre>icone_nouvelle_breve</titre>
+		<url>breves_edit</url>
+		<args>new=oui&amp;id_rubrique=@id_rubrique@</args>
+	</bouton>
+		
+</plugin>
