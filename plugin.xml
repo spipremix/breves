@@ -33,7 +33,21 @@
 		<nom>autoriser</nom>
 		<inclure>breves_autoriser.php</inclure>
 	</pipeline>
-				
+
+	<pipeline>
+		<nom>declarer_url_objets</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+
+	<pipeline>
+		<nom>rubrique_encours</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>affiche_enfants</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+						
 	<bouton id='breves' parent="bando_edition">
 		<icone>images/breve-16.png</icone>
 		<titre>icone_breves</titre>
