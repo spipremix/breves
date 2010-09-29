@@ -58,7 +58,25 @@
 	</pipeline>
 	
 	<pipeline>
+		<nom>trig_calculer_langues_rubriques</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>calculer_rubriques</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+	
+	<pipeline>
 		<nom>optimiser_base_disparus</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+
+	<pipeline>
+		<nom>rechercher_liste_des_champs</nom>
+		<inclure>breves_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>rechercher_liste_des_jointures</nom>
 		<inclure>breves_pipelines.php</inclure>
 	</pipeline>
 							

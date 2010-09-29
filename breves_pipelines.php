@@ -142,10 +142,79 @@ function breves_accueil_informations($texte){
  */
 function breves_objet_compte_enfants($flux){
 	if ($flux['args']['objet']=='rubrique'
-	  AND $id_rubrique=intval($flux['args']['id_objet']))
-	  	$flux['data']['breve'] = sql_countsel('spip_breves', "id_rubrique=".intval($id_rubrique)." AND (statut='publie' OR statut='prop')");
-
+	  AND $id_rubrique=intval($flux['args']['id_objet'])) {
+		// juste les publies ?
+		if (array_key_exists('statut', $flux['args']) and ($flux['args']['statut'] == 'publie')) {
+			$flux['data']['breve'] = sql_countsel('spip_breves', "id_rubrique=".intval($id_rubrique)." AND (statut='publie')");
+		} else {
+			$flux['data']['breve'] = sql_countsel('spip_breves', "id_rubrique=".intval($id_rubrique)." AND (statut='publie' OR statut='prop')");
+		}
+	}
 	return $flux;
+}
+
+
+/**
+ * Changer la langue des breves si la rubrique change
+ * 
+ * @param array $flux
+ * @return array
+ */
+function breves_trig_calculer_langues_rubriques($flux){
+
+	$s = sql_select("A.id_breve AS id_breve, R.lang AS lang", "spip_breves AS A, spip_rubriques AS R", "A.id_rubrique = R.id_rubrique AND A.langue_choisie != 'oui' AND (A.lang='' OR R.lang<>'') AND R.lang<>A.lang");
+	while ($row = sql_fetch($s)) {
+		$id_breve = $row['id_breve'];
+		sql_updateq('spip_breves', array("lang"=>$row['lang'], 'langue_choisie'=>'non'), "id_breve=$id_breve");
+	}
+		
+	return $flux;
+}
+
+
+/**
+ * Publier et dater les rubriques qui ont une breve publie
+ * 
+ * @param array $flux
+ * @return array
+ */
+function breves_calculer_rubriques($flux){
+
+	$r = sql_select("R.id_rubrique AS id, max(A.date_heure) AS date_h", "spip_rubriques AS R, spip_breves AS A", "R.id_rubrique = A.id_rubrique AND R.date_tmp <= A.date_heure AND A.statut='publie' ", "R.id_rubrique");
+	while ($row = sql_fetch($r))
+	  sql_updateq('spip_rubriques', array('statut_tmp'=>'publie', 'date_tmp'=>$row['date_h']), "id_rubrique=".$row['id']);	
+		
+	return $flux;
+}
+
+
+
+/**
+ * Liste et ponderation des champs pour la recherche
+ *
+ * @param array $tables
+ * @return int
+ */
+function breves_rechercher_liste_des_champs($tables){
+	$tables['breve'] = array(
+	  'titre' => 8, 'texte' => 2, 'lien_titre' => 1, 'lien_url' => 1
+	);
+
+	return $tables;
+}
+
+/**
+ * Liste et ponderation des champs pour la recherche avec jointures
+ *
+ * @param array $tables
+ * @return int
+ */
+function breves_rechercher_liste_des_jointures($tables){
+	$tables['breve'] = array(
+		'document' => array('titre' => 2, 'descriptif' => 1)
+	);
+
+	return $tables;
 }
 
 
