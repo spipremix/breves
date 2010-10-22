@@ -21,7 +21,8 @@
 	<BOUCLE_liste_bre(BREVES){id_breve?}{id_secteur?}{id_mot?}{id_rubrique?}{where?}{statut?}{tri #ENV{par,date},#GET{defaut_tri}}{pagination #ENV{nb,10}}>
 		<tr class="[(#COMPTEUR_BOUCLE|alterner{row_odd,row_even})]">
 			<td class='statut'>[(#ID_BREVE|puce_changement_statut{#STATUT,#ID_RUBRIQUE,breve})]</td>
-			<td class='titre principale'>[(#LOGO_BREVE|image_reduire{20,26})]<a href="[(#ID_BREVE|generer_url_entite{breve})]">#TITRE</a></td>
+			<td class='titre principale'>[(#LOGO_BREVE|image_reduire{20,26})]<a href="[(#ID_BREVE|generer_url_entite{breve})]"
+																																						title="<:info_numero_abbreviation|attribut_html:> #ID_BREVE">#TITRE</a></td>
 			<td class='date secondaire'>[(#DATE|affdate_jourcourt)]</td>
 			<td class='id'>[(#AUTORISER{modifier,breve,#ID_BREVE}|?{
 				<a href="[(#URL_ECRIRE{breves_edit,id_breve=#ID_BREVE})]">#ID_BREVE</a>,
