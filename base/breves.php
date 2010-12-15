@@ -30,7 +30,9 @@ function breves_declarer_tables_interfaces($interfaces) {
 	$interfaces['table_date']['breves'] = 'date_heure';
 
 	$interfaces['tables_jointures']['spip_breves'][]= 'documents_liens';
-	
+
+	$interfaces['table_statut']['spip_breves'][] = array('champ'=>'statut','publie'=>'publie','previsu'=>'publie,prop','exception'=>'statut');
+
 	$interfaces['table_des_traitements']['LIEN_TITRE'][]= _TRAITEMENT_TYPO;
 	$interfaces['table_des_traitements']['LIEN_URL'][]= 'vider_url(%s)';
 	
