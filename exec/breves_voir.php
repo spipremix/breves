@@ -134,9 +134,7 @@ function exec_breves_voir_args($id_breve, $cherche_mot, $select_groupe)
 	
 	$onglet_contenu = "<div id='wysiwyg'>$fond</div>";
 
-	$onglet_proprietes =
-		afficher_breve_rubrique($id_breve, $id_rubrique, $statut)
-		. ($dater
+	$onglet_proprietes = ($dater
 			? $dater($id_breve, $flag_editable, $statut, 'breve', 'breves_voir', $date_heure)
 			: ''
 		)
@@ -147,32 +145,17 @@ function exec_breves_voir_args($id_breve, $cherche_mot, $select_groupe)
 			'data'=>''))
 		  ;
 
-	$onglet_documents = "";
-
-	$onglet_interactivite = "";
 
 	echo debut_droite('', true)
 	  . pipeline('afficher_fiche_objet',array('args'=>array('type'=>'breve','id'=>$id_breve),'data'=>
 			"<div class='fiche_objet'>"
 			. $haut
-			. afficher_onglets_pages(array(
-				'voir' => _T('onglet_contenu'),
-				'props' => _T('onglet_proprietes'),
-				'docs' => _T('onglet_documents'),
-				'interactivite' => _T('onglet_interactivite'),
-				),
-			_INTERFACE_ONGLETS?
-			array(
-				'props'=>$onglet_proprietes,
-				'voir'=>$onglet_contenu,
-				'docs'=>$onglet_documents,
-				'interactivite'=>$onglet_interactivite,
-				)
-				:
-			array(
-				'props'=>$onglet_proprietes,
-				'voir'=>$onglet_contenu)
-			)
+			. "<div class='nettoyeur'></div>"
+			.	$onglet_proprietes
+			. "<div class='nettoyeur'></div>"
+			.	$onglet_contenu
+			.	pipeline('afficher_complement_objet',array('args'=>array('type'=>'breve','id'=>$id_breve),'data'=>"<div class='nettoyeur'></div>"))
+			. "<div class='nettoyeur'></div>"
 			. "</div>"))
 		. fin_gauche()
 		. fin_page();
@@ -210,32 +193,4 @@ function langue_breve($id_breve, $row){
 	return $res;
 }
 
-
-// http://doc.spip.org/@afficher_breve_rubrique
-function afficher_breve_rubrique($id_breve, $id_rubrique, $statut)
-{
-	if (!_INTERFACE_ONGLETS) return "";
-	global $spip_lang_right;
-	$aider = charger_fonction('aider', 'inc');
-	$chercher_rubrique = charger_fonction('chercher_rubrique', 'inc');
-
-	$form = $chercher_rubrique($id_rubrique, 'breve', ($statut == 'publie'));
-	if (strpos($form,'<select')!==false) {
-		$form .= "<div style='text-align: $spip_lang_right;'>"
-			. '<input class="fondo" type="submit" value="'._T('bouton_choisir').'"/>'
-			. "</div>";
-	}
-
-	$form = redirige_action_post('editer_breve', $id_breve, 'breves_voir', "id_breve=$id_breve", $form, " class='submit_plongeur'"	);
-
-
-	if ($id_rubrique == 0) $logo = "racine-24.png";
-	else $logo = "secteur-24.png";
-
-	return
-		debut_cadre_couleur($logo, true, "",_T('entree_interieur_rubrique').$aider ("brevesrub"))
-		. $form
-		. fin_cadre_couleur(true);
-
-}
 ?>
