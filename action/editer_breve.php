@@ -20,23 +20,20 @@ function action_editer_breve_dist($arg=null) {
 		$arg = $securiser_action();
 	}
 
-	// Envoi depuis le formulaire d'edition pour chgt de langue
-	if (preg_match(',^(\d+)\W(\w+)$,', $arg, $r)) {
-		revisions_breves_langue($id_breve=$r[1], $r[2], _request('changer_lang'));
+	// Envoi depuis le formulaire d'edition d'une breve
+	if (!$id_breve = intval($arg)) {
+		$id_breve = insert_breve(_request('id_parent'));
 	}
-	// Envoi depuis le formulaire d'edition d'une breve existante
-	else if ($id_breve = intval($arg)) {
+	if ($id_breve) {
 		revisions_breves($id_breve);
 	}
 	// Envoi depuis le formulaire de creation d'une breve
-	else if ($arg == 'oui') {
-		$id_breve = insert_breve(_request('id_parent'));
-		if ($id_breve) revisions_breves($id_breve);
-	} 
-	// Erreur
 	else{
-		include_spip('inc/headers');
-		redirige_url_ecrire();
+		if (_request('redirect')) {
+			include_spip('inc/headers');
+			redirige_url_ecrire();
+		}
+		return array(0,''); // erreur
 	}
 
 	if (_request('redirect')) {
@@ -106,7 +103,7 @@ function revisions_breves ($id_breve, $c=false) {
 		$c = array();
 		foreach (array(
 			'titre', 'texte', 'lien_titre', 'lien_url',
-			'id_parent', 'statut'
+			'id_parent', 'statut','changer_lang'
 		) as $champ)
 			if (($a = _request($champ)) !== null)
 				$c[$champ] = $a;
@@ -128,11 +125,15 @@ function revisions_breves ($id_breve, $c=false) {
 		),
 		$c);
 
-
 	// Changer le statut de la breve ?
-	$row = sql_fetsel("statut, id_rubrique,lang, langue_choisie", "spip_breves", "id_breve=$id_breve");
-
+	$row = sql_fetsel("statut, id_rubrique,lang, langue_choisie", "spip_breves", "id_breve=".intval($id_breve));
 	$id_rubrique = $row['id_rubrique'];
+	if ($changer_lang = _request('changer_lang',$c)){
+		revisions_breves_langue($id_breve, $id_rubrique, $changer_lang);
+		$row = sql_fetsel("statut, id_rubrique,lang, langue_choisie", "spip_breves", "id_breve=".intval($id_breve));
+		$id_rubrique = $row['id_rubrique'];
+	}
+
 	$statut_ancien = $statut = $row['statut'];
 	$langue_old = $row['lang'];
 	$langue_choisie_old = $row['langue_choisie'];
@@ -148,7 +149,7 @@ function revisions_breves ($id_breve, $c=false) {
 	// de la rubrique actuelle
 	if ($id_parent = intval(_request('id_parent', $c))
 	AND $id_parent != $id_rubrique
-	AND (NULL !== ($lang=sql_getfetsel('lang', 'spip_rubriques', "id_parent=0 AND id_rubrique=$id_parent")))) {
+	AND (NULL !== ($lang=sql_getfetsel('lang', 'spip_rubriques', "id_parent=0 AND id_rubrique=".intval($id_parent))))) {
 		$champs['id_rubrique'] = $id_parent;
 		// - changer sa langue (si heritee)
 		if ($langue_choisie_old != "oui") {
@@ -193,11 +194,11 @@ function revisions_breves ($id_breve, $c=false) {
 function revisions_breves_langue($id_breve, $id_rubrique, $changer_lang)
 {
 	if ($changer_lang == "herit") {
-		$row = sql_fetsel("lang", "spip_rubriques", "id_rubrique=$id_rubrique");
+		$row = sql_fetsel("lang", "spip_rubriques", "id_rubrique=".intval($id_rubrique));
 		$langue_parent = $row['lang'];
-		sql_updateq('spip_breves', array('lang'=>$langue_parent, 'langue_choisie'=>'non'), "id_breve=$id_breve");
-	} else 	{
-		sql_updateq('spip_breves', array('lang'=>$changer_lang, 'langue_choisie'=>'oui'), "id_breve=$id_breve");
+		sql_updateq('spip_breves', array('lang'=>$langue_parent, 'langue_choisie'=>'non'), "id_breve=".intval($id_breve));
+	} else {
+		sql_updateq('spip_breves', array('lang'=>$changer_lang, 'langue_choisie'=>'oui'), "id_breve=".intval($id_breve));
 		include_spip('inc/rubriques');
 		$langues = calculer_langues_utilisees();
 		ecrire_meta('langues_utilisees', $langues);
