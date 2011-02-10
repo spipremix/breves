@@ -1,0 +1,13 @@
+#SET{redirect,#ENV{redirect}|sinon{#ENV{id_breve}|?{#URL_ECRIRE{breve,id_breve=#ID_BREVE},#URL_ECRIRE{breves}}}}
+
+<div class='cadre-formulaire-editer'>
+<div class="entete-formulaire">
+	[(#GET{redirect}|icone_verticale{<:icone_retour:>,breve,'',left[(#ENV{retourajax,''}|oui)ajax preload]})]
+	[<:info_modifier_breve:>
+	<h1>(#ENV{titre,#INFO_TITRE{breve,#ID_BREVE}|sinon{<:titre_nouvelle_breve:>}})</h1>]
+</div>
+#FORMULAIRE_EDITER_BREVE{#ENV{id_breve,oui},#ENV{id_rubrique},#ENV{redirect},#ENV{lier_trad}}
+</div>
+[(#ENV{retourajax,''}|oui)
+<script type="text/javascript">if (window.jQuery) jQuery('#navigation>div').ajaxReload({args:{exec:'breve_edit'}});</script>
+]

@@ -22,7 +22,7 @@ function urls_generer_url_ecrire_breve($id, $args='', $ancre='', $statut='', $co
 	}
 	$h = ($statut == 'publie' OR $connect)
 	?  generer_url_entite_absolue($id, 'breve', $args, $ancre, $connect)
-	: (generer_url_ecrire('breves_voir',$a . ($args ? "&$args" : ''))
+	: (generer_url_ecrire('breve',$a . ($args ? "&$args" : ''))
 		. ($ancre ? "#$ancre" : ''));
 	return $h;
 }
