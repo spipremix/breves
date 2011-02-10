@@ -17,7 +17,7 @@
 	<INCLURE{fond=prive/listes/breves,titre=#TITRE|concat{#AIDER{breves}},sinon=#TITRE|concat{#AIDER{breves}},status=#ARRAY{0,prop,1,publie,2,#GET{editable}|?{refuse,xx}},id_rubrique,par=date_heure}>
 
 	[(#GET{editable})
-	[(#URL_ECRIRE{breves_edit,new=oui}|parametre_url{id_rubrique,#ID_RUBRIQUE}|icone_verticale{<:icone_nouvelle_breve:>,breve,new,right})]
+	[(#URL_ECRIRE{breve_edit,new=oui}|parametre_url{id_rubrique,#ID_RUBRIQUE}|icone_verticale{<:icone_nouvelle_breve:>,breve,new,right})]
 	]
 	<br class='nettoyeur' />
 
