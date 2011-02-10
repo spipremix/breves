@@ -20,14 +20,8 @@ function action_editer_breve_dist($arg=null) {
 		$arg = $securiser_action();
 	}
 
-	// Envoi depuis les boutons "publier/supprimer cette breve"
-	if (preg_match(',^(\d+)\Wstatut\W(\w+)$,', $arg, $r)) {
-		$id_breve = $r[1];
-		set_request('statut', $r[2]);
-		revisions_breves($id_breve);
-	} 
 	// Envoi depuis le formulaire d'edition pour chgt de langue
-	else if (preg_match(',^(\d+)\W(\w+)$,', $arg, $r)) {
+	if (preg_match(',^(\d+)\W(\w+)$,', $arg, $r)) {
 		revisions_breves_langue($id_breve=$r[1], $r[2], _request('changer_lang'));
 	}
 	// Envoi depuis le formulaire d'edition d'une breve existante
