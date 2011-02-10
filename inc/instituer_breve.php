@@ -11,7 +11,7 @@
 \***************************************************************************/
 
 if (!defined("_ECRIRE_INC_VERSION")) return;
-
+include_spip('inc/puce_statut');
 // http://doc.spip.org/@inc_instituer_breve_dist
 function inc_instituer_breve_dist($id_breve, $statut=-1)
 {
