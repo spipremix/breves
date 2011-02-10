@@ -31,9 +31,8 @@ function inc_instituer_breve_dist($id_breve, $statut=-1)
 	  . "<li>" . _T('entree_breve_publiee') 
 	  ."<ul>";
 	
-	$href = redirige_action_auteur('editer_breve',$id_breve,'breves_voir', "id_breve=$id_breve");
 	foreach($liste_statuts as $s=>$affiche){
-		$href = parametre_url($href,'statut',$s);
+		$href = generer_action_auteur('instituer_breve',"$id_breve-$s",self());
 		if ($s==$statut)
 			$res .= "<li class='$s selected'>" . puce_statut($s) . $affiche[0] . '</li>';
 		else
