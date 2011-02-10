@@ -86,7 +86,7 @@
 	<bouton id='breve_creer' parent="outils_rapides">
 		<icone>images/breve-new-16.png</icone>
 		<titre>icone_nouvelle_breve</titre>
-		<url>breves_edit</url>
+		<url>breve_edit</url>
 		<args>new=oui&amp;id_rubrique=@id_rubrique@</args>
 	</bouton>
 
