@@ -8,7 +8,7 @@
 
 <div class='cadre-formulaire-editer'>
 <div class="entete-formulaire">
-	[(#GET{redirect}|icone_verticale{<:icone_retour:>,breve,'',left[(#ENV{retourajax,''}|oui)ajax]})]
+	[(#GET{redirect}|icone_verticale{<:icone_retour:>,breve,'',left[(#ENV{retourajax,''}|oui)ajax nocache]})]
 	[<:info_modifier_breve:>
 	<h1>(#ENV{titre,#INFO_TITRE{breve,#ID_BREVE}|sinon{<:titre_nouvelle_breve:>}})</h1>]
 </div>
