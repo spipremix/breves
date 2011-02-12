@@ -1,7 +1,7 @@
 [(#ID_BREVE|oui)
 	[(#AUTORISER{modifier,breve,#ID_BREVE}|sinon_interdire_acces)]
 ][(#ID_BREVE|non)
-	#SET{id_rubrique,#ENV{id_rubrique}|rubrique_creer_breve}
+	#SET{id_rubrique,#ENV{id_rubrique}|trouver_rubrique_creer_objet{breve}}
 	[(#AUTORISER{creerbrevedans,rubrique,#GET{id_rubrique}}|sinon_interdire_acces)]
 ]
 #SET{redirect,#ENV{redirect}|sinon{#ENV{id_breve}|?{#URL_ECRIRE{breve,id_breve=#ID_BREVE},#URL_ECRIRE{breves}}}}
