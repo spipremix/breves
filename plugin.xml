@@ -19,22 +19,13 @@
 		<inclure>base/breves.php</inclure>
 	</pipeline>
 	<pipeline>
-		<nom>declarer_tables_objets_surnoms</nom>
+		<nom>declarer_tables_objets_sql</nom>
 		<inclure>base/breves.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>declarer_tables_principales</nom>
-		<inclure>base/breves.php</inclure>
-	</pipeline>
-	
-	<pipeline>
-		<nom>autoriser</nom>
-		<inclure>breves_autoriser.php</inclure>
 	</pipeline>
 
 	<pipeline>
-		<nom>declarer_url_objets</nom>
-		<inclure>breves_pipelines.php</inclure>
+		<nom>autoriser</nom>
+		<inclure>breves_autoriser.php</inclure>
 	</pipeline>
 
 	<pipeline>
@@ -66,15 +57,6 @@
 	
 	<pipeline>
 		<nom>optimiser_base_disparus</nom>
-		<inclure>breves_pipelines.php</inclure>
-	</pipeline>
-
-	<pipeline>
-		<nom>rechercher_liste_des_champs</nom>
-		<inclure>breves_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>rechercher_liste_des_jointures</nom>
 		<inclure>breves_pipelines.php</inclure>
 	</pipeline>
 							
