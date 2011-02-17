@@ -25,19 +25,6 @@ function breves_configurer_liste_metas($metas){
 }
 
 /**
- * Permet des calculs de noms d'url sur les breves. 
- *
- * @param array $array liste des objets acceptant des urls
- * @return array
-**/
-function breves_declarer_url_objets($array){
-	$array[] = 'breve';
-	return $array;
-}
-
-
-
-/**
  * Ajouter les breves a valider sur les rubriques 
  *
  * @param 
@@ -188,34 +175,6 @@ function breves_calculer_rubriques($flux){
 }
 
 
-
-/**
- * Liste et ponderation des champs pour la recherche
- *
- * @param array $tables
- * @return int
- */
-function breves_rechercher_liste_des_champs($tables){
-	$tables['breve'] = array(
-	  'titre' => 8, 'texte' => 2, 'lien_titre' => 1, 'lien_url' => 1
-	);
-
-	return $tables;
-}
-
-/**
- * Liste et ponderation des champs pour la recherche avec jointures
- *
- * @param array $tables
- * @return int
- */
-function breves_rechercher_liste_des_jointures($tables){
-	$tables['breve'] = array(
-		'document' => array('titre' => 2, 'descriptif' => 1)
-	);
-
-	return $tables;
-}
 
 
 /**
