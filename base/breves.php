@@ -43,7 +43,8 @@ function breves_declarer_tables_interfaces($interfaces) {
 function breves_declarer_tables_objets_sql($tables){
 	$tables['spip_breves'] = array(
 		'texte_retour' => 'icone_retour',
-		'texte_objets' => 'titre_page_breves',
+		'texte_objets' => 'breves',
+		'texte_objet' => 'breve',
 		'texte_modifier' => 'icone_modifier_breve',
 		'info_aucun_objet'=> 'info_aucun_breve',
 		'info_1_objet' => 'info_1_breve',
