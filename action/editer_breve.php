@@ -129,7 +129,8 @@ function revisions_breves ($id_breve, $c=false) {
 	$row = sql_fetsel("statut, id_rubrique,lang, langue_choisie", "spip_breves", "id_breve=".intval($id_breve));
 	$id_rubrique = $row['id_rubrique'];
 	if ($changer_lang = _request('changer_lang',$c)){
-		revisions_breves_langue($id_breve, $id_rubrique, $changer_lang);
+		$instituer_langue_objet = charger_fonction('instituer_langue_objet','action');
+		$instituer_langue_objet('breve',$id_breve, $id_rubrique, $changer_lang);
 		$row = sql_fetsel("statut, id_rubrique,lang, langue_choisie", "spip_breves", "id_breve=".intval($id_breve));
 		$id_rubrique = $row['id_rubrique'];
 	}
@@ -186,22 +187,6 @@ function revisions_breves ($id_breve, $c=false) {
 		$notifications('instituerbreve', $id_breve,
 			array('statut' => $statut, 'statut_ancien' => $statut_ancien)
 		);
-	}
-
-}
-
-// http://doc.spip.org/@revisions_breves_langue
-function revisions_breves_langue($id_breve, $id_rubrique, $changer_lang)
-{
-	if ($changer_lang == "herit") {
-		$row = sql_fetsel("lang", "spip_rubriques", "id_rubrique=".intval($id_rubrique));
-		$langue_parent = $row['lang'];
-		sql_updateq('spip_breves', array('lang'=>$langue_parent, 'langue_choisie'=>'non'), "id_breve=".intval($id_breve));
-	} else {
-		sql_updateq('spip_breves', array('lang'=>$changer_lang, 'langue_choisie'=>'oui'), "id_breve=".intval($id_breve));
-		include_spip('inc/rubriques');
-		$langues = calculer_langues_utilisees();
-		ecrire_meta('langues_utilisees', $langues);
 	}
 
 }
