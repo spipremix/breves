@@ -96,18 +96,17 @@ function insert_breve($id_rubrique) {
 // Enregistre une revision de breve
 // $c est un contenu (par defaut on prend le contenu via _request())
 // http://doc.spip.org/@revisions_breves
-function revisions_breves ($id_breve, $c=false) {
+function revisions_breves ($id_breve, $set=false) {
 
-	// champs normaux
-	if ($c === false) {
-		$c = array();
-		foreach (array(
-			'titre', 'texte', 'lien_titre', 'lien_url',
-			'id_parent', 'statut','changer_lang'
-		) as $champ)
-			if (($a = _request($champ)) !== null)
-				$c[$champ] = $a;
-	}
+	include_spip('inc/modifier');
+	$c = collecter_requests(
+		// white list
+		array('titre', 'texte', 'lien_titre', 'lien_url'),
+		// black list
+		array('id_parent', 'statut'),
+		// donnees eventuellement fournies
+		$set
+	);
 
 	// Si la breve est publiee, invalider les caches et demander sa reindexation
 	$t = sql_getfetsel("statut", "spip_breves", "id_breve=$id_breve");
@@ -116,7 +115,6 @@ function revisions_breves ($id_breve, $c=false) {
 		$indexation = true;
 	}
 
-	include_spip('inc/modifier');
 	modifier_contenu('breve', $id_breve,
 		array(
 			'nonvide' => array('titre' => _T('info_sans_titre')),
@@ -125,30 +123,27 @@ function revisions_breves ($id_breve, $c=false) {
 		),
 		$c);
 
+	$c = collecter_requests(array('id_parent', 'statut'),array(),$set);
+	$champs = array();
+
 	// Changer le statut de la breve ?
 	$row = sql_fetsel("statut, id_rubrique,lang, langue_choisie", "spip_breves", "id_breve=".intval($id_breve));
 	$id_rubrique = $row['id_rubrique'];
-	if ($changer_lang = _request('changer_lang',$c)){
-		$instituer_langue_objet = charger_fonction('instituer_langue_objet','action');
-		$instituer_langue_objet('breve',$id_breve, $id_rubrique, $changer_lang);
-		$row = sql_fetsel("statut, id_rubrique,lang, langue_choisie", "spip_breves", "id_breve=".intval($id_breve));
-		$id_rubrique = $row['id_rubrique'];
-	}
 
 	$statut_ancien = $statut = $row['statut'];
 	$langue_old = $row['lang'];
 	$langue_choisie_old = $row['langue_choisie'];
 
-	if (_request('statut', $c)
-	AND _request('statut', $c) != $statut
+	if ($c['statut']
+	AND $c['statut'] != $statut
 	AND autoriser('publierdans', 'rubrique', $id_rubrique)) {
-		$statut = $champs['statut'] = _request('statut', $c);
+		$statut = $champs['statut'] = $c['statut'];
 	}
 
 	// Changer de rubrique ?
 	// Verifier que la rubrique demandee est a la racine et differente
 	// de la rubrique actuelle
-	if ($id_parent = intval(_request('id_parent', $c))
+	if ($id_parent = intval($c['id_parent'])
 	AND $id_parent != $id_rubrique
 	AND (NULL !== ($lang=sql_getfetsel('lang', 'spip_rubriques', "id_parent=0 AND id_rubrique=".intval($id_parent))))) {
 		$champs['id_rubrique'] = $id_parent;
@@ -166,9 +161,22 @@ function revisions_breves ($id_breve, $c=false) {
 		}
 	}
 
+	// Envoyer aux plugins
+	$champs = pipeline('pre_edition',
+		array(
+			'args' => array(
+				'table' => 'spip_breves',
+				'id_objet' => $id_breve,
+				'action'=>'instituer',
+				'statut_ancien' => $statut_ancien,
+			),
+			'data' => $champs
+		)
+	);
+
 	if (!$champs) return;
 
-	sql_updateq('spip_breves', $champs, "id_breve=$id_breve");
+	sql_updateq('spip_breves', $champs, "id_breve=".intval($id_breve));
 
 	//
 	// Post-modifications
@@ -181,6 +189,20 @@ function revisions_breves ($id_breve, $c=false) {
 	// Au besoin, changer le statut des rubriques concernees 
 	include_spip('inc/rubriques');
 	calculer_rubriques_if($id_rubrique, $champs, $statut_ancien);
+
+	// Pipeline
+	pipeline('post_edition',
+		array(
+			'args' => array(
+				'table' => 'spip_breves',
+				'id_objet' => $id_breve,
+				'action'=>'instituer',
+				'statut_ancien' => $statut_ancien,
+			),
+			'data' => $champs
+		)
+	);
+
 
 	// Notifications
 	if ($notifications = charger_fonction('notifications', 'inc')) {
