@@ -68,7 +68,7 @@ function breves_affiche_enfants($flux) {
 			$bouton_breves = '';
 			$id_parent = sql_getfetsel('id_parent', 'spip_rubriques', 'id_rubrique='.$id_rubrique);
 			if (autoriser('creerbrevedans','rubrique',$id_rubrique,NULL,array('id_parent'=>$id_parent))) {
-				$bouton_breves .= icone_inline(_T('icone_nouvelle_breve'), generer_url_ecrire("breve_edit","id_rubrique=$id_rubrique&new=oui"), "breve-24.png","new", $spip_lang_right)
+				$bouton_breves .= icone_verticale(_T('icone_nouvelle_breve'), generer_url_ecrire("breve_edit","id_rubrique=$id_rubrique&new=oui"), "breve-24.png","new", $spip_lang_right)
 				. "<br class='nettoyeur' />";
 			}
 
