@@ -60,9 +60,11 @@ function breves_rubrique_encours($flux){
 function breves_affiche_enfants($flux) {
 	global $spip_lang_right;
 	
-	if ($flux['args']['exec'] == 'naviguer') {
+	if ($e = trouver_objet_exec($flux['args']['exec'])
+	  AND $e['type'] == 'rubrique'
+	  AND $e['edition'] == false) {
 		$id_rubrique = $flux['args']['id_rubrique'];
-  
+
 		if ($GLOBALS['meta']["activer_breves"] == 'oui') {
 			$lister_objets = charger_fonction('lister_objets','inc');
 			$bouton_breves = '';
