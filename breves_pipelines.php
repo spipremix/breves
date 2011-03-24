@@ -207,7 +207,7 @@ function breves_accueil_encours($flux){
  */
 function breves_optimiser_base_disparus($flux){
 	$n = &$flux['data'];
-
+	$mydate = $flux['args']['date'];
 
 
 	# les breves qui sont dans une id_rubrique inexistante
