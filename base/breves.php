@@ -46,6 +46,7 @@ function breves_declarer_tables_objets_sql($tables){
 		'texte_objets' => 'public:breves',
 		'texte_objet' => 'public:breve',
 		'texte_modifier' => 'icone_modifier_breve',
+		'texte_creer' => 'icone_nouvelle_breve',
 		'info_aucun_objet'=> 'info_aucun_breve',
 		'info_1_objet' => 'info_1_breve',
 		'info_nb_objets' => 'info_nb_breves',
