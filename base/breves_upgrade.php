@@ -17,20 +17,13 @@
  * @param string $version_cible
  */
 function breves_upgrade($nom_meta_base_version,$version_cible){
-	$current_version = 0.0;
-	if (   (!isset($GLOBALS['meta'][$nom_meta_base_version]) )
-			|| (($current_version = $GLOBALS['meta'][$nom_meta_base_version])!=$version_cible)){
-		
-		if ($current_version==0.0){
-			include_spip('base/create');
-			// creer les tables
-			creer_base();
-			// mettre les metas par defaut
-			$config = charger_fonction('config','inc');
-			$config();
-			ecrire_meta($nom_meta_base_version,$current_version=$version_cible);
-		}
-	}
+	$maj = array();
+	$maj['create'] = array(
+		array('maj_tables',array('spip_breves')),
+	);
+
+	include_spip('base/upgrade');
+	maj_plugin($nom_meta_base_version, $version_cible, $maj);
 }
 
 /**
