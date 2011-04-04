@@ -31,7 +31,7 @@ function formulaires_editer_breve_charger_dist($id_breve='new', $id_rubrique=0, 
  * ne representent pas l'objet edite
  */
 function formulaires_editer_breve_identifier_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
-	return serialize(array($id_breve,$lier_trad,$row));
+	return serialize(array(intval($id_breve),$lier_trad));
 }
 
 
@@ -50,7 +50,7 @@ function breves_edit_config($row)
 
 function formulaires_editer_breve_verifier_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
 	
-	$erreurs = formulaires_editer_objet_verifier('breve',$id_breve,array('titre'));
+	$erreurs = formulaires_editer_objet_verifier('breve',$id_breve,array('titre','id_parent'));
 	return $erreurs;
 }
 
