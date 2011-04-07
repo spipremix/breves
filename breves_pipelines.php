@@ -111,7 +111,7 @@ function breves_accueil_informations($texte){
 				$cpt2[$r] = intval($row['cnt']) . '/';
 			}
 		}
-		$texte .= "<div class='accueil_informations breves verdana1'>";
+		$texte .= "<div class='accueil_informations breves'>";
 		$texte .= afficher_plus_info(generer_url_ecrire("breves",""))."<b>"._T('info_breves_02')."</b>";
 		$texte .= "<ul style='margin:0px; padding-$spip_lang_left: 20px; margin-bottom: 5px;'>";
 		if (isset($cpt['prop'])) $texte .= "<li>"._T("texte_statut_attente_validation").": ".$cpt2['prop'].$cpt['prop'] . '</li>';
