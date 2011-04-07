@@ -25,14 +25,6 @@ function breves_declarer_tables_interfaces($interfaces) {
 	$interfaces['exceptions_des_tables']['breves']['nom_site'] = 'lien_titre';
 	$interfaces['exceptions_des_tables']['breves']['url_site'] = 'lien_url';
 
-	#$interfaces['table_titre']['breves'] = 'titre, lang';
-	
-	#$interfaces['table_date']['breves'] = 'date_heure';
-
-	$interfaces['tables_jointures']['spip_breves'][]= 'documents_liens';
-
-	$interfaces['table_statut']['spip_breves'][] = array('champ'=>'statut','publie'=>'publie','previsu'=>'publie,prop','exception'=>'statut');
-
 	$interfaces['table_des_traitements']['LIEN_TITRE'][]= _TRAITEMENT_TYPO;
 	$interfaces['table_des_traitements']['LIEN_URL'][]= 'vider_url(%s)';
 	
@@ -74,6 +66,25 @@ function breves_declarer_tables_objets_sql($tables){
 			"id_breve"=>"id_breve",
 			"id_rubrique"=>"id_rubrique"
 		),
+		'statut' =>  array(
+			array(
+				'champ'=>'statut',
+				'publie'=>'publie',
+				'previsu'=>'publie,prop',
+				'exception'=>'statut'
+			)
+		),
+		'statut_titres' => array(
+			'prop' => 'titre_breve_proposee',
+			'publie' => 'titre_breve_publiee',
+			'refuse' => 'titre_breve_refusee',
+		),
+		'statut_textes_instituer' => 	array(
+			'prop' => 'texte_statut_propose_evaluation',
+			'publie' => 'texte_statut_publie',
+			'refuse' => 'texte_statut_refuse',
+		),
+
 		'rechercher_champs' => array(
 		  'titre' => 8, 'texte' => 2, 'lien_titre' => 1, 'lien_url' => 1
 		),
