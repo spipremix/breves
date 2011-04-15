@@ -22,33 +22,25 @@ function action_editer_breve_dist($arg=null) {
 
 	// Envoi depuis le formulaire d'edition d'une breve
 	if (!$id_breve = intval($arg)) {
-		$id_breve = insert_breve(_request('id_parent'));
-	}
-	if ($id_breve) {
-		revisions_breves($id_breve);
-	}
-	// Envoi depuis le formulaire de creation d'une breve
-	else{
-		if (_request('redirect')) {
-			include_spip('inc/headers');
-			redirige_url_ecrire();
-		}
-		return array(0,''); // erreur
+		$id_breve = breve_inserer(_request('id_parent'));
 	}
 
-	if (_request('redirect')) {
-		$redirect = parametre_url(urldecode(_request('redirect')),
-			'id_breve', $id_breve, '&');
-			
-		include_spip('inc/headers');
-		redirige_par_entete($redirect);
-	}
-	else 
-		return array($id_breve,'');
+	if (!$id_breve)
+		return array(0,''); // erreur
+
+	$err = breve_modifier($id_breve);
+
+	return array($id_breve,$err);
 }
 
-// http://doc.spip.org/@insert_breve
-function insert_breve($id_rubrique) {
+/**
+ * Inserer une breve en base
+ * http://doc.spip.org/@insert_breve
+ *
+ * @param int $id_rubrique
+ * @return int
+ */
+function breve_inserer($id_rubrique) {
 
 	include_spip('inc/rubriques');
 
@@ -93,10 +85,17 @@ function insert_breve($id_rubrique) {
 }
 
 
-// Enregistre une revision de breve
-// $c est un contenu (par defaut on prend le contenu via _request())
-// http://doc.spip.org/@revisions_breves
-function revisions_breves ($id_breve, $set=false) {
+/**
+ * Modifier une breve en base
+ * $c est un contenu (par defaut on prend le contenu via _request())
+ *
+ * http://doc.spip.org/@revisions_breves
+ *
+ * @param int $id_breve
+ * @param array $set
+ * @return
+ */
+function breve_modifier ($id_breve, $set=null) {
 
 	include_spip('inc/modifier');
 	$c = collecter_requests(
@@ -124,6 +123,18 @@ function revisions_breves ($id_breve, $set=false) {
 		$c);
 
 	$c = collecter_requests(array('id_parent', 'statut'),array(),$set);
+	$err = breve_instituer($id_breve, $c);
+	return $err;
+}
+
+/**
+ * Instituer une breve : modifier son statut ou son parent
+ *
+ * @param int $id_breve
+ * @param array $c
+ * @return string
+ */
+function breve_instituer($id_breve, $c) {
 	$champs = array();
 
 	// Changer le statut de la breve ?
@@ -211,6 +222,13 @@ function revisions_breves ($id_breve, $set=false) {
 		);
 	}
 
+	return ''; // pas d'erreur
 }
 
+function insert_breve($id_rubrique) {
+	return breve_inserer($id_rubrique);
+}
+function revisions_breves ($id_breve, $set=false) {
+	return breve_modifier($id_breve,$set);
+}
 ?>
