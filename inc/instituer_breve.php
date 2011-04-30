@@ -19,16 +19,16 @@ function inc_instituer_breve_dist($id_breve, $statut=-1)
 
 	$liste_statuts = array(
 	  // statut => array(titre,image)
-		'prop' => array(_T('item_breve_proposee'),''),	
-		'publie' => array(_T('item_breve_validee'),''),	
-		'refuse' => array(_T('item_breve_refusee'),'')	
+		'prop' => array(_T('breves:item_breve_proposee'),''),	
+		'publie' => array(_T('breves:item_breve_validee'),''),	
+		'refuse' => array(_T('breves:item_breve_refusee'),'')	
 	);
 	if (!in_array($statut, array_keys($liste_statuts)))
 		$liste_statuts[$statut] =  array($statut,'');
 
 	$res =
 	  "<ul id='instituer_breve-$id_breve' class='instituer_breve instituer'>" 
-	  . "<li>" . _T('entree_breve_publiee') 
+	  . "<li>" . _T('breves:entree_breve_publiee') 
 	  ."<ul>";
 	
 	foreach($liste_statuts as $s=>$affiche){
