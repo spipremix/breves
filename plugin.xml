@@ -8,6 +8,7 @@
 	<etat>test</etat>
 	<description>Les br&egrave;ves sont des informations courtes, sans auteur.</description>
 	<prefix>breves</prefix>
+	<categorie>edition</categorie>
 
 	<pipeline>
 		<nom>configurer_liste_metas</nom>
