@@ -1,11 +1,43 @@
 <?php
 
-// This is a SPIP language file  --  Ceci est un fichier langue de SPIP
+// Ceci est un fichier langue de SPIP -- This is a SPIP language file
+// Produit automatiquement par le plugin LangOnet a partir de la langue source fr
+// Module: breves
+// Langue: fr
+// Date: 30-04-2011 19:47:41
+// Items: 23
+
+if (!defined('_ECRIRE_INC_VERSION')) return;
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
-
+// E
+	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?',
+	'entree_texte_breve' => 'Texte de la brève',
+// I
+	'icone_ecrire_nouvel_article' => 'Les brèves contenues dans cette rubrique',
+	'icone_modifier_breve' => 'Modifier cette brève',
+	'icone_nouvelle_breve' => 'Écrire une nouvelle brève',
+	'info_1_breve' => '1 brève',
+	'info_aucun_breve' => 'Aucune brève',
+	'info_breves' => 'Votre site utilise-t-il le système de brèves ?',
+	'info_breves_02' => 'Brèves',
+	'info_breves_valider' => 'Brèves à valider',
+	'info_gauche_numero_breve' => 'BRÈVE NUMÉRO',
+	'info_nb_breves' => '@nb@ brèves',
+	'item_breve_proposee' => 'Brève proposée',
+	'item_breve_refusee' => 'NON - Brève refusée',
+	'item_breve_validee' => 'OUI - Brève validée',
+	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves',
+	'item_utiliser_breves' => 'Utiliser les brèves',
+// T
+	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
+	mettre en ligne rapidement des informations concises, de gérer
+	une revue de presse, un calendrier d\'événements...',
+	'titre_breve_proposee' => 'Brève proposée',
+	'titre_breve_publiee' => 'Brève publiée',
+	'titre_breve_refusee' => 'Brève refusée',
+	'titre_breves' => 'Les brèves',
+	'titre_page_breves' => 'Brèves',
 );
-
-
 ?>

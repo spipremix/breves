@@ -40,7 +40,7 @@ function breves_rubrique_encours($flux){
 		// Les breves a valider
 		//
 		$flux['data'] .= $lister_objets('breves', array(
-			'titre'=>_T('info_breves_valider'),
+			'titre'=>_T('breves:info_breves_valider'),
 			'statut'=>array('prepa','prop'),
 			'id_rubrique'=>$id_rubrique,
 			'par'=>'date_heure'));
@@ -70,11 +70,11 @@ function breves_affiche_enfants($flux) {
 			$bouton_breves = '';
 			$id_parent = sql_getfetsel('id_parent', 'spip_rubriques', 'id_rubrique='.$id_rubrique);
 			if (autoriser('creerbrevedans','rubrique',$id_rubrique,NULL,array('id_parent'=>$id_parent))) {
-				$bouton_breves .= icone_verticale(_T('icone_nouvelle_breve'), generer_url_ecrire("breve_edit","id_rubrique=$id_rubrique&new=oui"), "breve-24.png","new", $spip_lang_right)
+				$bouton_breves .= icone_verticale(_T('breves:icone_nouvelle_breve'), generer_url_ecrire("breve_edit","id_rubrique=$id_rubrique&new=oui"), "breve-24.png","new", $spip_lang_right)
 				. "<br class='nettoyeur' />";
 			}
 
-			$flux['data'] .= $lister_objets('breves', array('titre'=>_T('icone_ecrire_nouvel_article'), 'where'=>"statut != 'prop' AND statut != 'prepa'", 'id_rubrique'=>$id_rubrique, 'par'=>'date_heure'));
+			$flux['data'] .= $lister_objets('breves', array('titre'=>_T('breves:icone_ecrire_nouvel_article'), 'where'=>"statut != 'prop' AND statut != 'prepa'", 'id_rubrique'=>$id_rubrique, 'par'=>'date_heure'));
 			$flux['data'] .= $bouton_breves;
 		}
 	}
@@ -112,7 +112,7 @@ function breves_accueil_informations($texte){
 			}
 		}
 		$texte .= "<div class='accueil_informations breves'>";
-		$texte .= afficher_plus_info(generer_url_ecrire("breves",""))."<b>"._T('info_breves_02')."</b>";
+		$texte .= afficher_plus_info(generer_url_ecrire("breves",""))."<b>"._T('breves:info_breves_02')."</b>";
 		$texte .= "<ul style='margin:0px; padding-$spip_lang_left: 20px; margin-bottom: 5px;'>";
 		if (isset($cpt['prop'])) $texte .= "<li>"._T("texte_statut_attente_validation").": ".$cpt2['prop'].$cpt['prop'] . '</li>';
 		if (isset($cpt['publie'])) $texte .= "<li><b>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] . "</b>" .'</li>';
@@ -190,7 +190,7 @@ function breves_accueil_encours($flux){
 
 
 	$flux .= $lister_objets('breves', array(
-		'titre'=>afficher_plus_info(generer_url_ecrire('breves'))._T('info_breves_valider'),
+		'titre'=>afficher_plus_info(generer_url_ecrire('breves'))._T('breves:info_breves_valider'),
 		'statut'=>array('prepa','prop'),
 		'par'=>'date_heure'));
 

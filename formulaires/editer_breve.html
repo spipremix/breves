@@ -23,7 +23,7 @@
 	    </li>]
 	    
 	    <li class="editer_texte[ (#ENV**{erreurs}|table_valeur{texte}|oui)erreur]">
-	      		<label for="text_area"><:entree_texte_breve:></label>[
+	      		<label for="text_area"><:breves:entree_texte_breve:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{texte})</span>
 				][(#ENV**{_texte_trop_long,''})
 				]<textarea name='texte' id='text_area' rows='[(#ENV**{config}|table_valeur{lignes}|plus{2})]' cols='40'>[(#ENV**{texte})]</textarea>
@@ -51,11 +51,11 @@
 			<fieldset>
 			<ul>
 			<li class="editer_statut obligatoire">
-				<label for='statut'><:entree_breve_publiee:><em class='aide'>#AIDER{statut}</em>
+				<label for='statut'><:breves:entree_breve_publiee:><em class='aide'>#AIDER{statut}</em>
 				</label><select name='statut' id='statut' size='1'>
-					<option value='prop'[(#ENV**{statut}|=={prop}|?{' selected="selected"'})] style='background-color: white'><:item_breve_proposee:></option>
-					<option value='refuse'[(#ENV**{statut}|=={refuse}|?{' selected="selected"'})] class='danger'><:item_breve_refusee:></option>
-					<option value='publie'[(#ENV**{statut}|=={publie}|?{' selected="selected"'})] style='background-color: #B4E8C5'><:item_breve_validee:></option>
+					<option value='prop'[(#ENV**{statut}|=={prop}|?{' selected="selected"'})] style='background-color: white'><:breves:item_breve_proposee:></option>
+					<option value='refuse'[(#ENV**{statut}|=={refuse}|?{' selected="selected"'})] class='danger'><:breves:item_breve_refusee:></option>
+					<option value='publie'[(#ENV**{statut}|=={publie}|?{' selected="selected"'})] style='background-color: #B4E8C5'><:breves:item_breve_validee:></option>
 				</select>
 			</li>
 			</ul>

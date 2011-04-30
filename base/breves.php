@@ -35,13 +35,13 @@ function breves_declarer_tables_interfaces($interfaces) {
 function breves_declarer_tables_objets_sql($tables){
 	$tables['spip_breves'] = array(
 		'texte_retour' => 'icone_retour',
-		'texte_objets' => 'public:breves', // _T('public:breves')
-		'texte_objet' => 'public:breve', // _T('public:breve')
-		'texte_modifier' => 'icone_modifier_breve', // _T('icone_modifier_breve')
-		'texte_creer' => 'icone_nouvelle_breve', // _T('icone_nouvelle_breve')
-		'info_aucun_objet'=> 'info_aucun_breve', // _T('info_aucun_breve')
-		'info_1_objet' => 'info_1_breve', // _T('info_1_breve')
-		'info_nb_objets' => 'info_nb_breves', // _T('info_nb_breves')
+		'texte_objets' => 'breves:breves',
+		'texte_objet' => 'breves:breve',
+		'texte_modifier' => 'breves:icone_modifier_breve',
+		'texte_creer' => 'breves:icone_nouvelle_breve',
+		'info_aucun_objet'=> 'breves:info_aucun_breve',
+		'info_1_objet' => 'breves:info_1_breve',
+		'info_nb_objets' => 'breves:info_nb_breves',
 		'titre' => 'titre, lang',
 		'date' => 'date_heure',
 		'principale' => 'oui',
@@ -75,9 +75,9 @@ function breves_declarer_tables_objets_sql($tables){
 			)
 		),
 		'statut_titres' => array(
-			'prop' => 'titre_breve_proposee', //_T('titre_breve_proposee')
-			'publie' => 'titre_breve_publiee', //_T('titre_breve_publiee')
-			'refuse' => 'titre_breve_refusee', //_T('titre_breve_refusee')
+			'prop' => 'breves:titre_breve_proposee',
+			'publie' => 'breves:titre_breve_publiee',
+			'refuse' => 'breves:titre_breve_refusee',
 		),
 		'statut_textes_instituer' => 	array(
 			'prop' => 'texte_statut_propose_evaluation', //_T('texte_statut_propose_evaluation')
