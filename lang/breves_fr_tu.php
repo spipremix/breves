@@ -1,6 +1,8 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// Fichier source, a modifier dans svn://zone.spip.org/spip-zone/_core_/plugins/breves/lang/
+// extrait automatiquement de http://www.spip.net/trad-lang/
+// ** ne pas modifier le fichier **
+
 if (!defined('_ECRIRE_INC_VERSION')) return;
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
@@ -19,7 +21,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_nouvelle_breve' => 'Écrire une nouvelle brève',
 	'info_1_breve' => '1 brève',
 	'info_aucun_breve' => 'Aucune brève',
-	'info_breves' => 'Votre site utilise-t-il le système de brèves ?',
+	'info_breves' => 'Ton site utilise-t-il le système de brèves ?',
 	'info_breves_02' => 'Brèves',
 	'info_breves_valider' => 'Brèves à valider',
 	'info_gauche_numero_breve' => 'BRÈVE NUMÉRO',
