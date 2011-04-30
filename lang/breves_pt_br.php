@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Não utilizar as notas',
 	'item_utiliser_breves' => 'Utilizar as notas',
 
+	// L
+	'logo_breve' => 'LOGO DA NOTA',
+
 	// T
 	'texte_breves' => 'As notas são textos curtos e simples que permitem rapidamente disponibilizar online informações concisas, gerenciar o clipping, um calendário de eventos...',
 	'titre_breve_proposee' => 'Nota proposta',
 	'titre_breve_publiee' => 'Nota publicada',
 	'titre_breve_refusee' => 'Nota recusada',
 	'titre_breves' => 'As notas',
+	'titre_langue_breve' => 'IDIOMA DA NOTA',
 	'titre_page_breves' => 'Notas'
 );
 

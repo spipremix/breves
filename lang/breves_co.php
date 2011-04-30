@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Ùn aduprà micca i dispacci',
 	'item_utiliser_breves' => 'Aduprà i dispacci',
 
+	// L
+	'logo_breve' => 'LOGO DI U DISPACCIU',
+
 	// T
 	'texte_breves' => 'I dispacci sò testi corti è sèmplici chì permettenu di mette in ligna nutizie assai in furia, è di gestisce una rivista di stampa, 
 	un almanaccu d\'evenimenti, ecc.',
@@ -39,6 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Dispacciu pubblicatu',
 	'titre_breve_refusee' => 'Dispacciu rifiutatu',
 	'titre_breves' => 'I dispacci',
+	'titre_langue_breve' => 'LINGUA DI U DISPACCIU',
 	'titre_page_breves' => 'Dispacci'
 );
 

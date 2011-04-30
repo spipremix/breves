@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'mi má zán xókléwún lɛ',
 	'item_utiliser_breves' => 'mi zán xó kléwún lɛ',
 
+	// L
+	'logo_breve' => 'sɔsí xó kléwún ɔ tɔn',
+
 	// T
 	'texte_breves' => 'bɔ yé nɔ zɔn bɔ xó lɛ nɔ yí àtɛjí gànmɛgànmɛ...',
 	'titre_breve_proposee' => 'xó kléwún yé sɔ jó',
 	'titre_breve_publiee' => 'xó kléwún yé sɔ xlɛ',
 	'titre_breve_refusee' => 'xó kléwún yê gbɛ ɔ ',
 	'titre_breves' => 'xó kléwún ',
+	'titre_langue_breve' => 'Gbèzán xó kléwún ɔ tɔn',
 	'titre_page_breves' => 'xó kléwún lɛ'
 );
 

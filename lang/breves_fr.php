@@ -30,6 +30,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves',
 	'item_utiliser_breves' => 'Utiliser les brèves',
 
+	// L
+	'logo_breve' => 'LOGO DE LA BRÈVE',
+
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
 	mettre en ligne rapidement des informations concises, de gérer
@@ -38,6 +41,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Brève publiée',
 	'titre_breve_refusee' => 'Brève refusée',
 	'titre_breves' => 'Les brèves',
+	'titre_langue_breve' => 'LANGUE DE LA BRÈVE',
 	'titre_page_breves' => 'Brèves'
 );
 

@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'D\'Kuerzmeldungen ausschalten',
 	'item_utiliser_breves' => 'D\'Kuerzmeldungen aschalten',
 
+	// L
+	'logo_breve' => 'LOGO VUN DER KUERZMELDUNG',
+
 	// T
 	'texte_breves' => 'D\'Kuerzmeldungen si kuerz an einfach Texter déi Iech erlaben Informatiounen séier ze publizéieren, eng Presse-Revue ze maachen, en Agenda ze weisen...',
 	'titre_breve_proposee' => 'Proposéiert Kuerzmeldung',
 	'titre_breve_publiee' => 'Publizéiert Kuerzmeldung',
 	'titre_breve_refusee' => 'Refuséiert Kuerzmeldung',
 	'titre_breves' => 'D\'Kuerzmeldungen',
+	'titre_langue_breve' => 'SPROOCH VUN DER KUERZMELDUNG',
 	'titre_page_breves' => 'Kuerzmeldungen'
 );
 

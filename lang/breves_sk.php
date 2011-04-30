@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Do not use the news',
 	'item_utiliser_breves' => 'Používať správy',
 
+	// L
+	'logo_breve' => 'NEWS ITEM\'S LOGO',
+
 	// T
 	'texte_breves' => 'News are short and simple texts which allow
 	the publication online of concise information, the management of
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'News item published',
 	'titre_breve_refusee' => 'News item rejected',
 	'titre_breves' => 'Novinky',
+	'titre_langue_breve' => 'JAZYK NOVINKY',
 	'titre_page_breves' => 'Novinky'
 );
 

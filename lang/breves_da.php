@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Luk ikke op for nyheder',
 	'item_utiliser_breves' => 'Anvend nyheder',
 
+	// L
+	'logo_breve' => 'LOGO TIL NYHEDEN',
+
 	// T
 	'texte_breves' => 'Nyheder er korte og enkle tekster der muliggør online offentliggørelse af præcis information, administration af presseanmeldelser, arrangementskalender...',
 	'titre_breve_proposee' => 'Indsendte nyheder',
 	'titre_breve_publiee' => 'Offentliggjorte nyheder',
 	'titre_breve_refusee' => 'Afviste nyheder',
 	'titre_breves' => 'Nyheder',
+	'titre_langue_breve' => 'NYHEDENS SPROG',
 	'titre_page_breves' => 'Nyheder'
 );
 

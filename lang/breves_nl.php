@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Geen gebruik maken van nieuwsberichten',
 	'item_utiliser_breves' => 'Nieuwsberichten gebruiken',
 
+	// L
+	'logo_breve' => 'LOGO VAN HET NIEUWSBERICHT',
+
 	// T
 	'texte_breves' => 'Berichten zijn korte en eenvoudige teksten die je toelaten nieuws snel online te brengen, een persbericht op te stellen, een evenementenkalender te maken, ...',
 	'titre_breve_proposee' => 'Voorgesteld bericht',
 	'titre_breve_publiee' => 'Gepubliceerd bericht',
 	'titre_breve_refusee' => 'Geweigerd bericht',
 	'titre_breves' => 'Berichten',
+	'titre_langue_breve' => 'TAAL VAN HET NIEUWSBERICHT',
 	'titre_page_breves' => 'Berichten'
 );
 

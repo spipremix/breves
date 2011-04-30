@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'הסרת שימוש המבזקים',
 	'item_utiliser_breves' => 'שימוש המבזקים',
 
+	// L
+	'logo_breve' => 'לוגו של המבזק',
+
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
 	mettre en ligne rapidement des informations concises, de gérer
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'מבזק מפורסם',
 	'titre_breve_refusee' => 'מבזק מסורב',
 	'titre_breves' => 'Les brèves', # NEW
+	'titre_langue_breve' => 'LANGUE DE LA BRÈVE', # NEW
 	'titre_page_breves' => 'Brèves' # NEW
 );
 

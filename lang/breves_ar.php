@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'عدم استخدام الأخبار',
 	'item_utiliser_breves' => 'إستخدام الأخبار',
 
+	// L
+	'logo_breve' => 'شعار الخبر',
+
 	// T
 	'texte_breves' => 'الأخيار هي نصوص قصيرة تسمح
 بنشر معلومات سريعة ومقتضبة، إدارة
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'خبر منشور',
 	'titre_breve_refusee' => 'خبر مرفوض',
 	'titre_breves' => 'الأخبار',
+	'titre_langue_breve' => 'لغة الخبر',
 	'titre_page_breves' => 'الأخبار'
 );
 

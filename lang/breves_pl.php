@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Nie używaj newsów',
 	'item_utiliser_breves' => 'Używaj newsów',
 
+	// L
+	'logo_breve' => 'LOGO NEWSA',
+
 	// T
 	'texte_breves' => 'Newsy są krótkimi tekstami, które pozwalają
  szybko umieścić na stronie zwięzłe informacje i zarządzać
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'News opublikowany',
 	'titre_breve_refusee' => 'News odrzucony',
 	'titre_breves' => 'Newsy',
+	'titre_langue_breve' => 'JĘZYK NEWSA',
 	'titre_page_breves' => 'Newsy'
 );
 

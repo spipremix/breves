@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves', # NEW
 	'item_utiliser_breves' => 'Utiliser les brèves', # NEW
 
+	// L
+	'logo_breve' => 'SANTRAUKOS LOGO',
+
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
 	mettre en ligne rapidement des informations concises, de gérer
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Publikuojama santrauka',
 	'titre_breve_refusee' => 'Atmesta santrauka',
 	'titre_breves' => 'Les brèves', # NEW
+	'titre_langue_breve' => 'LANGUE DE LA BRÈVE', # NEW
 	'titre_page_breves' => 'Brèves' # NEW
 );
 
