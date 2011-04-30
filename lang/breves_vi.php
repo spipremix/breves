@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Không dùng tin ngắn',
 	'item_utiliser_breves' => 'Dùng tin ngắn',
 
+	// L
+	'logo_breve' => 'LOGO CỦA TIN NGẮN',
+
 	// T
 	'texte_breves' => 'Tin ngắn là đoạn văn ngắn gọn đơn giản để có thể thông báo online các chi tiết cô đọng, quản trị các thông cáo báo chí, lịch trình sự việc ...',
 	'titre_breve_proposee' => 'Tin ngắn đã nộp',
 	'titre_breve_publiee' => 'Tin ngắn đã đăng tải',
 	'titre_breve_refusee' => 'Tin ngắn bị từ chối',
 	'titre_breves' => 'Tin ngắn',
+	'titre_langue_breve' => 'NGÔN NGỮ CỦA TIN NGẮN',
 	'titre_page_breves' => 'Tin ngắn'
 );
 

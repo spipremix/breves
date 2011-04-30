@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'သတင်းကို မသုံးပါနှင့်',
 	'item_utiliser_breves' => 'သတင်းကိုသုံးပါ',
 
+	// L
+	'logo_breve' => 'သတင်းအချက်များ၏လိုဂို',
+
 	// T
 	'texte_breves' => 'သတင်းများကို တိုရှင်းပုံစံဖြင့် အွန်လိုင်းပေါ်တွင် ထုတ်ဝေနိုင်သည်၊ ပြက္ခဒိန်နှင့် အစီအစဉ်များတွင်​ ဖော်ပြနိုင်သည်',
 	'titre_breve_proposee' => 'သတင်းများတင်သွင်းပြီး',
 	'titre_breve_publiee' => 'သတင်းများ ထုတ်​​ဝေပြီး',
 	'titre_breve_refusee' => 'သတင်းများ ငြင်းပယ်ထားပြီး',
 	'titre_breves' => 'သတင်း',
+	'titre_langue_breve' => 'သတင်းအချက်အလက် ဘာသာစကား',
 	'titre_page_breves' => 'သတင်းများ'
 );
 

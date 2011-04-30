@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Nepoužívat novinky',
 	'item_utiliser_breves' => 'Používat novinky',
 
+	// L
+	'logo_breve' => 'LOGO NOVINKY',
+
 	// T
 	'texte_breves' => 'Novinky jsou krátké texty umožňující rychle zveřejňovat
  stručné informace, redigovat přehled tisku, přehled událostí...',
@@ -39,6 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Novinka zveřejněna',
 	'titre_breve_refusee' => 'Novinka zamítnuta',
 	'titre_breves' => 'Novinky',
+	'titre_langue_breve' => 'JAZYK NOVINKY',
 	'titre_page_breves' => 'Novinky'
 );
 

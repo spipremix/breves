@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Na implijout ar berrskridoù',
 	'item_utiliser_breves' => 'Implijout ar berrskridoù',
 
+	// L
+	'logo_breve' => 'LOGO AR BERRSKRID',
+
 	// T
 	'texte_breves' => 'Skridoù berr ha simpl eo ar berrskridoù. Drezo e c\'haller lakaat enlinenn fonnus-tre keleier berr-ha-berr, merañ ur strobad pennadoù, un deiziataer darvoudoù, hag all.',
 	'titre_breve_proposee' => 'Berrskrid bet kinniget',
 	'titre_breve_publiee' => 'Berrskrid bet embannet',
 	'titre_breve_refusee' => 'Berrskrid bet nac\'het',
 	'titre_breves' => 'Ar berrskridoù',
+	'titre_langue_breve' => 'YEZH AR BERRSKRID',
 	'titre_page_breves' => 'Berrskridoù'
 );
 

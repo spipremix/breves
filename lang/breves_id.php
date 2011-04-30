@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Jangan gunakan berita',
 	'item_utiliser_breves' => 'Gunakan berita',
 
+	// L
+	'logo_breve' => 'LOGO ARTIKEL BERITA',
+
 	// T
 	'texte_breves' => 'Berita adalah teks singkat dan sederhana yang mengizinkan
 	publikasi online informasi, ulasan-ulasan, peristiwa-peristiwa.....',
@@ -39,6 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Artikel berita dipublikasi',
 	'titre_breve_refusee' => 'Artikel berita ditolak',
 	'titre_breves' => 'Berita',
+	'titre_langue_breve' => 'BAHASA ARTIKEL BERITA',
 	'titre_page_breves' => 'Berita'
 );
 

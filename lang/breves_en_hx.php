@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'D0 n07 u53 7h3 n3w5',
 	'item_utiliser_breves' => 'U53 7h3 n3w5',
 
+	// L
+	'logo_breve' => 'N3W5 173M\'5 10G0',
+
 	// T
 	'texte_breves' => 'N3w5 4r3 5h0r7 4nd 51mp13 73x75 wh1ch 4110w
 	7h3 pub11c4710n 0n11n3 0f c0nc153 1nf0rm4710n, 7h3 m4n4g3m3n7 0f
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'N3w5 173m pub115h3d',
 	'titre_breve_refusee' => 'N3w5 173m r3j3c73d',
 	'titre_breves' => 'N3w5',
+	'titre_langue_breve' => 'N3W5 173M 14NGU4G3',
 	'titre_page_breves' => 'N3w5'
 );
 

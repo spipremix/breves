@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Nu folosiţi ştirile',
 	'item_utiliser_breves' => 'Folosiţi ştirile',
 
+	// L
+	'logo_breve' => 'VINIETA ŞTIRII',
+
 	// T
 	'texte_breves' => 'Ştirile sunt texte scurte şi simple, permiţând publicarea rapidă de informaţii concise, menţinerea unei reviste a presei, o agenda ...',
 	'titre_breve_proposee' => 'Ştire propusă',
 	'titre_breve_publiee' => 'Ştire publicată',
 	'titre_breve_refusee' => 'Ştire refuzată',
 	'titre_breves' => 'Ştirile',
+	'titre_langue_breve' => 'LIMBA ŞTIRII',
 	'titre_page_breves' => 'Ştiri'
 );
 

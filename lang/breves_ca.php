@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'No utilitzar les breus',
 	'item_utiliser_breves' => 'Utilitzar les breus',
 
+	// L
+	'logo_breve' => 'LOGOTIP DE LA BREU',
+
 	// T
 	'texte_breves' => 'Les breus son textes curts i simples que permeten posar ràpidament en línia informacions concises, gestionar una revista de premsa, un calendari d\'esdeveniments...',
 	'titre_breve_proposee' => 'Breu proposada',
 	'titre_breve_publiee' => 'Breu publicada',
 	'titre_breve_refusee' => 'Breu refusada',
 	'titre_breves' => 'Les breus',
+	'titre_langue_breve' => 'LLENGUA DEL BREU',
 	'titre_page_breves' => 'Breus'
 );
 

@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves', # NEW
 	'item_utiliser_breves' => 'Utiliser les brèves', # NEW
 
+	// L
+	'logo_breve' => 'NYHETENS LOGO',
+
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
 	mettre en ligne rapidement des informations concises, de gérer
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Nyhet publisert',
 	'titre_breve_refusee' => 'Nyhet forkastet',
 	'titre_breves' => 'Nyheter',
+	'titre_langue_breve' => 'NYHETSSPRÅK',
 	'titre_page_breves' => 'Nyheter'
 );
 

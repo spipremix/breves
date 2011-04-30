@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Keine Meldungen verwenden.',
 	'item_utiliser_breves' => 'Meldungen verwenden',
 
+	// L
+	'logo_breve' => 'MELDUNGS-LOGO',
+
 	// T
 	'texte_breves' => 'Meldungen sind kurze einfache Texte, um schnell und unkompliziert Nachrichten, eine Presseschau oder einen Veranstaltungskalender zu publizieren ...',
 	'titre_breve_proposee' => 'Vorgeschlagene Meldungen',
 	'titre_breve_publiee' => 'veröffentlichte Meldungen',
 	'titre_breve_refusee' => 'abgelehnte Meldung',
 	'titre_breves' => 'Meldungen',
+	'titre_langue_breve' => 'SPRACHE DER MELDUNG',
 	'titre_page_breves' => 'Meldungen'
 );
 

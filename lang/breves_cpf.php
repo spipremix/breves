@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Anpès ansèrv bann tit-nouvèl',
 	'item_utiliser_breves' => 'Ansèrv bann tit-nouvèl',
 
+	// L
+	'logo_breve' => 'LOGO LA TIT-NOUVÈL',
+
 	// T
 	'texte_breves' => 'Inn tit-nouvèl lé inn ti tèks sinp  sak i permé mèt an liyn vitman tout bann zinformasyon préciz. Li permèt osi zèr inn tourlaprès o inn kalandryé bann zévénman...',
 	'titre_breve_proposee' => 'Tit-nouvèl propozé',
 	'titre_breve_publiee' => 'Tit-nouvèl pibliyé',
 	'titre_breve_refusee' => 'Tit-nouvèl arfizé',
 	'titre_breves' => 'Bann tit-nouvèl',
+	'titre_langue_breve' => 'LANG LA TITE-NOUVEL',
 	'titre_page_breves' => 'Bann tit-nouvèl'
 );
 

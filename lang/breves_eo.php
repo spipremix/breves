@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Ne uzi la fulm-informojn',
 	'item_utiliser_breves' => 'Uzi la fulm-informojn',
 
+	// L
+	'logo_breve' => 'VINJETO DE LA FULM-INFORMO',
+
 	// T
 	'texte_breves' => 'La fulm-informoj estas mallongaj kaj simplaj tekstoj ebligantaj
  rapide ĉeretigi koncizajn informojn, mastrumi
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Publikigita fulm-informo',
 	'titre_breve_refusee' => 'Rifuzita fulm-informo',
 	'titre_breves' => 'La fulm-informoj',
+	'titre_langue_breve' => 'LINGVO DE LA FULM-INFORMO',
 	'titre_page_breves' => 'Fulm-informoj'
 );
 

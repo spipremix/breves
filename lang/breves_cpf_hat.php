@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Itilize pa tinouvèl',
 	'item_utiliser_breves' => 'Itilize tinouvel yo',
 
+	// L
+	'logo_breve' => 'LOGO TINOUVÈL',
+
 	// T
 	'texte_breves' => 'Ti-nouvèl yo se ti tèks senp ki pèmè w fè parèt kèk ti enfòmasyon taptap, osnon debouye w ek yon revi-laprès, ek mèm yon kalandrye pou anonse kisa moun kap soutni.',
 	'titre_breve_proposee' => 'Tinouvèl pwopoze pou parèt',
 	'titre_breve_publiee' => 'Tinouvèl ki pibliye an liy',
 	'titre_breve_refusee' => 'Tinouvèl ki refize',
 	'titre_breves' => 'Tinouvèl yo',
+	'titre_langue_breve' => 'LALANNG TINOUVÈL-LA',
 	'titre_page_breves' => 'Tinouvèl yo'
 );
 

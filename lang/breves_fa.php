@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'از مقالات كوتاه استفاده نكنيد',
 	'item_utiliser_breves' => 'از مقالات كوتاه استفاده كنيد',
 
+	// L
+	'logo_breve' => 'درج علامت(لوگو) براى مقاله كوتاه',
+
 	// T
 	'texte_breves' => 'مقالات كوتاه متن هاى ساده اى هستد كه ميتوان سريعا برروى سايت قرار گيرند و غالبا براى اطلاعات فشرده، اداره مجلات و سالنماى وقايع استفاده ميشوند',
 	'titre_breve_proposee' => 'مقاله كوتاه پيشنهادى',
 	'titre_breve_publiee' => 'مقاله كوتاه منتشر شده',
 	'titre_breve_refusee' => 'مقاله كوتاه پذيرفته نشده',
 	'titre_breves' => 'مقالات كوتاه',
+	'titre_langue_breve' => 'زبان مقاله كوتاه',
 	'titre_page_breves' => 'مقالات كوتاه'
 );
 

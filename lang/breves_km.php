@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'កុំប្រើប្រាស់ ដំណឹង',
 	'item_utiliser_breves' => 'ប្រើប្រាស់ ដំណឹង',
 
+	// L
+	'logo_breve' => 'រូបសញ្ញា នៃខ្ទង់ដំណឹង',
+
 	// T
 	'texte_breves' => 'ពត៌មានខ្លី ជាអត្ថបទ ខ្លី និង សាមញ្ញ អនុញ្ញាត
  បោះផ្សាយរហ័ស លើអិនរើណែត ពត៌មានសង្ខេប, គ្រប់គ្រង មួយព្រឹត្តិបត្រពត៌មាន, មួយប្រក្រតីទិន។',
@@ -39,6 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'បានផ្សព្វផ្សាយ ​ពត៌មានសង្ខេប',
 	'titre_breve_refusee' => '​បាន​បដិសេធ ពត៌មានសង្ខេប',
 	'titre_breves' => 'ដំណឹង',
+	'titre_langue_breve' => 'ភាសា នៃខ្ទង់ដំណឹង',
 	'titre_page_breves' => 'ដំណឹង'
 );
 

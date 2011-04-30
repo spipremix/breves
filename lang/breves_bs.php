@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Ne koristiti kratke poruke',
 	'item_utiliser_breves' => 'Koristi kratke poruke',
 
+	// L
+	'logo_breve' => 'LOGOTIP KRATKE PORUKE',
+
 	// T
 	'texte_breves' => 'Kratke poruke su kratki i jednostavni tekstovi, koji dozvoljavaju brzo postavljanje preciznih informacija, obradjivanje casopisa, kalendara dogadjaja...',
 	'titre_breve_proposee' => 'Predlozeno obavjestenje',
 	'titre_breve_publiee' => 'Obavjestenje objavljeno',
 	'titre_breve_refusee' => 'Obavjestenje odbijeno',
 	'titre_breves' => 'Kratke poruke',
+	'titre_langue_breve' => 'JEZIK KRATKE PORUKE',
 	'titre_page_breves' => 'Kratke poruke'
 );
 

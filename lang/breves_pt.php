@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Não utilizar as notícias',
 	'item_utiliser_breves' => 'Utilizar as notícias',
 
+	// L
+	'logo_breve' => 'LOGOTIPO DA NOTÍCIA',
+
 	// T
 	'texte_breves' => 'As notícias são textos curtos e simples que permitem
  pôr rapidamente em linha informações concisas, gerir
@@ -40,6 +43,7 @@ uma revista de imprensa, um calendário dos acontecimentos...',
 	'titre_breve_publiee' => 'Notícia publicada',
 	'titre_breve_refusee' => 'Notícia recusada',
 	'titre_breves' => 'As notícias',
+	'titre_langue_breve' => 'LÍNGUA DA NOTÍCIA',
 	'titre_page_breves' => 'Notícias'
 );
 

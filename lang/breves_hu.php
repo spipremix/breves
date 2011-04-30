@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Nem kell használni a híreket',
 	'item_utiliser_breves' => 'Hírek használata',
 
+	// L
+	'logo_breve' => 'A HÍR LOGOJA',
+
 	// T
 	'texte_breves' => 'A hírek olyan rövid és egyszerű szövegek, melyeknek segítségével lehet gyorsan publikálni rövid információkat, napszemlét, eseménynaptárt...',
 	'titre_breve_proposee' => 'Javasolt hír',
 	'titre_breve_publiee' => 'Publikált hír',
 	'titre_breve_refusee' => 'Elutasított hír',
 	'titre_breves' => 'A hírek',
+	'titre_langue_breve' => 'A HÍR NYELVE',
 	'titre_page_breves' => 'Hírek'
 );
 

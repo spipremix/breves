@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Не',
 	'item_utiliser_breves' => 'Да',
 
+	// L
+	'logo_breve' => 'ЛОГО НА НОВИНАТА',
+
 	// T
 	'texte_breves' => 'Новините са кратки и прости съобщения, които позволяват публикуване
  на сбита информация, преглед на пресата, календар на 
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Публикувана новина',
 	'titre_breve_refusee' => 'Отхвърлена новина',
 	'titre_breves' => 'Новини',
+	'titre_langue_breve' => 'ЕЗИК НА НОВИНАТА',
 	'titre_page_breves' => 'Новини'
 );
 

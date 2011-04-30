@@ -32,12 +32,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Ez erabili berri laburrak',
 	'item_utiliser_breves' => 'Berri laburrak erabili',
 
+	// L
+	'logo_breve' => 'BERRI LABURRAREN LOGOA',
+
 	// T
 	'texte_breves' => 'Laburrak argibide zehatzenargitaratze azkarra uzten duten artikulu txikiak dira.',
 	'titre_breve_proposee' => 'Proposatutako laburra',
 	'titre_breve_publiee' => 'Argitaratutako laburra',
 	'titre_breve_refusee' => 'Ezeztatutako laburra',
 	'titre_breves' => 'Laburrak',
+	'titre_langue_breve' => 'LABURRAREN HIZKUNTZA',
 	'titre_page_breves' => 'Berri laburrak'
 );
 

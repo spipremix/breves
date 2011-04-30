@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => 'Kısa haberleri kullanma',
 	'item_utiliser_breves' => 'Kısa haberleri kullan',
 
+	// L
+	'logo_breve' => 'KISA HABER LOGOSU',
+
 	// T
 	'texte_breves' => 'Kısa haberler kısa ve sade metinler olup,
     özlü bilgileri süratle çevrimiçi iletmeye,
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Yayınlanan kısa haber',
 	'titre_breve_refusee' => 'Reddedilen kısa haber',
 	'titre_breves' => 'Kısa haberler  ',
+	'titre_langue_breve' => 'KISA HABERİN DİLİ',
 	'titre_page_breves' => 'Kısa haberler'
 );
 

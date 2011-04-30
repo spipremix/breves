@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_utiliser_breves' => '不使用新闻',
 	'item_utiliser_breves' => '使用新闻',
 
+	// L
+	'logo_breve' => '新闻图标',
+
 	// T
 	'texte_breves' => '新闻是简短文字允许在线出版简明的信息
  , 管理新闻回顾
@@ -40,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => '发表的新闻',
 	'titre_breve_refusee' => '丢弃的新闻',
 	'titre_breves' => '新闻',
+	'titre_langue_breve' => '新闻语言',
 	'titre_page_breves' => '新闻'
 );
 
