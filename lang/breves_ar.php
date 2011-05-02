@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'مادة الخبر',
 
 	// I
+	'icone_breves' => 'الأخبار',
 	'icone_ecrire_nouvel_article' => 'الأخبار الموجودة في هذا القسم',
 	'icone_modifier_breve' => 'تعديل هذا الخبر',
 	'icone_nouvelle_breve' => 'كتابة خبر جديد',

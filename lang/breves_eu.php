@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Berri laburraren testua',
 
 	// I
+	'icone_breves' => 'Berri laburrak',
 	'icone_ecrire_nouvel_article' => 'Atal honen berri laburrak',
 	'icone_modifier_breve' => 'Berri laburhau aldatu',
 	'icone_nouvelle_breve' => 'Labur berri bat eratu',

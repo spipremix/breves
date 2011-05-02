@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => '简要内容',
 
 	// I
+	'icone_breves' => '简要',
 	'icone_ecrire_nouvel_article' => '该专栏中的内容提要',
 	'icone_modifier_breve' => '修改简要',
 	'icone_nouvelle_breve' => '写新简要',

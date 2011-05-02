@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'wěmá kléwun',
 
 	// I
+	'icone_breves' => 'xó kléwún ',
 	'icone_ecrire_nouvel_article' => 'xó kléwún ɖé lò àkpáxwé é lɔ mɛ ɔ',
 	'icone_modifier_breve' => 'mi vɔ ɖyɔ xókléwún',
 	'icone_nouvelle_breve' => 'mi vɔ xó kléwún ɖêvó wlán',

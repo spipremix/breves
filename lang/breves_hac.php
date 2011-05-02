@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Texte de la brève', # NEW
 
 	// I
+	'icone_breves' => 'مقالات كوتاه',
 	'icone_ecrire_nouvel_article' => 'Les brèves contenues dans cette rubrique', # NEW
 	'icone_modifier_breve' => 'Modifier cette brève', # NEW
 	'icone_nouvelle_breve' => 'يك مقاله كوتاه بنويسيد',

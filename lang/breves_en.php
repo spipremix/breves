@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Text of news item',
 
 	// I
+	'icone_breves' => 'News',
 	'icone_ecrire_nouvel_article' => 'News items in this section',
 	'icone_modifier_breve' => 'Edit this news item',
 	'icone_nouvelle_breve' => 'Create a news item',

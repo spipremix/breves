@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'អត្ថបទ​ នៃ​ពត៌មានសង្ខេប',
 
 	// I
+	'icone_breves' => 'ពត៌មានសង្ខេប',
 	'icone_ecrire_nouvel_article' => 'ពត៌មានខ្លីបានផ្ទុក ក្នុងផ្នែកនេះ ',
 	'icone_modifier_breve' => 'កែប្រែ ពត៌មានខ្លីនេះ',
 	'icone_nouvelle_breve' => 'សរសេរ​ មួយពត៌មានសង្ខេប ​ថ្មី',

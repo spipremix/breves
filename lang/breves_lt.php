@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Santraukos tekstas',
 
 	// I
+	'icone_breves' => 'Santraukos',
 	'icone_ecrire_nouvel_article' => 'Santraukos esančios šioje rubrikoje',
 	'icone_modifier_breve' => 'Redaguoti šią santrauką',
 	'icone_nouvelle_breve' => 'Sukurti naują santrauką',

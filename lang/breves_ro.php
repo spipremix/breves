@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Textul ştirii',
 
 	// I
+	'icone_breves' => 'Ştiri',
 	'icone_ecrire_nouvel_article' => 'Ştiri conţinute în această rubrică',
 	'icone_modifier_breve' => 'Modificaţi această ştire',
 	'icone_nouvelle_breve' => 'Scrieţi o nouă ştire',

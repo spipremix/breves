@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Testenn ar berrskrid',
 
 	// I
+	'icone_breves' => 'Berrskridoù',
 	'icone_ecrire_nouvel_article' => 'Ar berrskridoù er rubrikenn-mañ',
 	'icone_modifier_breve' => 'Kemmañ ar berrskrid-mañ',
 	'icone_nouvelle_breve' => 'Skrivañ ur berrskrid nevez',

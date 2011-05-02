@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'טקסט של המבזק',
 
 	// I
+	'icone_breves' => 'מבזקים',
 	'icone_ecrire_nouvel_article' => 'מבזקים במדור',
 	'icone_modifier_breve' => 'תיקון המבזק',
 	'icone_nouvelle_breve' => 'כתוב מבזק חדש',

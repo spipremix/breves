@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Teksto de la fulm-informo',
 
 	// I
+	'icone_breves' => 'Fulm-informoj',
 	'icone_ecrire_nouvel_article' => 'La fulm-informoj troviĝantaj en tiu rubriko',
 	'icone_modifier_breve' => 'Modifi tiun ĉi fulm-informon',
 	'icone_nouvelle_breve' => 'Skribi novan fulm-informon',

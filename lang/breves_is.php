@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Texti stuttfréttarinnar',
 
 	// I
+	'icone_breves' => 'Stuttar fréttir',
 	'icone_ecrire_nouvel_article' => 'Stuttar fréttir innan þessa bálks',
 	'icone_modifier_breve' => 'Breyta þessari stuttu frétt',
 	'icone_nouvelle_breve' => 'Skrifa nýja stutta frétt',

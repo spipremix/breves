@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Nội dung tin ngắn',
 
 	// I
+	'icone_breves' => 'Tin ngắn',
 	'icone_ecrire_nouvel_article' => 'Tin ngắn trong đề mục này',
 	'icone_modifier_breve' => 'Sửa tin ngắn này',
 	'icone_nouvelle_breve' => 'Viết một tin ngắn mới',

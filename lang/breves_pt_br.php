@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Texto da nota',
 
 	// I
+	'icone_breves' => 'Notas',
 	'icone_ecrire_nouvel_article' => 'As notas contidas nesta seção',
 	'icone_modifier_breve' => 'Editar esta nota',
 	'icone_nouvelle_breve' => 'Escrever uma nova nota',

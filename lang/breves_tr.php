@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Kısa haber özeti',
 
 	// I
+	'icone_breves' => 'Kısa haberler',
 	'icone_ecrire_nouvel_article' => 'Bu bölümdeki kısa haberler',
 	'icone_modifier_breve' => 'Bu kısa haberi değiştir',
 	'icone_nouvelle_breve' => 'Yeni bir kısa haber yaz',

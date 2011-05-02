@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Tèks pou tinouvèl-la',
 
 	// I
+	'icone_breves' => 'Tinouvèl yo',
 	'icone_ecrire_nouvel_article' => 'Tinouvèl yo andan ribrik la',
 	'icone_modifier_breve' => 'Chanje tinouvèl',
 	'icone_nouvelle_breve' => 'Ekri yon nouvo tinouvèl',
