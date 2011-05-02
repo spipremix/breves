@@ -63,7 +63,7 @@
 							
 	<bouton id='breves' parent="bando_edition">
 		<icone>images/breve-16.png</icone>
-		<titre>icone_breves</titre>
+		<titre>breves:icone_breves</titre>
 	</bouton>
 	
 	<bouton id='breve_creer' parent="outils_rapides">
