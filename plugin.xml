@@ -74,4 +74,5 @@
 	</bouton>
 
 	<utilise id='mots' />
+	<traduire gestionnaire="salvatore" module="breves" reference="fr" />
 </plugin>
