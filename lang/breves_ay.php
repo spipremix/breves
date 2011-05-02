@@ -17,6 +17,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Jisk\'aptata sawu',
 
 	// I
+	'icone_breves' => 'Jisk\'aptatanaka',
 	'icone_ecrire_nouvel_article' => 'Aka t\'aqat jisk\'aptatanakaxa ',
 	'icone_modifier_breve' => 'Aka jisk\'aptata mayjt\'ayaña',
 	'icone_nouvelle_breve' => 'Machaq jiskht\'aptata',

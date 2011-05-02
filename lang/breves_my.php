@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'သတင်းစကား',
 
 	// I
+	'icone_breves' => 'သတင်း',
 	'icone_ecrire_nouvel_article' => 'ဤကဏ္ဍရှိသတင်း',
 	'icone_modifier_breve' => 'ဤသတင်းအချက်အလက်ကို ပြန်လည်မွမ်းမံပါ',
 	'icone_nouvelle_breve' => 'သတင်း အသစ်ရေးရန်',

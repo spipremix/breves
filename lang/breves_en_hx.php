@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => '73x7 0f n3w5 173m',
 
 	// I
+	'icone_breves' => 'N3w5',
 	'icone_ecrire_nouvel_article' => 'N3w5 1n 7h15 53c710n',
 	'icone_modifier_breve' => 'M0d1fy 7h15 n3w5 173m',
 	'icone_nouvelle_breve' => 'Wr173 4 n3w n3w5 173m',

@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Testu di u dispacciu',
 
 	// I
+	'icone_breves' => 'Dispacci',
 	'icone_ecrire_nouvel_article' => 'I dispacci cuntenuti in a rùbbrica',
 	'icone_modifier_breve' => 'Mudificà u dispacciu',
 	'icone_nouvelle_breve' => 'Scrive un nuvellu dispacciu',

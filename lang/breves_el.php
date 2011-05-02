@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Κείμενο του στοιχείου ειδήσεων',
 
 	// I
+	'icone_breves' => 'Ειδήσεις',
 	'icone_ecrire_nouvel_article' => 'Οι ειδήσεις που περιέχονται σε αυτή την κατηγορία',
 	'icone_modifier_breve' => 'Τροποποίηση αυτής της είδησης',
 	'icone_nouvelle_breve' => 'Γράψε ένα καινούργιο σύντομο νέο',

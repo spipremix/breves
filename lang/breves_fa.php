@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'متن مقاله كوتاه',
 
 	// I
+	'icone_breves' => 'مقالات كوتاه',
 	'icone_ecrire_nouvel_article' => 'مقاله هاى كوتاه موجود در اين بخش',
 	'icone_modifier_breve' => 'اين مقاله كوتاه را اصلاح كنيد',
 	'icone_nouvelle_breve' => 'يك مقاله كوتاه بنويسيد',

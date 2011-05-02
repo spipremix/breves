@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Tekst van het bericht',
 
 	// I
+	'icone_breves' => 'Berichten',
 	'icone_ecrire_nouvel_article' => 'De berichten van deze rubriek',
 	'icone_modifier_breve' => 'Dit bericht wijzigen',
 	'icone_nouvelle_breve' => 'Een nieuwsbericht schrijven',

@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Hír szövege',
 
 	// I
+	'icone_breves' => 'Hírek',
 	'icone_ecrire_nouvel_article' => 'E rovatban szereplő hírek',
 	'icone_modifier_breve' => 'A hír módosítása',
 	'icone_nouvelle_breve' => 'Új hír írása',

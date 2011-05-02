@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Nyhedstekst',
 
 	// I
+	'icone_breves' => 'Nyheder',
 	'icone_ecrire_nouvel_article' => 'Nye indlæg i dette afsnit',
 	'icone_modifier_breve' => 'Ret denne nyhed',
 	'icone_nouvelle_breve' => 'Skriv ny nyhed',

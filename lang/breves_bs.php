@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Tekst kratke poruke',
 
 	// I
+	'icone_breves' => 'Obavjestenja',
 	'icone_ecrire_nouvel_article' => 'Kratke poruke sadrzane u ovoj rubrici',
 	'icone_modifier_breve' => 'Izmijeni ovu kratku poruku',
 	'icone_nouvelle_breve' => 'Napisi novo obavjestenje',

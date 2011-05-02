@@ -16,6 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'entree_texte_breve' => 'Lo tèks pou tit-nouvèl',
 
 	// I
+	'icone_breves' => 'Bann tit-nouvèl',
 	'icone_ecrire_nouvel_article' => 'Bann tit-nouvèl dann rubrik-la',
 	'icone_modifier_breve' => 'Sanz tit-nouvèl-la',
 	'icone_nouvelle_breve' => 'Ékri inn ot tit-nouvèl',
