@@ -10,6 +10,8 @@
 	<prefix>breves</prefix>
 	<categorie>edition</categorie>
 
+	<necessite id="SPIP" version="[3.0.0-dev;)" />
+
 	<pipeline>
 		<nom>configurer_liste_metas</nom>
 		<inclure>breves_pipelines.php</inclure>
