@@ -58,8 +58,6 @@ function breves_rubrique_encours($flux){
  * @return 
 **/
 function breves_affiche_enfants($flux) {
-	global $spip_lang_right;
-	
 	if ($e = trouver_objet_exec($flux['args']['exec'])
 	  AND $e['type'] == 'rubrique'
 	  AND $e['edition'] == false) {
@@ -70,7 +68,7 @@ function breves_affiche_enfants($flux) {
 			$bouton_breves = '';
 			$id_parent = sql_getfetsel('id_parent', 'spip_rubriques', 'id_rubrique='.$id_rubrique);
 			if (autoriser('creerbrevedans','rubrique',$id_rubrique,NULL,array('id_parent'=>$id_parent))) {
-				$bouton_breves .= icone_verticale(_T('breves:icone_nouvelle_breve'), generer_url_ecrire("breve_edit","id_rubrique=$id_rubrique&new=oui"), "breve-24.png","new", $spip_lang_right)
+				$bouton_breves .= icone_verticale(_T('breves:icone_nouvelle_breve'), generer_url_ecrire("breve_edit","id_rubrique=$id_rubrique&new=oui"), "breve-24.png","new", 'right')
 				. "<br class='nettoyeur' />";
 			}
 
