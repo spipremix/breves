@@ -6,6 +6,7 @@
 	<version_base>1.0.0</version_base>
 	<install>base/breves_upgrade.php</install>
 	<etat>test</etat>
+	<slogan>Gestion des br&egrave;ves dans SPIP</slogan>
 	<description>Les br&egrave;ves sont des informations courtes, sans auteur.</description>
 	<prefix>breves</prefix>
 	<categorie>edition</categorie>
