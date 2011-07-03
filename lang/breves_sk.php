@@ -8,41 +8,40 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breve' => 'News item',
+	'breve' => 'Novinka',
 	'breves' => 'Novinky',
 
 	// E
-	'entree_breve_publiee' => 'Is this news item to be published?',
-	'entree_texte_breve' => 'Text of news item',
+	'entree_breve_publiee' => 'Chcete publikovať túto novinku?',
+	'entree_texte_breve' => 'Text novinky',
 
 	// I
-	'icone_breves' => 'Správy',
-	'icone_ecrire_nouvel_article' => 'Správy v tejto rubrike',
-	'icone_modifier_breve' => 'Upraviť túto správu',
-	'icone_nouvelle_breve' => 'Napísať novú správu',
-	'info_1_breve' => '1 správa',
+	'icone_breves' => 'Novinky',
+	'icone_ecrire_nouvel_article' => 'Novinky v tejto rubrike',
+	'icone_modifier_breve' => 'Upraviť túto novinku',
+	'icone_nouvelle_breve' => 'Vytvoriť novinku',
+	'info_1_breve' => '1 novinka',
 	'info_aucun_breve' => 'Žiadne novinky',
-	'info_breves' => 'Does your site use the news system?',
+	'info_breves' => 'Chcete využívať novinky?',
 	'info_breves_02' => 'Novinky',
-	'info_breves_valider' => 'Novinky na schválenie',
-	'info_gauche_numero_breve' => 'NEWS ITEM NUMBER',
+	'info_breves_valider' => 'Novinky čakajúce na schválenie',
+	'info_gauche_numero_breve' => 'NOVINKA ČÍSLO',
 	'info_nb_breves' => '@nb@ noviniek',
-	'item_breve_proposee' => 'Novinka bola odoslaná',
-	'item_breve_refusee' => 'Odmietnutá novinka',
-	'item_breve_validee' => 'Schválená novinka',
-	'item_non_utiliser_breves' => 'Do not use the news',
-	'item_utiliser_breves' => 'Používať správy',
+	'item_breve_proposee' => 'Novinka odoslaná',
+	'item_breve_refusee' => 'Nie - novinka zamietnutá',
+	'item_breve_validee' => 'Áno - novinka schválená',
+	'item_non_utiliser_breves' => 'Nepoužívať novinky',
+	'item_utiliser_breves' => 'Používať novinky',
 
 	// L
-	'logo_breve' => 'NEWS ITEM\'S LOGO',
+	'logo_breve' => 'LOGO NOVINKY',
 
 	// T
-	'texte_breves' => 'News are short and simple texts which allow
-	the publication online of concise information, the management of
-	a press review, a calendar of events...',
-	'titre_breve_proposee' => 'Novinka bola odoslaná',
-	'titre_breve_publiee' => 'News item published',
-	'titre_breve_refusee' => 'News item rejected',
+	'texte_breves' => 'Novinky sú stručné správy, ktoré umožňujú
+ publikovať bleskové správy, riadiť prehľady tlače, kalendár udalostí, atď.',
+	'titre_breve_proposee' => 'Novinka odoslaná',
+	'titre_breve_publiee' => 'Novinka publikovaná',
+	'titre_breve_refusee' => 'Novinka zamietnutá',
 	'titre_breves' => 'Novinky',
 	'titre_langue_breve' => 'JAZYK NOVINKY',
 	'titre_page_breves' => 'Novinky'
