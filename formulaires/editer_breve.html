@@ -11,8 +11,8 @@
 	    <li class="editer editer_titre obligatoire[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur]">
 		    	<label for="titre"><:info_titre:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{titre})</span>
-				]<input type='text' class='text' name='titre' id='titre' value="[(#ENV**{titre,#REM|concat{titre_nouvelle_breve}|_T})]"
-					[(#ENV{titre,''}|?{'',' '})onfocus="if(!antifocus){this.value='';antifocus=true;}"]/>
+				]<input type='text' class='text' name='titre' id='titre' value="#ENV*{titre}"
+					placeholder="<:breves:titre_nouvelle_breve:>" />
 	    </li>
 
 	 	[<li class="editer editer_parent[ (#ENV**{erreurs}|table_valeur{id_parent}|oui)erreur]">
