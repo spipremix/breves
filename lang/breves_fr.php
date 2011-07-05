@@ -43,7 +43,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_refusee' => 'Brève refusée',
 	'titre_breves' => 'Les brèves',
 	'titre_langue_breve' => 'LANGUE DE LA BRÈVE',
-	'titre_page_breves' => 'Brèves'
+	'titre_nouvelle_breve' => 'Nouvelle brève',
+	'titre_page_breves' => 'Brèves',
 );
 
 ?>
