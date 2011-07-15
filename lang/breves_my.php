@@ -43,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_refusee' => 'သတင်းများ ငြင်းပယ်ထားပြီး',
 	'titre_breves' => 'သတင်း',
 	'titre_langue_breve' => 'သတင်းအချက်အလက် ဘာသာစကား',
+	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'သတင်းများ'
 );
 

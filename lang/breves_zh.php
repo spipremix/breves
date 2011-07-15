@@ -45,6 +45,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_refusee' => '丢弃的新闻',
 	'titre_breves' => '新闻',
 	'titre_langue_breve' => '新闻语言',
+	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => '新闻'
 );
 
