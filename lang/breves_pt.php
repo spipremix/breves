@@ -45,6 +45,7 @@ uma revista de imprensa, um calendário dos acontecimentos...',
 	'titre_breve_refusee' => 'Notícia recusada',
 	'titre_breves' => 'As notícias',
 	'titre_langue_breve' => 'LÍNGUA DA NOTÍCIA',
+	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Notícias'
 );
 

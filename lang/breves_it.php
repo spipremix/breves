@@ -45,6 +45,7 @@ di gestire una rassegna stampa o un calendario di eventi, ecc.',
 	'titre_breve_refusee' => 'Breve rifiutata',
 	'titre_breves' => 'Le brevi',
 	'titre_langue_breve' => 'LINGUA DELLA BREVE',
+	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Brevi'
 );
 

@@ -43,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_refusee' => 'Ştire refuzată',
 	'titre_breves' => 'Ştirile',
 	'titre_langue_breve' => 'LIMBA ŞTIRII',
+	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Ştiri'
 );
 
