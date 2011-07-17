@@ -36,10 +36,10 @@ function formulaires_editer_breve_identifier_dist($id_breve='new', $id_rubrique=
 // Choix par defaut des options de presentation
 function breves_edit_config($row)
 {
-	global $spip_ecran, $spip_lang;
+	global $spip_lang;
 
 	$config = $GLOBALS['meta'];
-	$config['lignes'] = ($spip_ecran == "large")? 8 : 5;
+	$config['lignes'] = 8;
 	$config['langue'] = $spip_lang;
 
 	$config['restreint'] = ($row['statut'] == 'publie');
