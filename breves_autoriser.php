@@ -15,10 +15,10 @@ function breves_autoriser(){}
 
 
 // bouton du bandeau
-function autoriser_breves_bouton_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
+function autoriser_breves_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
 	return 	($GLOBALS['meta']["activer_breves"] != "non");
 }
-function autoriser_brevecreer_bouton_dist($faire, $type, $id, $qui, $opt){
+function autoriser_brevecreer_menu_dist($faire, $type, $id, $qui, $opt){
 	return 	($GLOBALS['meta']["activer_breves"] != "non");
 }
 
