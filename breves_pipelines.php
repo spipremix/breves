@@ -27,8 +27,8 @@ function breves_configurer_liste_metas($metas){
 /**
  * Ajouter les breves a valider sur les rubriques 
  *
- * @param 
- * @return 
+ * @param array $flux
+ * @return array
 **/
 function breves_rubrique_encours($flux){
 	if ($flux['args']['type'] == 'rubrique') {
@@ -54,8 +54,8 @@ function breves_rubrique_encours($flux){
 /**
  * Ajouter les breves references sur les vues de rubriques
  *
- * @param 
- * @return 
+ * @param array $flux
+ * @return array
 **/
 function breves_affiche_enfants($flux) {
 	if ($e = trouver_objet_exec($flux['args']['exec'])
@@ -180,8 +180,8 @@ function breves_calculer_rubriques($flux){
 /**
  * Ajouter les breves a valider sur la page d'accueil 
  *
- * @param 
- * @return 
+ * @param array $flux
+ * @return array
 **/
 function breves_accueil_encours($flux){
 	$lister_objets = charger_fonction('lister_objets','inc');
@@ -200,8 +200,8 @@ function breves_accueil_encours($flux){
 /**
  * Optimiser la base de donnee en supprimant les liens orphelins
  *
- * @param int $n
- * @return int
+ * @param array $flux
+ * @return array
  */
 function breves_optimiser_base_disparus($flux){
 	$n = &$flux['data'];
@@ -225,12 +225,8 @@ function breves_optimiser_base_disparus($flux){
 
 	sql_delete("spip_breves", "statut='refuse' AND maj < $mydate");
 
-
-	
-
 	return $flux;
 
 }
-
 
 ?>
