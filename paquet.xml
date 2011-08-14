@@ -27,6 +27,7 @@
 	<pipeline nom="trig_calculer_langues_rubriques" inclure="breves_pipelines.php" />
 	<pipeline nom="calculer_rubriques" inclure="breves_pipelines.php" />
 	<pipeline nom="optimiser_base_disparus" inclure="breves_pipelines.php" />
+	<pipeline nom="boite_infos" inclure="breves_pipelines.php" />
 
 	<utilise nom="mots" />
 

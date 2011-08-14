@@ -236,4 +236,15 @@ function breves_optimiser_base_disparus($flux){
 
 }
 
+function breves_boite_infos($flux){
+	if ($flux['args']['type']=='rubrique'
+	  AND $id_rubrique = $flux['args']['id']){
+		if ($nb = sql_countsel('spip_breves',"statut='publie' AND id_rubrique=".intval($id_rubrique))){
+			$nb = "<div>". singulier_ou_pluriel($nb, "breves:info_1_breve", "breves:info_nb_breves") . "</div>";
+			if ($p = strpos($flux['data'],"<!--nb_elements-->"))
+				$flux['data'] = substr_replace($flux['data'],$nb,$p,0);
+		}
+	}
+	return $flux;
+}
 ?>
