@@ -236,6 +236,12 @@ function breves_optimiser_base_disparus($flux){
 
 }
 
+/**
+ * Afficher le nombre de breves dans chaque rubrique
+ *
+ * @param array $flux
+ * @return array
+ */
 function breves_boite_infos($flux){
 	if ($flux['args']['type']=='rubrique'
 	  AND $id_rubrique = $flux['args']['id']){
