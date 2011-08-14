@@ -95,12 +95,19 @@ function breves_accueil_informations($texte){
 
 	$cpt = array();
 	$cpt2 = array();
+	$where = false;
+	if ($GLOBALS['visiteur_session']['statut']=='0minirezo'){
+		$where = sql_allfetsel('id_objet','spip_auteurs_liens',"objet='rubrique' AND id_auteur=".intval($GLOBALS['visiteur_session']['id_auteur']));
+		if ($where){
+			$where = sql_in('id_rubrique',array_map('reset',$where));
+		}
+	}
 	$defaut = $where ? '0/' : '';
 	while($row = sql_fetch($q)) {
 	  $cpt[$row['statut']] = $row['cnt'];
 	  $cpt2[$row['statut']] = $defaut;
 	}
- 
+
 	if ($cpt) {
 		if ($where) {
 			$q = sql_select("COUNT(*) AS cnt, statut", 'spip_breves', $where, "statut");
@@ -109,11 +116,11 @@ function breves_accueil_informations($texte){
 				$cpt2[$r] = intval($row['cnt']) . '/';
 			}
 		}
-		$texte .= "<div class='accueil_informations breves'>";
-		$texte .= afficher_plus_info(generer_url_ecrire("breves",""))."<b>"._T('breves:info_breves_02')."</b>";
-		$texte .= "<ul style='margin:0px; padding-$spip_lang_left: 20px; margin-bottom: 5px;'>";
-		if (isset($cpt['prop'])) $texte .= "<li>"._T("texte_statut_attente_validation").": ".$cpt2['prop'].$cpt['prop'] . '</li>';
-		if (isset($cpt['publie'])) $texte .= "<li><b>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] . "</b>" .'</li>';
+		$texte .= "<div class='accueil_informations breves liste'>";
+		$texte .= "<h4>".afficher_plus_info(generer_url_ecrire("breves","")) . _T('breves:info_breves_02')."</h4>";
+		$texte .= "<ul class='liste-items'>";
+		if (isset($cpt['prop'])) $texte .= "<li class='item'>"._T("texte_statut_attente_validation").": ".$cpt2['prop'].$cpt['prop'] . '</li>';
+		if (isset($cpt['publie'])) $texte .= "<li class='item on'>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] . '</li>';
 		$texte .= "</ul>";
 		$texte .= "</div>";
 	}

@@ -1,7 +1,7 @@
 <paquet
 	prefix="breves"
 	categorie="edition"
-	version="1.2.0"
+	version="1.2.1"
 	etat="test"
 	compatibilite="[3.0.0-dev;["
 	logo="prive/themes/spip/images/breve-32.png"
@@ -22,6 +22,7 @@
 	<pipeline nom="rubrique_encours" inclure="breves_pipelines.php" />
 	<pipeline nom="affiche_enfants" inclure="breves_pipelines.php" />
 	<pipeline nom="accueil_encours" inclure="breves_pipelines.php" />
+	<pipeline nom="accueil_informations" inclure="breves_pipelines.php" />
 	<pipeline nom="objet_compte_enfants" inclure="breves_pipelines.php" />
 	<pipeline nom="trig_calculer_langues_rubriques" inclure="breves_pipelines.php" />
 	<pipeline nom="calculer_rubriques" inclure="breves_pipelines.php" />
