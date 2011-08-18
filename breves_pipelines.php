@@ -253,4 +253,18 @@ function breves_boite_infos($flux){
 	}
 	return $flux;
 }
+
+/**
+ * Configuration des contenus
+ * @param array $flux
+ * @return array
+ */
+function breves_affiche_milieu($flux){
+	if ($flux["args"]["exec"] == "configurer_contenu") {
+		$flux["data"] .=  recuperer_fond('prive/squelettes/inclure/configurer',array('configurer'=>'configurer_breves'));
+	}
+	return $flux;
+}
+
+
 ?>
