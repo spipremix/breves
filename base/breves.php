@@ -43,6 +43,7 @@ function breves_declarer_tables_objets_sql($tables){
 		'info_1_objet' => 'breves:info_1_breve',
 		'info_nb_objets' => 'breves:info_nb_breves',
 		'texte_logo_objet' => 'breves:logo_breve',
+		'texte_langue_objet' => 'breves:titre_langue_breve',
 		'titre' => 'titre, lang',
 		'date' => 'date_heure',
 		'principale' => 'oui',
