@@ -23,7 +23,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Votre site utilise-t-il le système de brèves ?',
 	'info_breves_02' => 'Brèves',
 	'info_breves_valider' => 'Brèves à valider',
-	'info_gauche_numero_breve' => 'BRÈVE NUMÉRO',
+	'info_gauche_numero_breve' => 'Brève numéro',
 	'info_nb_breves' => '@nb@ brèves',
 	'item_breve_proposee' => 'Brève proposée',
 	'item_breve_refusee' => 'NON - Brève refusée',
@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_utiliser_breves' => 'Utiliser les brèves',
 
 	// L
-	'logo_breve' => 'LOGO DE LA BRÈVE',
+	'logo_breve' => 'Logo de la brève',
 
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Brève publiée',
 	'titre_breve_refusee' => 'Brève refusée',
 	'titre_breves' => 'Les brèves',
-	'titre_langue_breve' => 'LANGUE DE LA BRÈVE',
+	'titre_langue_breve' => 'Langue de la brève',
 	'titre_nouvelle_breve' => 'Nouvelle brève',
 	'titre_page_breves' => 'Brèves'
 );
