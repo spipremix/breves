@@ -1,4 +1,4 @@
-<BOUCLE_afficher_contenu(BREVES){id_breve=#ENV{id}}{statut?}>
+<BOUCLE_afficher_contenu(BREVES){id_breve=#ENV{id}}{statut==.*}>
 <div class="champ contenu_titre[ (#TITRE*|strlen|?{'',vide})]">
 <div class='label'><:info_titre:></div>
 <div dir='#LANG_DIR' class='#EDIT{titre} titre'>#TITRE</div>
