@@ -76,15 +76,17 @@ function breves_declarer_tables_objets_sql($tables){
 				'exception'=>'statut'
 			)
 		),
+		'texte_changer_statut' => 'breves:entree_breve_publiee',
+		'aide_changer_statut' => 'brevesstatut',
 		'statut_titres' => array(
 			'prop' => 'breves:titre_breve_proposee',
 			'publie' => 'breves:titre_breve_publiee',
 			'refuse' => 'breves:titre_breve_refusee',
 		),
 		'statut_textes_instituer' => 	array(
-			'prop' => 'texte_statut_propose_evaluation', //_T('texte_statut_propose_evaluation')
-			'publie' => 'texte_statut_publie', //_T('texte_statut_publie')
-			'refuse' => 'texte_statut_refuse', //_T('texte_statut_refuse')
+			'prop' => 'breves:item_breve_proposee', //_T('texte_statut_propose_evaluation')
+			'publie' => 'breves:item_breve_validee', //_T('texte_statut_publie')
+			'refuse' => 'breves:item_breve_refusee', //_T('texte_statut_refuse')
 		),
 
 		'rechercher_champs' => array(

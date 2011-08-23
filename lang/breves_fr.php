@@ -10,7 +10,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Brèves',
 
 	// E
-	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?',
+	'entree_breve_publiee' => 'Cette brève est :',
 	'entree_texte_breve' => 'Texte de la brève',
 
 	// I
@@ -25,9 +25,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves_valider' => 'Brèves à valider',
 	'info_gauche_numero_breve' => 'Brève numéro',
 	'info_nb_breves' => '@nb@ brèves',
-	'item_breve_proposee' => 'Brève proposée',
-	'item_breve_refusee' => 'NON - Brève refusée',
-	'item_breve_validee' => 'OUI - Brève validée',
+	'item_breve_proposee' => 'proposée à l\'évaluation',
+	'item_breve_refusee' => 'refusée',
+	'item_breve_validee' => 'validée',
 	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves',
 	'item_utiliser_breves' => 'Utiliser les brèves',
 
