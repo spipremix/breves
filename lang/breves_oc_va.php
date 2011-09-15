@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Brèvas',
 
 	// E
-	'entree_breve_publiee' => 'Aquela brèva la chal publicar?',
+	'entree_breve_publiee' => 'Aquela brèva la chal publicar?', # MODIF
 	'entree_texte_breve' => 'Tèxt de la brèva',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Vòstre sit utiliza lo sistèma de brèvas?',
 	'info_breves_02' => 'Brèvas',
 	'info_breves_valider' => 'Brèvas de validar',
-	'info_gauche_numero_breve' => 'BRÈVA NUMÈRO',
+	'info_gauche_numero_breve' => 'BRÈVA NUMÈRO', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Brèva prepausaa',
-	'item_breve_refusee' => 'NON - Brèva refusaa',
-	'item_breve_validee' => 'ÒC - Brèva validaa',
+	'item_breve_proposee' => 'Brèva prepausaa', # MODIF
+	'item_breve_refusee' => 'NON - Brèva refusaa', # MODIF
+	'item_breve_validee' => 'ÒC - Brèva validaa', # MODIF
 	'item_non_utiliser_breves' => 'Pas utilizar las brèvas',
 	'item_utiliser_breves' => 'Utilizar las brèvas',
 
 	// L
-	'logo_breve' => 'LÒGO DE LA BRÈVA',
+	'logo_breve' => 'LÒGO DE LA BRÈVA', # MODIF
 
 	// T
 	'texte_breves' => 'Las brèvas son de tèxtes corts e simples que permeton de metre en linha lèu d\'informacions concisas, de gerir
@@ -43,7 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Brèva publicaa',
 	'titre_breve_refusee' => 'Brèva refusaa',
 	'titre_breves' => 'Las brèvas',
-	'titre_langue_breve' => 'LENGA DE LA BRÈVA',
+	'titre_langue_breve' => 'LENGA DE LA BRÈVA', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Brèvas'
 );

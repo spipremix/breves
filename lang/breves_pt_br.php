@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Notas',
 
 	// E
-	'entree_breve_publiee' => 'Esta nota deve ser publicada?',
+	'entree_breve_publiee' => 'Esta nota deve ser publicada?', # MODIF
 	'entree_texte_breve' => 'Texto da nota',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'O seu site utiliza o sistema de notas?',
 	'info_breves_02' => 'Notas',
 	'info_breves_valider' => 'Notas para validar',
-	'info_gauche_numero_breve' => 'NOTA NÚMERO',
+	'info_gauche_numero_breve' => 'NOTA NÚMERO', # MODIF
 	'info_nb_breves' => '@nb@ notas',
-	'item_breve_proposee' => 'Nota proposta',
-	'item_breve_refusee' => 'NÃO - Nota recusada',
-	'item_breve_validee' => 'SIM - Nota validada',
+	'item_breve_proposee' => 'Nota proposta', # MODIF
+	'item_breve_refusee' => 'NÃO - Nota recusada', # MODIF
+	'item_breve_validee' => 'SIM - Nota validada', # MODIF
 	'item_non_utiliser_breves' => 'Não utilizar as notas',
 	'item_utiliser_breves' => 'Utilizar as notas',
 
 	// L
-	'logo_breve' => 'LOGO DA NOTA',
+	'logo_breve' => 'LOGO DA NOTA', # MODIF
 
 	// T
 	'texte_breves' => 'As notas são textos curtos e simples que permitem rapidamente disponibilizar online informações concisas, gerenciar o clipping, um calendário de eventos...',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Nota publicada',
 	'titre_breve_refusee' => 'Nota recusada',
 	'titre_breves' => 'As notas',
-	'titre_langue_breve' => 'IDIOMA DA NOTA',
+	'titre_langue_breve' => 'IDIOMA DA NOTA', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Notas'
 );

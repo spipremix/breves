@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Nyheder',
 
 	// E
-	'entree_breve_publiee' => 'Skal denne nyhed offentliggøres?',
+	'entree_breve_publiee' => 'Skal denne nyhed offentliggøres?', # MODIF
 	'entree_texte_breve' => 'Nyhedstekst',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Bruger dit websted nyhedssystemet?',
 	'info_breves_02' => 'Nyheder',
 	'info_breves_valider' => 'Nyheder der afventer godkendelse',
-	'info_gauche_numero_breve' => 'NYHED NUMMER:',
+	'info_gauche_numero_breve' => 'NYHED NUMMER:', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Nyhed indsendt',
-	'item_breve_refusee' => 'NEJ - Nyhed afvist',
-	'item_breve_validee' => 'JA - Nyhed godkendt',
+	'item_breve_proposee' => 'Nyhed indsendt', # MODIF
+	'item_breve_refusee' => 'NEJ - Nyhed afvist', # MODIF
+	'item_breve_validee' => 'JA - Nyhed godkendt', # MODIF
 	'item_non_utiliser_breves' => 'Luk ikke op for nyheder',
 	'item_utiliser_breves' => 'Anvend nyheder',
 
 	// L
-	'logo_breve' => 'LOGO TIL NYHEDEN',
+	'logo_breve' => 'LOGO TIL NYHEDEN', # MODIF
 
 	// T
 	'texte_breves' => 'Nyheder er korte og enkle tekster der muliggør online offentliggørelse af præcis information, administration af presseanmeldelser, arrangementskalender...',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Offentliggjorte nyheder',
 	'titre_breve_refusee' => 'Afviste nyheder',
 	'titre_breves' => 'Nyheder',
-	'titre_langue_breve' => 'NYHEDENS SPROG',
+	'titre_langue_breve' => 'NYHEDENS SPROG', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Nyheder'
 );

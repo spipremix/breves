@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Breves',
 
 	// E
-	'entree_breve_publiee' => '¿Publicamos ésta breve?',
+	'entree_breve_publiee' => '¿Publicamos ésta breve?', # MODIF
 	'entree_texte_breve' => 'Texto de la breve',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Puedes utilizar el sistema de breves',
 	'info_breves_02' => 'Breves',
 	'info_breves_valider' => 'Breves a validar',
-	'info_gauche_numero_breve' => 'Breve',
+	'info_gauche_numero_breve' => 'Breve', # MODIF
 	'info_nb_breves' => '@nb@ breves',
-	'item_breve_proposee' => 'Breve propuesta',
-	'item_breve_refusee' => 'Breve rechazada',
-	'item_breve_validee' => 'Breve validada',
+	'item_breve_proposee' => 'Breve propuesta', # MODIF
+	'item_breve_refusee' => 'Breve rechazada', # MODIF
+	'item_breve_validee' => 'Breve validada', # MODIF
 	'item_non_utiliser_breves' => 'No utilizar las breves',
 	'item_utiliser_breves' => 'Utilizar las breves',
 
 	// L
-	'logo_breve' => 'Logotipo de la breve...',
+	'logo_breve' => 'Logotipo de la breve...', # MODIF
 
 	// T
 	'texte_breves' => 'Las breves son notas cortas y simples que permiten poner rápidamente en línea informaciones concisas, por ejemplo para manejar reseñas de prensa, un calendario de eventos...',
@@ -42,8 +42,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Breve publicada',
 	'titre_breve_refusee' => 'Breve rechazada',
 	'titre_breves' => 'Las breves',
-	'titre_langue_breve' => 'IDIOMA DE LA BREVE',
-	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
+	'titre_langue_breve' => 'IDIOMA DE LA BREVE', # MODIF
+	'titre_nouvelle_breve' => 'Nueva breve',
 	'titre_page_breves' => 'Breves'
 );
 

@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Nyheter',
 
 	// E
-	'entree_breve_publiee' => 'Ska den här notisen publiceras?',
+	'entree_breve_publiee' => 'Ska den här notisen publiceras?', # MODIF
 	'entree_texte_breve' => 'Notisens text',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Använder din sajt nyhetssystemet?',
 	'info_breves_02' => 'Nyheter',
 	'info_breves_valider' => 'Nyheter som ska godkännas',
-	'info_gauche_numero_breve' => 'NYHET NUMMER',
+	'info_gauche_numero_breve' => 'NYHET NUMMER', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Inlämnad nyhet',
-	'item_breve_refusee' => 'Nej - Nyheten refuserades',
-	'item_breve_validee' => 'Ja - Nyheten godkändes',
+	'item_breve_proposee' => 'Inlämnad nyhet', # MODIF
+	'item_breve_refusee' => 'Nej - Nyheten refuserades', # MODIF
+	'item_breve_validee' => 'Ja - Nyheten godkändes', # MODIF
 	'item_non_utiliser_breves' => 'Använd inte nyheter',
 	'item_utiliser_breves' => 'Använd nyheter',
 
 	// L
-	'logo_breve' => 'NYHETENS LOGOTYPE',
+	'logo_breve' => 'NYHETENS LOGOTYPE', # MODIF
 
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Nyheten har publicerats',
 	'titre_breve_refusee' => 'Nyheten har refuserats',
 	'titre_breves' => 'Nyheter',
-	'titre_langue_breve' => 'NYHETENS SPRÅK',
+	'titre_langue_breve' => 'NYHETENS SPRÅK', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Nyheter'
 );

@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'ពត៌មានសង្ខេប',
 
 	// E
-	'entree_breve_publiee' => 'ពត៌មាន​សង្ខេបនេះ ត្រូវតែបានផ្សព្វផ្សាយ​ ឬ?',
+	'entree_breve_publiee' => 'ពត៌មាន​សង្ខេបនេះ ត្រូវតែបានផ្សព្វផ្សាយ​ ឬ?', # MODIF
 	'entree_texte_breve' => 'អត្ថបទ​ នៃ​ពត៌មានសង្ខេប',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'សៃថ៍ របស់អ្នក ប្រើប្រាស់ ប្រព័ន្ធពត៌មានខ្លី ឬ ?',
 	'info_breves_02' => 'ពត៌មានសង្ខេប',
 	'info_breves_valider' => 'ពត៌មានសង្ខេប ​ត្រូវធ្វើ​អោយ​​សុពលភាព',
-	'info_gauche_numero_breve' => 'លេខដំណឹង',
+	'info_gauche_numero_breve' => 'លេខដំណឹង', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'បានស្នើ ពត៌មាន​សង្ខេប',
-	'item_breve_refusee' => 'ទេ - ខ្ទង់ដំណឹង ត្រូវបានបដិសេធ',
-	'item_breve_validee' => 'បាទ/ចាស - ខ្ទង់ដំណឹង មានសុពលភាព',
+	'item_breve_proposee' => 'បានស្នើ ពត៌មាន​សង្ខេប', # MODIF
+	'item_breve_refusee' => 'ទេ - ខ្ទង់ដំណឹង ត្រូវបានបដិសេធ', # MODIF
+	'item_breve_validee' => 'បាទ/ចាស - ខ្ទង់ដំណឹង មានសុពលភាព', # MODIF
 	'item_non_utiliser_breves' => 'កុំប្រើប្រាស់ ដំណឹង',
 	'item_utiliser_breves' => 'ប្រើប្រាស់ ដំណឹង',
 
 	// L
-	'logo_breve' => 'រូបសញ្ញា នៃខ្ទង់ដំណឹង',
+	'logo_breve' => 'រូបសញ្ញា នៃខ្ទង់ដំណឹង', # MODIF
 
 	// T
 	'texte_breves' => 'ពត៌មានខ្លី ជាអត្ថបទ ខ្លី និង សាមញ្ញ អនុញ្ញាត
@@ -43,7 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'បានផ្សព្វផ្សាយ ​ពត៌មានសង្ខេប',
 	'titre_breve_refusee' => '​បាន​បដិសេធ ពត៌មានសង្ខេប',
 	'titre_breves' => 'ដំណឹង',
-	'titre_langue_breve' => 'ភាសា នៃខ្ទង់ដំណឹង',
+	'titre_langue_breve' => 'ភាសា នៃខ្ទង់ដំណឹង', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'ដំណឹង'
 );

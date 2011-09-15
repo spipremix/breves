@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => '简要',
 
 	// E
-	'entree_breve_publiee' => '该新闻要被发表?',
+	'entree_breve_publiee' => '该新闻要被发表?', # MODIF
 	'entree_texte_breve' => '简要内容',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => '您的站点使用了新闻简要系统,吗?',
 	'info_breves_02' => '简要',
 	'info_breves_valider' => '需确认的简要',
-	'info_gauche_numero_breve' => '新闻号',
+	'info_gauche_numero_breve' => '新闻号', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => '新闻提交',
-	'item_breve_refusee' => '不 - 丢弃新闻',
-	'item_breve_validee' => '是 - 确认新闻',
+	'item_breve_proposee' => '新闻提交', # MODIF
+	'item_breve_refusee' => '不 - 丢弃新闻', # MODIF
+	'item_breve_validee' => '是 - 确认新闻', # MODIF
 	'item_non_utiliser_breves' => '不使用新闻',
 	'item_utiliser_breves' => '使用新闻',
 
 	// L
-	'logo_breve' => '新闻图标',
+	'logo_breve' => '新闻图标', # MODIF
 
 	// T
 	'texte_breves' => '新闻是简短文字允许在线出版简明的信息
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => '发表的新闻',
 	'titre_breve_refusee' => '丢弃的新闻',
 	'titre_breves' => '新闻',
-	'titre_langue_breve' => '新闻语言',
+	'titre_langue_breve' => '新闻语言', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => '新闻'
 );

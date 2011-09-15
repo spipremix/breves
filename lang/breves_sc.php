@@ -9,11 +9,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
 	'breve' => 'Brève', # NEW
-	'breves' => '<NEW> Brèves',
+	'breves' => 'Breves',
 
 	// E
-	'entree_breve_publiee' => 'Cette brève est :', # NEW
-	'entree_texte_breve' => 'Texte de la brève', # NEW
+	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?', # MODIF
+	'entree_texte_breve' => 'Testu de sa breve',
 
 	// I
 	'icone_breves' => 'Brèves', # NEW
@@ -25,28 +25,28 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Votre site utilise-t-il le système de brèves ?', # NEW
 	'info_breves_02' => 'Brèves', # NEW
 	'info_breves_valider' => 'Brèves à valider', # NEW
-	'info_gauche_numero_breve' => 'Brève numéro', # NEW
+	'info_gauche_numero_breve' => 'BRÈVE NUMÉRO', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'proposée à l\'évaluation', # NEW
-	'item_breve_refusee' => 'refusée', # NEW
-	'item_breve_validee' => 'validée', # NEW
+	'item_breve_proposee' => 'Brève proposée', # MODIF
+	'item_breve_refusee' => 'NON - Brève refusée', # MODIF
+	'item_breve_validee' => 'OUI - Brève validée', # MODIF
 	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves', # NEW
 	'item_utiliser_breves' => 'Utiliser les brèves', # NEW
 
 	// L
-	'logo_breve' => 'Logo de la brève', # NEW
+	'logo_breve' => 'LOGO DE LA BRÈVE', # MODIF
 
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
 	mettre en ligne rapidement des informations concises, de gérer
 	une revue de presse, un calendrier d\'événements...', # NEW
-	'titre_breve_proposee' => 'Brève proposée', # NEW
-	'titre_breve_publiee' => 'Brève publiée', # NEW
-	'titre_breve_refusee' => 'Brève refusée', # NEW
-	'titre_breves' => 'Les brèves', # NEW
-	'titre_langue_breve' => 'Langue de la brève', # NEW
+	'titre_breve_proposee' => 'Proposta breve',
+	'titre_breve_publiee' => 'Breve publicada',
+	'titre_breve_refusee' => 'Breve refudada',
+	'titre_breves' => 'Sas breves',
+	'titre_langue_breve' => 'LIMBA DE SA BREVE', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
-	'titre_page_breves' => 'Brèves' # NEW
+	'titre_page_breves' => 'Breves'
 );
 
 ?>

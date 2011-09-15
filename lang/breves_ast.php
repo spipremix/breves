@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Breves',
 
 	// E
-	'entree_breve_publiee' => '¿Hai qu\'espublizar esta breve?',
+	'entree_breve_publiee' => '¿Hai qu\'espublizar esta breve?', # MODIF
 	'entree_texte_breve' => 'Testu de la breve',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => '¿Utiliza\'l to sitiu el sistema de breves?',
 	'info_breves_02' => 'Breves',
 	'info_breves_valider' => 'Curties por validar',
-	'info_gauche_numero_breve' => 'BREVE NÚMBERU',
+	'info_gauche_numero_breve' => 'BREVE NÚMBERU', # MODIF
 	'info_nb_breves' => '@nb@ breves',
-	'item_breve_proposee' => 'Breve propuesta',
-	'item_breve_refusee' => 'NON - Breve refugada',
-	'item_breve_validee' => 'SI - Breve validada',
+	'item_breve_proposee' => 'Breve propuesta', # MODIF
+	'item_breve_refusee' => 'NON - Breve refugada', # MODIF
+	'item_breve_validee' => 'SI - Breve validada', # MODIF
 	'item_non_utiliser_breves' => 'Nun utilizar les breves',
 	'item_utiliser_breves' => 'Utilizar les breves',
 
 	// L
-	'logo_breve' => 'LOGO DE LA BREVE',
+	'logo_breve' => 'LOGO DE LA BREVE', # MODIF
 
 	// T
 	'texte_breves' => 'Les breves son testos curtios y simples que permiten
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Breve publicada',
 	'titre_breve_refusee' => 'Breve refugada',
 	'titre_breves' => 'Les breves',
-	'titre_langue_breve' => 'LLINGUA DE LA BREVE',
+	'titre_langue_breve' => 'LLINGUA DE LA BREVE', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Breves'
 );

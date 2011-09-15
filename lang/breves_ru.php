@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Новости',
 
 	// E
-	'entree_breve_publiee' => 'Является ли эта новость опубликованной?',
+	'entree_breve_publiee' => 'Является ли эта новость опубликованной?', # MODIF
 	'entree_texte_breve' => 'Текст новости',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Использовать систему новостей?',
 	'info_breves_02' => 'Новости',
 	'info_breves_valider' => 'Новости на утверждении',
-	'info_gauche_numero_breve' => 'ЧИСЛО НОВОСТЕЙ',
+	'info_gauche_numero_breve' => 'ЧИСЛО НОВОСТЕЙ', # MODIF
 	'info_nb_breves' => '@nb@ news items', # NEW
-	'item_breve_proposee' => 'Новости отправлены',
-	'item_breve_refusee' => 'НЕТ - отключить новость',
-	'item_breve_validee' => 'Да - включить новость ',
+	'item_breve_proposee' => 'Новости отправлены', # MODIF
+	'item_breve_refusee' => 'НЕТ - отключить новость', # MODIF
+	'item_breve_validee' => 'Да - включить новость ', # MODIF
 	'item_non_utiliser_breves' => 'Не использовать новости',
 	'item_utiliser_breves' => 'Использовать новости',
 
 	// L
-	'logo_breve' => 'ЛОГОТИП НОВОСТИ',
+	'logo_breve' => 'ЛОГОТИП НОВОСТИ', # MODIF
 
 	// T
 	'texte_breves' => 'Новости - короткие и простые тексты, которые используют 
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Новости опубликованы',
 	'titre_breve_refusee' => 'Новости отклонены',
 	'titre_breves' => 'Новости',
-	'titre_langue_breve' => 'ЯЗЫК НОВОСТИ',
+	'titre_langue_breve' => 'ЯЗЫК НОВОСТИ', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Новости'
 );

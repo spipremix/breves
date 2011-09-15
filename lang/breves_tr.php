@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Kısa haberler',
 
 	// E
-	'entree_breve_publiee' => 'Bu kısa haber yayınlanmalı mı ?',
+	'entree_breve_publiee' => 'Bu kısa haber yayınlanmalı mı ?', # MODIF
 	'entree_texte_breve' => 'Kısa haber özeti',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Siteniz kısa haber sistemini kullanıyor mu ?',
 	'info_breves_02' => 'Kısa haberler',
 	'info_breves_valider' => 'Onaylanacak kısa haberler',
-	'info_gauche_numero_breve' => 'KISA HABER NUMARASI',
+	'info_gauche_numero_breve' => 'KISA HABER NUMARASI', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Önerilen kısa haber',
-	'item_breve_refusee' => 'HAYIR - Kısa haber reddedildi',
-	'item_breve_validee' => 'EVET - Kısa haber onaylandı',
+	'item_breve_proposee' => 'Önerilen kısa haber', # MODIF
+	'item_breve_refusee' => 'HAYIR - Kısa haber reddedildi', # MODIF
+	'item_breve_validee' => 'EVET - Kısa haber onaylandı', # MODIF
 	'item_non_utiliser_breves' => 'Kısa haberleri kullanma',
 	'item_utiliser_breves' => 'Kısa haberleri kullan',
 
 	// L
-	'logo_breve' => 'KISA HABER LOGOSU',
+	'logo_breve' => 'KISA HABER LOGOSU', # MODIF
 
 	// T
 	'texte_breves' => 'Kısa haberler kısa ve sade metinler olup,
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Yayınlanan kısa haber',
 	'titre_breve_refusee' => 'Reddedilen kısa haber',
 	'titre_breves' => 'Kısa haberler  ',
-	'titre_langue_breve' => 'KISA HABERİN DİLİ',
+	'titre_langue_breve' => 'KISA HABERİN DİLİ', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Kısa haberler'
 );

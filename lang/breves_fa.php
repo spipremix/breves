@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'خبرها يا مقاله هاى كوتاه',
 
 	// E
-	'entree_breve_publiee' => 'آيا اين مطلب كوتاه بايد منتشر شود؟',
+	'entree_breve_publiee' => 'آيا اين مطلب كوتاه بايد منتشر شود؟', # MODIF
 	'entree_texte_breve' => 'متن مقاله كوتاه',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'آيا سايت شما از سيستم مقاله هاى كوتاه استفاده ميكند ؟',
 	'info_breves_02' => 'مقاله هاى كوتاه',
 	'info_breves_valider' => 'مقاله هاى كوتاه براى تأئيد',
-	'info_gauche_numero_breve' => 'مقاله كوتاه شماره',
+	'info_gauche_numero_breve' => 'مقاله كوتاه شماره', # MODIF
 	'info_nb_breves' => '@nb@ خبر',
-	'item_breve_proposee' => 'مقاله كوتاه پيشنهادى',
-	'item_breve_refusee' => 'خير - مقاله كوتاه پذيرفته نشده',
-	'item_breve_validee' => 'آرى - مقاله كوتاه تأئيد شد',
+	'item_breve_proposee' => 'مقاله كوتاه پيشنهادى', # MODIF
+	'item_breve_refusee' => 'خير - مقاله كوتاه پذيرفته نشده', # MODIF
+	'item_breve_validee' => 'آرى - مقاله كوتاه تأئيد شد', # MODIF
 	'item_non_utiliser_breves' => 'از مقالات كوتاه استفاده نكنيد',
 	'item_utiliser_breves' => 'از مقالات كوتاه استفاده كنيد',
 
 	// L
-	'logo_breve' => 'درج علامت(لوگو) براى مقاله كوتاه',
+	'logo_breve' => 'درج علامت(لوگو) براى مقاله كوتاه', # MODIF
 
 	// T
 	'texte_breves' => 'مقالات كوتاه متن هاى ساده اى هستد كه ميتوان سريعا برروى سايت قرار گيرند و غالبا براى اطلاعات فشرده، اداره مجلات و سالنماى وقايع استفاده ميشوند',
@@ -42,8 +42,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'مقاله كوتاه منتشر شده',
 	'titre_breve_refusee' => 'مقاله كوتاه پذيرفته نشده',
 	'titre_breves' => 'مقالات كوتاه',
-	'titre_langue_breve' => 'زبان مقاله كوتاه',
-	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
+	'titre_langue_breve' => 'زبان مقاله كوتاه', # MODIF
+	'titre_nouvelle_breve' => 'خبر جديد ',
 	'titre_page_breves' => 'مقالات كوتاه'
 );
 

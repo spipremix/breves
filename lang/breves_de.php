@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Meldungen',
 
 	// E
-	'entree_breve_publiee' => 'Soll diese Meldung veröffentlicht werden?',
+	'entree_breve_publiee' => 'Soll diese Meldung veröffentlicht werden?', # MODIF
 	'entree_texte_breve' => 'Text der Meldung',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Verwendet Ihre Website Meldungen?',
 	'info_breves_02' => 'Meldungen',
 	'info_breves_valider' => 'Zur Veröffentlichung vorgeschlagene Meldungen',
-	'info_gauche_numero_breve' => 'MELDUNG NUMMER',
+	'info_gauche_numero_breve' => 'MELDUNG NUMMER', # MODIF
 	'info_nb_breves' => '@nb@ Meldungen',
-	'item_breve_proposee' => 'Vorgeschlagene Meldung',
-	'item_breve_refusee' => 'NEIN - Meldung abgelehnt',
-	'item_breve_validee' => 'JA - Meldung freigegeben',
+	'item_breve_proposee' => 'Vorgeschlagene Meldung', # MODIF
+	'item_breve_refusee' => 'NEIN - Meldung abgelehnt', # MODIF
+	'item_breve_validee' => 'JA - Meldung freigegeben', # MODIF
 	'item_non_utiliser_breves' => 'Keine Meldungen verwenden.',
 	'item_utiliser_breves' => 'Meldungen verwenden',
 
 	// L
-	'logo_breve' => 'MELDUNGS-LOGO',
+	'logo_breve' => 'MELDUNGS-LOGO', # MODIF
 
 	// T
 	'texte_breves' => 'Meldungen sind kurze einfache Texte, um schnell und unkompliziert Nachrichten, eine Presseschau oder einen Veranstaltungskalender zu publizieren ...',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'veröffentlichte Meldungen',
 	'titre_breve_refusee' => 'abgelehnte Meldung',
 	'titre_breves' => 'Meldungen',
-	'titre_langue_breve' => 'SPRACHE DER MELDUNG',
+	'titre_langue_breve' => 'SPRACHE DER MELDUNG', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Meldungen'
 );

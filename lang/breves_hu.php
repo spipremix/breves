@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Hírek',
 
 	// E
-	'entree_breve_publiee' => 'Ezt a hírt publikálni kell?',
+	'entree_breve_publiee' => 'Ezt a hírt publikálni kell?', # MODIF
 	'entree_texte_breve' => 'Hír szövege',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Az Ön honlapja használja-e a hírek rendszerét ?',
 	'info_breves_02' => 'Hírek',
 	'info_breves_valider' => 'Jóváhagyandó hírek',
-	'info_gauche_numero_breve' => 'HÍR SZÁMA',
+	'info_gauche_numero_breve' => 'HÍR SZÁMA', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Javasolt hír',
-	'item_breve_refusee' => 'NEM - Elutasított hír',
-	'item_breve_validee' => 'IGEN - Elfogadott hír',
+	'item_breve_proposee' => 'Javasolt hír', # MODIF
+	'item_breve_refusee' => 'NEM - Elutasított hír', # MODIF
+	'item_breve_validee' => 'IGEN - Elfogadott hír', # MODIF
 	'item_non_utiliser_breves' => 'Nem kell használni a híreket',
 	'item_utiliser_breves' => 'Hírek használata',
 
 	// L
-	'logo_breve' => 'A HÍR LOGOJA',
+	'logo_breve' => 'A HÍR LOGOJA', # MODIF
 
 	// T
 	'texte_breves' => 'A hírek olyan rövid és egyszerű szövegek, melyeknek segítségével lehet gyorsan publikálni rövid információkat, napszemlét, eseménynaptárt...',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Publikált hír',
 	'titre_breve_refusee' => 'Elutasított hír',
 	'titre_breves' => 'A hírek',
-	'titre_langue_breve' => 'A HÍR NYELVE',
+	'titre_langue_breve' => 'A HÍR NYELVE', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Hírek'
 );
