@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Nauji straipsniai',
 
 	// E
-	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?', # NEW
+	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?', # MODIF
 	'entree_texte_breve' => 'Santraukos tekstas',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Ar jūsų svetainė naudoja santraukų sistemą?',
 	'info_breves_02' => 'Santraukos',
 	'info_breves_valider' => 'Santraukos patvirtinimui',
-	'info_gauche_numero_breve' => 'SANTRAUKOS NUMERIS',
+	'info_gauche_numero_breve' => 'SANTRAUKOS NUMERIS', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Brève proposée', # NEW
-	'item_breve_refusee' => 'NE - Santrauka atmesta',
-	'item_breve_validee' => 'TAIP - Santrauka patvirtinta',
+	'item_breve_proposee' => 'Brève proposée', # MODIF
+	'item_breve_refusee' => 'NE - Santrauka atmesta', # MODIF
+	'item_breve_validee' => 'TAIP - Santrauka patvirtinta', # MODIF
 	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves', # NEW
 	'item_utiliser_breves' => 'Utiliser les brèves', # NEW
 
 	// L
-	'logo_breve' => 'SANTRAUKOS LOGO',
+	'logo_breve' => 'SANTRAUKOS LOGO', # MODIF
 
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Publikuojama santrauka',
 	'titre_breve_refusee' => 'Atmesta santrauka',
 	'titre_breves' => 'Les brèves', # NEW
-	'titre_langue_breve' => 'LANGUE DE LA BRÈVE', # NEW
+	'titre_langue_breve' => 'LANGUE DE LA BRÈVE', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Brèves' # NEW
 );

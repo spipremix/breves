@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Fulm-informoj',
 
 	// E
-	'entree_breve_publiee' => 'Ĉu tiun fulm-informon oni publikigu?',
+	'entree_breve_publiee' => 'Ĉu tiun fulm-informon oni publikigu?', # MODIF
 	'entree_texte_breve' => 'Teksto de la fulm-informo',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Ĉu via retejo uzas la fulm-informilon ?',
 	'info_breves_02' => 'Fulm-informoj',
 	'info_breves_valider' => 'Validigendaj fulm-informoj',
-	'info_gauche_numero_breve' => 'FULM-INFORMA NUMERO',
+	'info_gauche_numero_breve' => 'FULM-INFORMA NUMERO', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Proponita fulm-informo',
-	'item_breve_refusee' => 'NE - Fulm-informo rifuzita',
-	'item_breve_validee' => 'JES - Fulm-informo validigita',
+	'item_breve_proposee' => 'Proponita fulm-informo', # MODIF
+	'item_breve_refusee' => 'NE - Fulm-informo rifuzita', # MODIF
+	'item_breve_validee' => 'JES - Fulm-informo validigita', # MODIF
 	'item_non_utiliser_breves' => 'Ne uzi la fulm-informojn',
 	'item_utiliser_breves' => 'Uzi la fulm-informojn',
 
 	// L
-	'logo_breve' => 'VINJETO DE LA FULM-INFORMO',
+	'logo_breve' => 'VINJETO DE LA FULM-INFORMO', # MODIF
 
 	// T
 	'texte_breves' => 'La fulm-informoj estas mallongaj kaj simplaj tekstoj ebligantaj
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Publikigita fulm-informo',
 	'titre_breve_refusee' => 'Rifuzita fulm-informo',
 	'titre_breves' => 'La fulm-informoj',
-	'titre_langue_breve' => 'LINGVO DE LA FULM-INFORMO',
+	'titre_langue_breve' => 'LINGVO DE LA FULM-INFORMO', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Fulm-informoj'
 );

@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Kuerzmeldungen',
 
 	// E
-	'entree_breve_publiee' => 'Soll dës Kuerzmeldung publizéiert ginn?',
+	'entree_breve_publiee' => 'Soll dës Kuerzmeldung publizéiert ginn?', # MODIF
 	'entree_texte_breve' => 'Text vun der Kuerzmeldung',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Benotzt äre Site de Kuerzmeldungs-System?',
 	'info_breves_02' => 'Kuerzmeldungen',
 	'info_breves_valider' => 'Kuerzmeldungen fir ze validéieren',
-	'info_gauche_numero_breve' => 'KUERZMELDUNG NUMMER',
+	'info_gauche_numero_breve' => 'KUERZMELDUNG NUMMER', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Proposéiert Kuerzmeldung',
-	'item_breve_refusee' => 'NEEN - Kuerzmeldung refuséiert',
-	'item_breve_validee' => 'JO - Kuerzmeldung validéiert',
+	'item_breve_proposee' => 'Proposéiert Kuerzmeldung', # MODIF
+	'item_breve_refusee' => 'NEEN - Kuerzmeldung refuséiert', # MODIF
+	'item_breve_validee' => 'JO - Kuerzmeldung validéiert', # MODIF
 	'item_non_utiliser_breves' => 'D\'Kuerzmeldungen ausschalten',
 	'item_utiliser_breves' => 'D\'Kuerzmeldungen aschalten',
 
 	// L
-	'logo_breve' => 'LOGO VUN DER KUERZMELDUNG',
+	'logo_breve' => 'LOGO VUN DER KUERZMELDUNG', # MODIF
 
 	// T
 	'texte_breves' => 'D\'Kuerzmeldungen si kuerz an einfach Texter déi Iech erlaben Informatiounen séier ze publizéieren, eng Presse-Revue ze maachen, en Agenda ze weisen...',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Publizéiert Kuerzmeldung',
 	'titre_breve_refusee' => 'Refuséiert Kuerzmeldung',
 	'titre_breves' => 'D\'Kuerzmeldungen',
-	'titre_langue_breve' => 'SPROOCH VUN DER KUERZMELDUNG',
+	'titre_langue_breve' => 'SPROOCH VUN DER KUERZMELDUNG', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Kuerzmeldungen'
 );

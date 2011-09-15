@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Brevas',
 
 	// E
-	'entree_breve_publiee' => 'Quela breva la chau publicar?',
+	'entree_breve_publiee' => 'Quela breva la chau publicar?', # MODIF
 	'entree_texte_breve' => 'Text de la breva',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Vòstre sit utiliza lo sistema de brevas?',
 	'info_breves_02' => 'Brevas',
 	'info_breves_valider' => 'Brevas de validar',
-	'info_gauche_numero_breve' => 'BREVA NUMERO',
+	'info_gauche_numero_breve' => 'BREVA NUMERO', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Breva prepausada',
-	'item_breve_refusee' => 'NON - Breva refusada',
-	'item_breve_validee' => 'ÒC - Breva validada',
+	'item_breve_proposee' => 'Breva prepausada', # MODIF
+	'item_breve_refusee' => 'NON - Breva refusada', # MODIF
+	'item_breve_validee' => 'ÒC - Breva validada', # MODIF
 	'item_non_utiliser_breves' => 'Pas utilizar las brevas',
 	'item_utiliser_breves' => 'Utilizar las brevas',
 
 	// L
-	'logo_breve' => 'LÒGO DE LA BREVA',
+	'logo_breve' => 'LÒGO DE LA BREVA', # MODIF
 
 	// T
 	'texte_breves' => 'Las brevas son daus texts corts e simples que permeten de metre en linha regde de las informacions concisas, de gerir
@@ -43,7 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Breva publicada',
 	'titre_breve_refusee' => 'Breva refusada',
 	'titre_breves' => 'Las brevas',
-	'titre_langue_breve' => 'LENGA DE LA BREVA',
+	'titre_langue_breve' => 'LENGA DE LA BREVA', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Brevas'
 );

@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Tin ngắn',
 
 	// E
-	'entree_breve_publiee' => 'Đăng tải tin ngắn này không?',
+	'entree_breve_publiee' => 'Đăng tải tin ngắn này không?', # MODIF
 	'entree_texte_breve' => 'Nội dung tin ngắn',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Trang web của bạn có sử dụng hệ thống tin ngắn không?',
 	'info_breves_02' => 'Tin ngắn',
 	'info_breves_valider' => 'Những tin ngắn chờ thông qua',
-	'info_gauche_numero_breve' => 'SỐ THỨ TỰ TIN NGẮN',
+	'info_gauche_numero_breve' => 'SỐ THỨ TỰ TIN NGẮN', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Nộp vào',
-	'item_breve_refusee' => 'TỪ CHỐI - không đăng',
-	'item_breve_validee' => 'CHẤP THUẬN đăng tải',
+	'item_breve_proposee' => 'Nộp vào', # MODIF
+	'item_breve_refusee' => 'TỪ CHỐI - không đăng', # MODIF
+	'item_breve_validee' => 'CHẤP THUẬN đăng tải', # MODIF
 	'item_non_utiliser_breves' => 'Không dùng tin ngắn',
 	'item_utiliser_breves' => 'Dùng tin ngắn',
 
 	// L
-	'logo_breve' => 'LOGO CỦA TIN NGẮN',
+	'logo_breve' => 'LOGO CỦA TIN NGẮN', # MODIF
 
 	// T
 	'texte_breves' => 'Tin ngắn là đoạn văn ngắn gọn đơn giản để có thể thông báo online các chi tiết cô đọng, quản trị các thông cáo báo chí, lịch trình sự việc ...',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Tin ngắn đã đăng tải',
 	'titre_breve_refusee' => 'Tin ngắn bị từ chối',
 	'titre_breves' => 'Tin ngắn',
-	'titre_langue_breve' => 'NGÔN NGỮ CỦA TIN NGẮN',
+	'titre_langue_breve' => 'NGÔN NGỮ CỦA TIN NGẮN', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Tin ngắn'
 );

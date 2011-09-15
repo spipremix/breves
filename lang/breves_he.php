@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'מבזקים',
 
 	// E
-	'entree_breve_publiee' => 'האם מבזק זה צריך להתפרסם ?',
+	'entree_breve_publiee' => 'האם מבזק זה צריך להתפרסם ?', # MODIF
 	'entree_texte_breve' => 'טקסט של המבזק',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'האם אתרך משתמש במערכת המבזקים ?',
 	'info_breves_02' => 'מבזקים',
 	'info_breves_valider' => 'לתת תוקף למבזקים האלה',
-	'info_gauche_numero_breve' => 'מבזק מספר',
+	'info_gauche_numero_breve' => 'מבזק מספר', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'מבזק מוצע',
-	'item_breve_refusee' => 'לא - מבזק דחוי',
-	'item_breve_validee' => 'כן - מבזק מאושר',
+	'item_breve_proposee' => 'מבזק מוצע', # MODIF
+	'item_breve_refusee' => 'לא - מבזק דחוי', # MODIF
+	'item_breve_validee' => 'כן - מבזק מאושר', # MODIF
 	'item_non_utiliser_breves' => 'הסרת שימוש המבזקים',
 	'item_utiliser_breves' => 'שימוש המבזקים',
 
 	// L
-	'logo_breve' => 'לוגו של המבזק',
+	'logo_breve' => 'לוגו של המבזק', # MODIF
 
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'מבזק מפורסם',
 	'titre_breve_refusee' => 'מבזק מסורב',
 	'titre_breves' => 'Les brèves', # NEW
-	'titre_langue_breve' => 'LANGUE DE LA BRÈVE', # NEW
+	'titre_langue_breve' => 'LANGUE DE LA BRÈVE', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Brèves' # NEW
 );

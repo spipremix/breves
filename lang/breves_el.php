@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Σύντομες ειδήσεις',
 
 	// E
-	'entree_breve_publiee' => 'Πρέπει να δημοσιευτεί αυτή η είδηση;',
+	'entree_breve_publiee' => 'Πρέπει να δημοσιευτεί αυτή η είδηση;', # MODIF
 	'entree_texte_breve' => 'Κείμενο του στοιχείου ειδήσεων',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Χρησιμοποιεί ο ιστοχώρος σας το σύστημα ειδήσεων?',
 	'info_breves_02' => 'Σύντομα νέα',
 	'info_breves_valider' => 'Σύντομα νέα για επικύρωση',
-	'info_gauche_numero_breve' => 'ΝΟΥΜΕΡΟ ΣΤΟΙΧΕΙΟΥ ΕΙΔΗΣΕΩΝ',
+	'info_gauche_numero_breve' => 'ΝΟΥΜΕΡΟ ΣΤΟΙΧΕΙΟΥ ΕΙΔΗΣΕΩΝ', # MODIF
 	'info_nb_breves' => '@nb@ news items', # NEW
-	'item_breve_proposee' => 'Προτεινόμενη είδηση',
-	'item_breve_refusee' => 'NO - News item rejected', # NEW
-	'item_breve_validee' => 'YES - News item validated', # NEW
+	'item_breve_proposee' => 'Προτεινόμενη είδηση', # MODIF
+	'item_breve_refusee' => 'NO - News item rejected', # MODIF
+	'item_breve_validee' => 'YES - News item validated', # MODIF
 	'item_non_utiliser_breves' => 'Do not use the news', # NEW
 	'item_utiliser_breves' => 'Use the news', # NEW
 
 	// L
-	'logo_breve' => 'NEWS ITEM\'S LOGO', # NEW
+	'logo_breve' => 'NEWS ITEM\'S LOGO', # MODIF
 
 	// T
 	'texte_breves' => 'News are short and simple texts which allow
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Δημοσιευμένη είδηση',
 	'titre_breve_refusee' => 'Είδηση που απορρίφθηκε',
 	'titre_breves' => 'Οι ειδήσεις',
-	'titre_langue_breve' => 'NEWS ITEM LANGUAGE', # NEW
+	'titre_langue_breve' => 'NEWS ITEM LANGUAGE', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Ειδήσεις'
 );

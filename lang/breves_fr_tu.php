@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Brèves',
 
 	// E
-	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?',
+	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?', # MODIF
 	'entree_texte_breve' => 'Texte de la brève',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Ton site utilise-t-il le système de brèves ?',
 	'info_breves_02' => 'Brèves',
 	'info_breves_valider' => 'Brèves à valider',
-	'info_gauche_numero_breve' => 'BRÈVE NUMÉRO',
+	'info_gauche_numero_breve' => 'BRÈVE NUMÉRO', # MODIF
 	'info_nb_breves' => '@nb@ brèves',
-	'item_breve_proposee' => 'Brève proposée',
-	'item_breve_refusee' => 'NON - Brève refusée',
-	'item_breve_validee' => 'OUI - Brève validée',
+	'item_breve_proposee' => 'Brève proposée', # MODIF
+	'item_breve_refusee' => 'NON - Brève refusée', # MODIF
+	'item_breve_validee' => 'OUI - Brève validée', # MODIF
 	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves',
 	'item_utiliser_breves' => 'Utiliser les brèves',
 
 	// L
-	'logo_breve' => 'LOGO DE LA BRÈVE',
+	'logo_breve' => 'LOGO DE LA BRÈVE', # MODIF
 
 	// T
 	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Brève publiée',
 	'titre_breve_refusee' => 'Brève refusée',
 	'titre_breves' => 'Les brèves',
-	'titre_langue_breve' => 'LANGUE DE LA BRÈVE',
+	'titre_langue_breve' => 'LANGUE DE LA BRÈVE', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Brèves'
 );

@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Aktualności',
 
 	// E
-	'entree_breve_publiee' => 'Czy ten news ma zostać opublikowany?',
+	'entree_breve_publiee' => 'Czy ten news ma zostać opublikowany?', # MODIF
 	'entree_texte_breve' => 'Tekst newsa',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Czy na Twojej stronie działa system newsów?',
 	'info_breves_02' => 'Newsy',
 	'info_breves_valider' => 'Newsy do zatwierdzenia',
-	'info_gauche_numero_breve' => 'NEWS NUMER',
+	'info_gauche_numero_breve' => 'NEWS NUMER', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Zaproponowany news',
-	'item_breve_refusee' => 'NIE - news odrzucony',
-	'item_breve_validee' => 'TAK - news zatwierdzony',
+	'item_breve_proposee' => 'Zaproponowany news', # MODIF
+	'item_breve_refusee' => 'NIE - news odrzucony', # MODIF
+	'item_breve_validee' => 'TAK - news zatwierdzony', # MODIF
 	'item_non_utiliser_breves' => 'Nie używaj newsów',
 	'item_utiliser_breves' => 'Używaj newsów',
 
 	// L
-	'logo_breve' => 'LOGO NEWSA',
+	'logo_breve' => 'LOGO NEWSA', # MODIF
 
 	// T
 	'texte_breves' => 'Newsy są krótkimi tekstami, które pozwalają
@@ -44,7 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'News opublikowany',
 	'titre_breve_refusee' => 'News odrzucony',
 	'titre_breves' => 'Newsy',
-	'titre_langue_breve' => 'JĘZYK NEWSA',
+	'titre_langue_breve' => 'JĘZYK NEWSA', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Newsy'
 );

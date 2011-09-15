@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Novinky',
 
 	// E
-	'entree_breve_publiee' => 'Má být tato novinka publikována?',
+	'entree_breve_publiee' => 'Má být tato novinka publikována?', # MODIF
 	'entree_texte_breve' => 'Text novinky',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Používá váš web novinky?',
 	'info_breves_02' => 'Novinky',
 	'info_breves_valider' => 'Novinky ke schválení',
-	'info_gauche_numero_breve' => 'ČÍSLO NOVINKY',
+	'info_gauche_numero_breve' => 'ČÍSLO NOVINKY', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Předložené novinky',
-	'item_breve_refusee' => 'Odmítnutá novinka',
-	'item_breve_validee' => 'Schválená novinka',
+	'item_breve_proposee' => 'Předložené novinky', # MODIF
+	'item_breve_refusee' => 'Odmítnutá novinka', # MODIF
+	'item_breve_validee' => 'Schválená novinka', # MODIF
 	'item_non_utiliser_breves' => 'Nepoužívat novinky',
 	'item_utiliser_breves' => 'Používat novinky',
 
 	// L
-	'logo_breve' => 'LOGO NOVINKY',
+	'logo_breve' => 'LOGO NOVINKY', # MODIF
 
 	// T
 	'texte_breves' => 'Novinky jsou krátké texty umožňující rychle zveřejňovat
@@ -43,7 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Novinka zveřejněna',
 	'titre_breve_refusee' => 'Novinka zamítnuta',
 	'titre_breves' => 'Novinky',
-	'titre_langue_breve' => 'JAZYK NOVINKY',
+	'titre_langue_breve' => 'JAZYK NOVINKY', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Novinky'
 );

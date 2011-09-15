@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Kratke poruke',
 
 	// E
-	'entree_breve_publiee' => 'Da li zelite publicirati ovu kratku poruku?',
+	'entree_breve_publiee' => 'Da li zelite publicirati ovu kratku poruku?', # MODIF
 	'entree_texte_breve' => 'Tekst kratke poruke',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Da li vasa stranica upotrebljava sistem  kratkih poruka?',
 	'info_breves_02' => 'Obavjestenja',
 	'info_breves_valider' => 'Obavjestenja za ovjeriti',
-	'info_gauche_numero_breve' => 'BROJ KRATKE PORUKE',
+	'info_gauche_numero_breve' => 'BROJ KRATKE PORUKE', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Predlozena obavjestenja',
-	'item_breve_refusee' => 'NE - Kratka poruka odbijena',
-	'item_breve_validee' => 'DA - Kratka poruka ovjerena',
+	'item_breve_proposee' => 'Predlozena obavjestenja', # MODIF
+	'item_breve_refusee' => 'NE - Kratka poruka odbijena', # MODIF
+	'item_breve_validee' => 'DA - Kratka poruka ovjerena', # MODIF
 	'item_non_utiliser_breves' => 'Ne koristiti kratke poruke',
 	'item_utiliser_breves' => 'Koristi kratke poruke',
 
 	// L
-	'logo_breve' => 'LOGOTIP KRATKE PORUKE',
+	'logo_breve' => 'LOGOTIP KRATKE PORUKE', # MODIF
 
 	// T
 	'texte_breves' => 'Kratke poruke su kratki i jednostavni tekstovi, koji dozvoljavaju brzo postavljanje preciznih informacija, obradjivanje casopisa, kalendara dogadjaja...',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Obavjestenje objavljeno',
 	'titre_breve_refusee' => 'Obavjestenje odbijeno',
 	'titre_breves' => 'Kratke poruke',
-	'titre_langue_breve' => 'JEZIK KRATKE PORUKE',
+	'titre_langue_breve' => 'JEZIK KRATKE PORUKE', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Kratke poruke'
 );

@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'ニュース',
 
 	// E
-	'entree_breve_publiee' => 'このニュースは公開されるはずですか？',
+	'entree_breve_publiee' => 'このニュースは公開されるはずですか？', # MODIF
 	'entree_texte_breve' => 'ニュースの文',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'あなたのサイトで、ニュース・システムをお使いですか？',
 	'info_breves_02' => 'ニュース',
 	'info_breves_valider' => '検査済みニュース',
-	'info_gauche_numero_breve' => 'ニュース番号',
+	'info_gauche_numero_breve' => 'ニュース番号', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'ニュースは提出された',
-	'item_breve_refusee' => 'いいえ - ニュースは拒否された',
-	'item_breve_validee' => 'はい - 検査済みニュース',
+	'item_breve_proposee' => 'ニュースは提出された', # MODIF
+	'item_breve_refusee' => 'いいえ - ニュースは拒否された', # MODIF
+	'item_breve_validee' => 'はい - 検査済みニュース', # MODIF
 	'item_non_utiliser_breves' => 'ニュースを使わない',
 	'item_utiliser_breves' => 'ニュースを使う',
 
 	// L
-	'logo_breve' => 'ニュースのロゴ',
+	'logo_breve' => 'ニュースのロゴ', # MODIF
 
 	// T
 	'texte_breves' => 'ニュースは短くて簡単な文章です。オンラインで簡潔な情報を公表したり、プレスレビューに使ったり、イベントのカレンダーなどに使えます。',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => '公開されたニュース記事',
 	'titre_breve_refusee' => '受け付けられなかったニュース記事',
 	'titre_breves' => 'ニュース',
-	'titre_langue_breve' => 'ニュースの言語',
+	'titre_langue_breve' => 'ニュースの言語', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'ニュース'
 );

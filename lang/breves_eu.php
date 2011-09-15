@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Berri-laburrak',
 
 	// E
-	'entree_breve_publiee' => 'Berri labur hau argitaratuko dugu?',
+	'entree_breve_publiee' => 'Berri labur hau argitaratuko dugu?', # MODIF
 	'entree_texte_breve' => 'Berri laburraren testua',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Berri laburren sistema erabil dezakezu',
 	'info_breves_02' => 'Laburrak',
 	'info_breves_valider' => 'Egiaztatzeko laburrak',
-	'info_gauche_numero_breve' => 'Berri laburra',
+	'info_gauche_numero_breve' => 'Berri laburra', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Proposaturiko berri laburra',
-	'item_breve_refusee' => 'Berri laburra arbuiaturik',
-	'item_breve_validee' => 'Berri laburra arbuiaturik',
+	'item_breve_proposee' => 'Proposaturiko berri laburra', # MODIF
+	'item_breve_refusee' => 'Berri laburra arbuiaturik', # MODIF
+	'item_breve_validee' => 'Berri laburra arbuiaturik', # MODIF
 	'item_non_utiliser_breves' => 'Ez erabili berri laburrak',
 	'item_utiliser_breves' => 'Berri laburrak erabili',
 
 	// L
-	'logo_breve' => 'BERRI LABURRAREN LOGOA',
+	'logo_breve' => 'BERRI LABURRAREN LOGOA', # MODIF
 
 	// T
 	'texte_breves' => 'Laburrak argibide zehatzenargitaratze azkarra uzten duten artikulu txikiak dira.',
@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Argitaratutako laburra',
 	'titre_breve_refusee' => 'Ezeztatutako laburra',
 	'titre_breves' => 'Laburrak',
-	'titre_langue_breve' => 'LABURRAREN HIZKUNTZA',
+	'titre_langue_breve' => 'LABURRAREN HIZKUNTZA', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Berri laburrak'
 );
