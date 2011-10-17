@@ -114,13 +114,14 @@ function breve_modifier ($id_breve, $set=null) {
 		$indexation = true;
 	}
 
-	modifier_contenu('breve', $id_breve,
+	if ($err = objet_modifier_champs('breve', $id_breve,
 		array(
 			'nonvide' => array('titre' => _T('info_sans_titre')),
 			'invalideur' => $invalideur,
 			'indexation' => $indexation
 		),
-		$c);
+		$c))
+		return $err;
 
 	$c = collecter_requests(array('id_parent', 'statut'),array(),$set);
 	$err = breve_instituer($id_breve, $c);
