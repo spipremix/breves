@@ -93,7 +93,7 @@ function breve_inserer($id_rubrique) {
  *
  * @param int $id_breve
  * @param array $set
- * @return
+ * @return string|bool
  */
 function breve_modifier ($id_breve, $set=null) {
 
@@ -116,7 +116,7 @@ function breve_modifier ($id_breve, $set=null) {
 
 	if ($err = objet_modifier_champs('breve', $id_breve,
 		array(
-			'nonvide' => array('titre' => _T('info_sans_titre')),
+			'nonvide' => array('titre' => _T('breves:titre_nouvelle_breve')." "._T('info_numero_abbreviation').$id_breve),
 			'invalideur' => $invalideur,
 			'indexation' => $indexation
 		),
