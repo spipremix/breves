@@ -55,6 +55,7 @@
 	<langue code="my" />
 	<langue code="nb" />
 	<langue code="nl">
+		<traducteur nom="Suske" lien="http://trad.spip.org/auteur/suske" />
 		<traducteur nom="mpossoz" lien="http://trad.spip.org/auteur/mpossoz" />
 	</langue>
 	<langue code="oc_auv" />

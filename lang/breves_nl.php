@@ -8,11 +8,11 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breve' => 'Brève', # NEW
+	'breve' => 'Nieuwsbericht',
 	'breves' => 'Nieuwsberichten',
 
 	// E
-	'entree_breve_publiee' => 'Dient dit bericht te worden gepubliceerd ?', # MODIF
+	'entree_breve_publiee' => 'Dit bericht is:',
 	'entree_texte_breve' => 'Tekst van het bericht',
 
 	// I
@@ -25,16 +25,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Werkt je website met het systeem van berichten?',
 	'info_breves_02' => 'nieuwsberichten',
 	'info_breves_valider' => 'Berichten ter goedkeuring',
-	'info_gauche_numero_breve' => 'NUMMER BERICHT', # MODIF
-	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Bericht voorgesteld', # MODIF
-	'item_breve_refusee' => 'NEEN - Geweigerd nieuwsbericht', # MODIF
-	'item_breve_validee' => 'JA - Goedgekeurd nieuwsbericht', # MODIF
+	'info_gauche_numero_breve' => 'Bericht nummer',
+	'info_nb_breves' => '@nb@ berichten',
+	'item_breve_proposee' => 'ter evaluatie voorgesteld',
+	'item_breve_refusee' => 'geweigerd',
+	'item_breve_validee' => 'goedgekeurd',
 	'item_non_utiliser_breves' => 'Geen gebruik maken van nieuwsberichten',
 	'item_utiliser_breves' => 'Nieuwsberichten gebruiken',
 
 	// L
-	'logo_breve' => 'LOGO VAN HET NIEUWSBERICHT', # MODIF
+	'logo_breve' => 'Logo van het nieuwsbericht',
 
 	// T
 	'texte_breves' => 'Berichten zijn korte en eenvoudige teksten die je toelaten nieuws snel online te brengen, een persbericht op te stellen, een evenementenkalender te maken, ...',
@@ -42,8 +42,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Gepubliceerd bericht',
 	'titre_breve_refusee' => 'Geweigerd bericht',
 	'titre_breves' => 'Berichten',
-	'titre_langue_breve' => 'TAAL VAN HET NIEUWSBERICHT', # MODIF
-	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
+	'titre_langue_breve' => 'Taal van het nieuwsbericht',
+	'titre_nouvelle_breve' => 'Nieuwe nieuwsbericht',
 	'titre_page_breves' => 'Berichten'
 );
 
