@@ -9,7 +9,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
 	'breve' => 'Brève', # NEW
-	'breves' => '<NEW> Brèves',
+	'breves' => ' Brèves', # NEW
 
 	// E
 	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?', # MODIF
