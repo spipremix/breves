@@ -7,6 +7,9 @@
 		<traducteur nom="Quentin" lien="http://trad.spip.org/auteur/quentin" />
 	</langue>
 	<langue code="fr" />
+	<langue code="fr_tu">
+		<traducteur nom="RealET" lien="http://trad.spip.org/auteur/realet" />
+	</langue>
 	<langue code="sk">
 		<traducteur nom="jaro" lien="http://trad.spip.org/auteur/jaro" />
 	</langue>
