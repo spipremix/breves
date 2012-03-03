@@ -9,7 +9,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
 	'breves_description' => 'اين خبرها اطلاعات كوتاه و بدون مؤلف هستند',
-	'breves_slogan' => 'مديريت خبرها در اسپيپ' # NEW
+	'breves_slogan' => 'مديريت خبرها در اسپيپ'
 );
 
 ?>
