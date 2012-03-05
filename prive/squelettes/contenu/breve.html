@@ -7,7 +7,7 @@
 			[(#URL_ECRIRE{breve_edit,id_breve=#ID_BREVE}|icone_verticale{<:breves:icone_modifier_breve:>,breve,edit,right ajax preload})]
 		]
 		[(#ID_BREVE|afficher_qui_edite{breve}|oui)
-			[(#URL_ECRIRE{breve_edit,id_breve=#ID_BREVE}|icone_verticale{#ID_BREVE|afficher_qui_edite{breve},warning-24,'',right ajax preload})]
+			[(#URL_ECRIRE{breve_edit,id_breve=#ID_BREVE}|icone_verticale{#ID_BREVE|afficher_qui_edite{breve},warning-24,'',right edition_deja ajax preload})]
 		]
 	]
 	<h1>[(#RANG). ](#TITRE|sinon{<:info_sans_titre:>})[(#CHEMIN_IMAGE{breve-24.png}|balise_img{breve,cadre-icone})]</h1>
