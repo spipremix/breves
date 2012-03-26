@@ -4,10 +4,15 @@
 	</langue>
 	<langue code="ast" url="http://trad.spip.org/tradlang_module/breves?lang_cible=ast">
 		<traducteur nom="Xuacu" lien="http://trad.spip.org/auteur/xuacu" />
+		<traducteur nom="akomarani" lien="http://trad.spip.org/auteur/akomarani" />
 	</langue>
 	<langue code="ay" />
-	<langue code="bg" />
-	<langue code="br" />
+	<langue code="bg" url="http://trad.spip.org/tradlang_module/breves?lang_cible=bg">
+		<traducteur nom="akomarani" lien="http://trad.spip.org/auteur/akomarani" />
+	</langue>
+	<langue code="br" url="http://trad.spip.org/tradlang_module/breves?lang_cible=br">
+		<traducteur nom="akomarani" lien="http://trad.spip.org/auteur/akomarani" />
+	</langue>
 	<langue code="bs" />
 	<langue code="ca" url="http://trad.spip.org/tradlang_module/breves?lang_cible=ca">
 		<traducteur nom="merce" lien="http://trad.spip.org/auteur/merce" />
