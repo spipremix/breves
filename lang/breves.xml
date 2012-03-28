@@ -49,7 +49,12 @@
 		<traducteur nom="RealET" lien="http://trad.spip.org/auteur/realet" />
 	</langue>
 	<langue code="gl" />
-	<langue code="he" />
+	<langue code="hac" url="http://trad.spip.org/tradlang_module/breves?lang_cible=hac">
+		<traducteur nom="akomarani" lien="http://trad.spip.org/auteur/akomarani" />
+	</langue>
+	<langue code="he" url="http://trad.spip.org/tradlang_module/breves?lang_cible=he">
+		<traducteur nom="akomarani" lien="http://trad.spip.org/auteur/akomarani" />
+	</langue>
 	<langue code="hr" />
 	<langue code="hu" />
 	<langue code="id" />
