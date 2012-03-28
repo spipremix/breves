@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org/tradlang_module/breves?lang_cible=hac
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -8,45 +8,44 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breve' => 'Brève', # NEW
-	'breves' => 'Brèves', # NEW
+	'breve' => 'هەۋاڵ',
+	'breves' => 'هەۋاڵی',
 
 	// E
-	'entree_breve_publiee' => 'Cette brève est :', # NEW
-	'entree_texte_breve' => 'Texte de la brève', # NEW
+	'entree_breve_publiee' => ': ئی هەۋاڵە',
+	'entree_texte_breve' => 'دەقو هەۋاڵی',
 
 	// I
-	'icone_breves' => 'مقالات كوتاه',
-	'icone_ecrire_nouvel_article' => 'Les brèves contenues dans cette rubrique', # NEW
-	'icone_modifier_breve' => 'Modifier cette brève', # NEW
-	'icone_nouvelle_breve' => 'يك مقاله كوتاه بنويسيد',
-	'info_1_breve' => '1 brève', # NEW
-	'info_aucun_breve' => 'Aucune brève', # NEW
-	'info_breves' => 'Votre site utilise-t-il le système de brèves ?', # NEW
-	'info_breves_02' => 'مقاله هاى كوتاه',
-	'info_breves_valider' => 'مقاله هاى كوتاه براى تأئيد',
-	'info_gauche_numero_breve' => 'Brève numéro', # NEW
-	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'مقاله كوتاه پيشنهادى', # MODIF
-	'item_breve_refusee' => 'refusée', # NEW
-	'item_breve_validee' => 'validée', # NEW
-	'item_non_utiliser_breves' => 'Ne pas utiliser les brèves', # NEW
-	'item_utiliser_breves' => 'Utiliser les brèves', # NEW
+	'icone_breves' => 'هەۋاڵ',
+	'icone_ecrire_nouvel_article' => 'هەۋاڵ چی بەشەنە',
+	'icone_modifier_breve' => 'ئی هەۋاڵەیە پاکنـۋیس کەرە',
+	'icone_nouvelle_breve' => 'هەۋاڵیـۋ بنـۋیسە',
+	'info_1_breve' => '1 هەۋاڵ',
+	'info_aucun_breve' => 'هیچ هەۋاڵیـۋ نییا',
+	'info_breves' => 'ئایا لاپەڕەکەت هەۋاڵی ۋەڵاکەروۋە؟',
+	'info_breves_02' => 'هەۋاڵی',
+	'info_breves_valider' => 'هەۋاڵی چە سەرەو پەسینایەنە',
+	'info_gauche_numero_breve' => 'ژمارەو هەۋاڵەکا',
+	'info_nb_breves' => '@nb@ هەواڵ',
+	'item_breve_proposee' => 'پیشنیارکریێ',
+	'item_breve_refusee' => 'ڕەتکریان',
+	'item_breve_validee' => 'پەسینیان',
+	'item_non_utiliser_breves' => 'هەۋاڵ بەکار مەبەرە',
+	'item_utiliser_breves' => 'هەۋاڵ بەکاربەرە',
 
 	// L
-	'logo_breve' => 'Logo de la brève', # NEW
+	'logo_breve' => 'سیمبولو هەۋاڵی',
 
 	// T
-	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
-	mettre en ligne rapidement des informations concises, de gérer
-	une revue de presse, un calendrier d\'événements...', # NEW
-	'titre_breve_proposee' => 'کورته‌ وتاری پیشنیاریی',
+	'texte_breves' => 'هەۋاڵی کوڵە پەیامینی کە بوار ۋڵاکەردەی هەۋاڵە خیرایا ، ڕیکـۋستەی نیشاندای جاپەمەنی و  خشتەکی کاتیی و ... هیتد مـﮆا 
+',
+	'titre_breve_proposee' => 'هەۋاڵی پیشنیارکریێ',
 	'titre_breve_publiee' => 'کورته‌ وتاری ڤه‌ڵاکریێ',
 	'titre_breve_refusee' => 'کورته‌ وتاری په‌سه‌ند نه‌کریێ',
-	'titre_breves' => 'Les brèves', # NEW
-	'titre_langue_breve' => 'Langue de la brève', # NEW
-	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
-	'titre_page_breves' => 'Brèves' # NEW
+	'titre_breves' => 'هەۋاڵ',
+	'titre_langue_breve' => 'زۋانو هەۋاڵی',
+	'titre_nouvelle_breve' => 'هەۋاڵی تازە',
+	'titre_page_breves' => 'هەۋاڵ'
 );
 
 ?>
