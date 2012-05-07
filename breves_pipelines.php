@@ -117,7 +117,7 @@ function breves_accueil_informations($texte){
 			}
 		}
 		$texte .= "<div class='accueil_informations breves liste'>";
-		$texte .= "<h4><a href='" . generer_url_ecrire("breves") . "'>" .  _T('breves:info_breves_02')."</a></h4>";
+		$texte .= "<h4>" . afficher_plus_info(generer_url_ecrire("breves"), "", _T('breves:info_breves_02')) . "</h4>";
 		$texte .= "<ul class='liste-items'>";
 		if (isset($cpt['prop'])) $texte .= "<li class='item'>"._T("texte_statut_attente_validation").": ".$cpt2['prop'].$cpt['prop'] . '</li>';
 		if (isset($cpt['publie'])) $texte .= "<li class='item on'>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] . '</li>';
