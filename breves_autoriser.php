@@ -10,24 +10,59 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Déclarations d'autorisations
+ * 
+ * @package SPIP\Breves\Autorisations
+**/
 if (!defined('_ECRIRE_INC_VERSION')) return;
 
-// pour le pipeline d'autorisation
+/**
+ * Fonction du pipeline autoriser. N'a rien à faire
+ * @pipeline autoriser
+ */
 function breves_autoriser(){}
 
 
-// bouton du bandeau
+/**
+ * Autoriser les brèves dans le menu de navigation
+ *
+ * @param  string $faire Action demandée
+ * @param  string $type  Type d'objet sur lequel appliquer l'action
+ * @param  int    $id    Identifiant de l'objet
+ * @param  array  $qui   Description de l'auteur demandant l'autorisation
+ * @param  array  $opt   Options de cette autorisation
+ * @return bool          true s'il a le droit, false sinon
+ */
 function autoriser_breves_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
 	return 	($GLOBALS['meta']["activer_breves"] != "non");
 }
+
+/**
+ * Autoriser la création de brèves dans le menu de navigation
+ *
+ * @param  string $faire Action demandée
+ * @param  string $type  Type d'objet sur lequel appliquer l'action
+ * @param  int    $id    Identifiant de l'objet
+ * @param  array  $qui   Description de l'auteur demandant l'autorisation
+ * @param  array  $opt   Options de cette autorisation
+ * @return bool          true s'il a le droit, false sinon
+ */
 function autoriser_brevecreer_menu_dist($faire, $type, $id, $qui, $opt){
 	return 	($GLOBALS['meta']["activer_breves"] != "non");
 }
 
 
-
-// Autoriser a creer une breve dans la rubrique $id
-// http://doc.spip.org/@autoriser_rubrique_creerbrevedans_dist
+/**
+ * Autoriser à créer une brève dans la rubrique $id
+ *
+ * @param  string $faire Action demandée
+ * @param  string $type  Type d'objet sur lequel appliquer l'action
+ * @param  int    $id    Identifiant de l'objet
+ * @param  array  $qui   Description de l'auteur demandant l'autorisation
+ * @param  array  $opt   Options de cette autorisation
+ * @return bool          true s'il a le droit, false sinon
+ */
 function autoriser_rubrique_creerbrevedans_dist($faire, $type, $id, $qui, $opt) {
 	$r = sql_fetsel("id_parent", "spip_rubriques", "id_rubrique=".intval($id));
 	return
@@ -38,10 +73,19 @@ function autoriser_rubrique_creerbrevedans_dist($faire, $type, $id, $qui, $opt) 
 }
 
 
-// Autoriser a modifier la breve $id
-// = admins & redac si la breve n'est pas publiee
-// = admins de rubrique parente si publiee
-// http://doc.spip.org/@autoriser_breve_modifier_dist
+/**
+ * Autoriser à modifier la brève $id
+ *
+ * - admins & redac si la brève n'est pas publiée
+ * - admins de rubrique parente si publiée
+ * 
+ * @param  string $faire Action demandée
+ * @param  string $type  Type d'objet sur lequel appliquer l'action
+ * @param  int    $id    Identifiant de l'objet
+ * @param  array  $qui   Description de l'auteur demandant l'autorisation
+ * @param  array  $opt   Options de cette autorisation
+ * @return bool          true s'il a le droit, false sinon
+ */
 function autoriser_breve_modifier_dist($faire, $type, $id, $qui, $opt) {
 	$r = sql_fetsel("id_rubrique,statut", "spip_breves", "id_breve=".intval($id));
 	return

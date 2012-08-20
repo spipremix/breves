@@ -10,11 +10,38 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Gestion du formulaire de d'édition d'une brève
+ *
+ * @package SPIP\Breves\Formulaires
+**/
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 include_spip('inc/actions');
 include_spip('inc/editer');
 
+/**
+ * Chargement du formulaire d'édition d'une brève 
+ *
+ * @see formulaires_editer_objet_charger()
+ * 
+ * @param int|string $id_breve
+ *     Identifiant de la brève. 'new' pour une nouvelle brève.
+ * @param int $id_rubrique
+ *     Identifiant de la rubrique parente (si connue)
+ * @param string $retour
+ *     URL de redirection après le traitement
+ * @param int $lier_trad
+ *     Identifiant de la brève que l'on cherche à traduire
+ * @param string $config_fonc
+ *     Nom de la fonction ajoutant des configurations particulières au formulaire
+ * @param array $row
+ *     Valeurs de la ligne SQL de la brève, si connue
+ * @param string $hidden
+ *     Contenu HTML ajouté en même temps que les champs cachés du formulaire.
+ * @return array
+ *     Environnement du formulaire
+**/
 function formulaires_editer_breve_charger_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
 	$valeurs = formulaires_editer_objet_charger('breve',$id_breve,$id_rubrique,$lier_trad,$retour,$config_fonc,$row,$hidden);
 	// un bug a permis a un moment que des breves soient dans des sous rubriques
@@ -24,16 +51,41 @@ function formulaires_editer_breve_charger_dist($id_breve='new', $id_rubrique=0, 
 	return $valeurs;
 }
 
+
 /**
- * Identifier le formulaire en faisant abstraction des parametres qui
- * ne representent pas l'objet edite
- */
+ * Identifier le formulaire en faisant abstraction des paramètres qui
+ * ne representent pas l'objet édité
+ *
+ * @param int|string $id_breve
+ *     Identifiant de la brève. 'new' pour une nouvelle brève.
+ * @param int $id_rubrique
+ *     Identifiant de la rubrique parente (si connue)
+ * @param string $retour
+ *     URL de redirection après le traitement
+ * @param int $lier_trad
+ *     Identifiant de la brève que l'on cherche à traduire
+ * @param string $config_fonc
+ *     Nom de la fonction ajoutant des configurations particulières au formulaire
+ * @param array $row
+ *     Valeurs de la ligne SQL de la brève, si connue
+ * @param string $hidden
+ *     Contenu HTML ajouté en même temps que les champs cachés du formulaire.
+ * @return string
+ *     Hash du formulaire
+**/
 function formulaires_editer_breve_identifier_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
 	return serialize(array(intval($id_breve),$lier_trad));
 }
 
 
-// Choix par defaut des options de presentation
+/**
+ * Choix par défaut des options de présentation
+ *
+ * @param array $row
+ *     Valeurs de la ligne SQL d'un mot, si connu
+ * return array
+ *     Configuration pour le formulaire
+ */
 function breves_edit_config($row)
 {
 	global $spip_lang;
@@ -46,6 +98,28 @@ function breves_edit_config($row)
 	return $config;
 }
 
+/**
+ * Vérification du formulaire d'édition d'une brève
+ *
+ * @see formulaires_editer_objet_verifier()
+ * 
+ * @param int|string $id_breve
+ *     Identifiant de la brève. 'new' pour une nouvelle brève.
+ * @param int $id_rubrique
+ *     Identifiant de la rubrique parente (si connue)
+ * @param string $retour
+ *     URL de redirection après le traitement
+ * @param int $lier_trad
+ *     Identifiant de la brève que l'on cherche à traduire
+ * @param string $config_fonc
+ *     Nom de la fonction ajoutant des configurations particulières au formulaire
+ * @param array $row
+ *     Valeurs de la ligne SQL de la brève, si connue
+ * @param string $hidden
+ *     Contenu HTML ajouté en même temps que les champs cachés du formulaire.
+ * @return array
+ *     Tableau des erreurs
+ */
 function formulaires_editer_breve_verifier_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
 	// auto-renseigner le titre si il n'existe pas
 	titre_automatique('titre',array('texte'));
@@ -54,7 +128,28 @@ function formulaires_editer_breve_verifier_dist($id_breve='new', $id_rubrique=0,
 	return $erreurs;
 }
 
-// http://doc.spip.org/@inc_editer_article_dist
+/**
+ * Traitements du formulaire d'édition d'une brève
+ *
+ * @see formulaires_editer_objet_traiter()
+ * 
+ * @param int|string $id_breve
+ *     Identifiant de la brève. 'new' pour une nouvelle brève.
+ * @param int $id_rubrique
+ *     Identifiant de la rubrique parente (si connue)
+ * @param string $retour
+ *     URL de redirection après le traitement
+ * @param int $lier_trad
+ *     Identifiant de la brève que l'on cherche à traduire
+ * @param string $config_fonc
+ *     Nom de la fonction ajoutant des configurations particulières au formulaire
+ * @param array $row
+ *     Valeurs de la ligne SQL de la brève, si connue
+ * @param string $hidden
+ *     Contenu HTML ajouté en même temps que les champs cachés du formulaire.
+ * @return array
+ *     Tableau des erreurs
+ */
 function formulaires_editer_breve_traiter_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
 	return formulaires_editer_objet_traiter('breve',$id_breve,$id_rubrique,$lier_trad,$retour,$config_fonc,$row,$hidden);
 }
