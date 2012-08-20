@@ -13,7 +13,7 @@
 /**
  * Gestion de l'action editer_breve
  *
- * @package SPIP\Breve\Actions
+ * @package SPIP\Breves\Actions
  */
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
