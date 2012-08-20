@@ -10,13 +10,22 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Fichier gérant l'installation et désinstallation du plugin
+ *
+ * @package SPIP\Breves\Installation
+**/
 if (!defined('_ECRIRE_INC_VERSION')) return;
 
 /**
- * Installation/maj des tables breves
+ * Installation/maj des tables de brèves
  *
+ * Crée les tables SQL du plugin (spip_breves)
+ * 
  * @param string $nom_meta_base_version
+ *     Nom de la meta informant de la version du schéma de données du plugin installé dans SPIP
  * @param string $version_cible
+ *     Version du schéma de données dans ce plugin (déclaré dans paquet.xml)
  */
 function breves_upgrade($nom_meta_base_version,$version_cible){
 	// cas particulier :
@@ -41,11 +50,15 @@ function breves_upgrade($nom_meta_base_version,$version_cible){
 	maj_plugin($nom_meta_base_version, $version_cible, $maj);
 }
 
+
 /**
- * Desinstallation/suppression des tables breves
+ * Désinstallation du plugin
  *
+ * Supprime les tables SQL du plugin (spip_breves)
+ * 
  * @param string $nom_meta_base_version
- */
+ *     Nom de la meta informant de la version du schéma de données du plugin installé dans SPIP
+**/
 function breves_vider_tables($nom_meta_base_version) {
 	sql_drop_table("spip_breves");
 	

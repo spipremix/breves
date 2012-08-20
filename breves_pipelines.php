@@ -10,14 +10,21 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Utilisations de pipelines 
+ *
+ * @package SPIP\Breves\Pipelines
+**/
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 
 /**
- * Definir les meta de configuration liee aux breves
+ * Définir les meta de configuration liées aux brèves
  *
  * @param array $metas
+ *     Couples nom de la méta => valeur par défaut
  * @return array
+ *    Couples nom de la méta => valeur par défaut
  */
 function breves_configurer_liste_metas($metas){
 	$metas['activer_breves'] =  'non';
@@ -25,10 +32,12 @@ function breves_configurer_liste_metas($metas){
 }
 
 /**
- * Ajouter les breves a valider sur les rubriques 
+ * Ajouter les brèves à valider sur les rubriques 
  *
- * @param array $flux
- * @return array
+ * @pipeline rubrique_encours
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
 **/
 function breves_rubrique_encours($flux){
 	if ($flux['args']['type'] == 'rubrique') {
@@ -52,10 +61,12 @@ function breves_rubrique_encours($flux){
 
 
 /**
- * Ajouter les breves references sur les vues de rubriques
+ * Ajouter les brèves référencées sur les vues de rubriques
  *
- * @param array $flux
- * @return array
+ * @pipeline affiche_enfants
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
 **/
 function breves_affiche_enfants($flux) {
 	if ($e = trouver_objet_exec($flux['args']['exec'])
@@ -83,10 +94,16 @@ function breves_affiche_enfants($flux) {
 
 
 /**
- * Bloc sur les informations generales concernant chaque type d'objet
- *
+ * Ajoute le nombre de brèves sur l'accueil privé
+ * 
+ * @pipeline accueil_informations
+ * 
  * @param string $texte
+ *     HTML des informations générales concernant chaque type d'objet
+ *     sur la page d'accueil privée
  * @return string
+ *     HTML des informations générales concernant chaque type d'objet
+ *     sur la page d'accueil privée
  */
 function breves_accueil_informations($texte){
 	include_spip('base/abstract_sql');
@@ -129,10 +146,12 @@ function breves_accueil_informations($texte){
 
 
 /**
- * Compter les breves dans une rubrique
+ * Compter les brèves dans une rubrique
  * 
- * @param array $flux
- * @return array
+ * @pipeline objet_compte_enfants
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
  */
 function breves_objet_compte_enfants($flux){
 	if ($flux['args']['objet']=='rubrique'
@@ -149,10 +168,12 @@ function breves_objet_compte_enfants($flux){
 
 
 /**
- * Changer la langue des breves si la rubrique change
+ * Changer la langue des brèves si la rubrique change
  * 
- * @param array $flux
- * @return array
+ * @pipeline trig_calculer_langues_rubriques
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
  */
 function breves_trig_calculer_langues_rubriques($flux){
 
@@ -161,16 +182,18 @@ function breves_trig_calculer_langues_rubriques($flux){
 		$id_breve = $row['id_breve'];
 		sql_updateq('spip_breves', array("lang"=>$row['lang'], 'langue_choisie'=>'non'), "id_breve=$id_breve");
 	}
-		
+
 	return $flux;
 }
 
 
 /**
- * Publier et dater les rubriques qui ont une breve publie
+ * Publier et dater les rubriques qui ont une brève publiée
  * 
- * @param array $flux
- * @return array
+ * @pipeline calculer_rubriques
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
  */
 function breves_calculer_rubriques($flux){
 
@@ -183,12 +206,13 @@ function breves_calculer_rubriques($flux){
 
 
 
-
 /**
- * Ajouter les breves a valider sur la page d'accueil 
+ * Ajouter les brèves à valider sur la page d'accueil 
  *
- * @param array $flux
- * @return array
+ * @pipeline accueil_encours
+ * 
+ * @param string $flux  HTML du bloc encours sur la page d'accueil privée
+ * @return string       HTML du bloc encours sur la page d'accueil privée
 **/
 function breves_accueil_encours($flux){
 	$lister_objets = charger_fonction('lister_objets','inc');
@@ -205,10 +229,12 @@ function breves_accueil_encours($flux){
 
 
 /**
- * Optimiser la base de donnee en supprimant les liens orphelins
+ * Optimiser la base de données en supprimant les liens de brèves orphelins
  *
- * @param array $flux
- * @return array
+ * @pipeline optimiser_base_disparus
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
  */
 function breves_optimiser_base_disparus($flux){
 	$n = &$flux['data'];
@@ -237,10 +263,12 @@ function breves_optimiser_base_disparus($flux){
 }
 
 /**
- * Afficher le nombre de breves dans chaque rubrique
+ * Afficher le nombre de brèves dans chaque rubrique
  *
- * @param array $flux
- * @return array
+ * @pipeline boite_infos
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
  */
 function breves_boite_infos($flux){
 	if ($flux['args']['type']=='rubrique'
@@ -255,9 +283,13 @@ function breves_boite_infos($flux){
 }
 
 /**
- * Configuration des contenus
- * @param array $flux
- * @return array
+ * Ajoute le formulaire de configuration des brèves sur la page de
+ * configuration des contenus
+ * 
+ * @pipeline affiche_milieu
+ * 
+ * @param array $flux  Données du pipeline
+ * @return array       Données du pipeline
  */
 function breves_affiche_milieu($flux){
 	if ($flux["args"]["exec"] == "configurer_contenu") {

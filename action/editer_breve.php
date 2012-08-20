@@ -10,9 +10,26 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Gestion de l'action editer_breve
+ *
+ * @package SPIP\Breve\Actions
+ */
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
-// http://doc.spip.org/@action_editer_breve_dist
+/**
+ * Action d'édition d'une brève dans la base de données dont
+ * l'identifiant est donné en paramètre de cette fonction ou
+ * en argument de l'action sécurisée
+ *
+ * Si aucun identifiant n'est donné, on crée alors une nouvelle brève.
+ *
+ * @param null|int $arg
+ *     Identifiant de la brève. En absence utilise l'argument
+ *     de l'action sécurisée.
+ * @return array
+ *     Liste : identifiant de la brève, texte d'erreur éventuel
+**/
 function action_editer_breve_dist($arg=null) {
 
 	if (is_null($arg)){
@@ -33,12 +50,17 @@ function action_editer_breve_dist($arg=null) {
 	return array($id_breve,$err);
 }
 
+
 /**
- * Inserer une breve en base
- * http://doc.spip.org/@insert_breve
+ * Insertion d'une brève dans une rubrique
  *
+ * @pipeline_appel pre_insertion
+ * @pipeline_appel post_insertion
+ * 
  * @param int $id_rubrique
+ *     Identifiant de la rubrique
  * @return int
+ *     Identifiant de la nouvelle brève.
  */
 function breve_inserer($id_rubrique) {
 
@@ -85,15 +107,20 @@ function breve_inserer($id_rubrique) {
 }
 
 
+
 /**
- * Modifier une breve en base
- * $c est un contenu (par defaut on prend le contenu via _request())
- *
- * http://doc.spip.org/@revisions_breves
- *
+ * Modifier une brève en base
+ * 
  * @param int $id_breve
- * @param array $set
- * @return string|bool
+ *     Identifiant de la brève à modifier
+ * @param array|null $set
+ *     Couples (colonne => valeur) de données à modifier.
+ *     En leur absence, on cherche les données dans les champs éditables
+ *     qui ont été postés (via _request())
+ * @return string|null
+ *     Chaîne vide si aucune erreur,
+ *     Null si aucun champ à modifier,
+ *     Chaîne contenant un texte d'erreur sinon.
  */
 function breve_modifier ($id_breve, $set=null) {
 
@@ -128,12 +155,19 @@ function breve_modifier ($id_breve, $set=null) {
 	return $err;
 }
 
+
 /**
- * Instituer une breve : modifier son statut ou son parent
+ * Instituer une brève : modifier son statut ou son parent
  *
+ * @pipeline_appel pre_insertion
+ * @pipeline_appel post_insertion
+ * 
  * @param int $id_breve
+ *     Identifiant de la brève
  * @param array $c
- * @return string
+ *     Couples (colonne => valeur) des données à instituer
+ * @return string|null
+ *     Null si aucun champ à modifier, chaîne vide sinon.
  */
 function breve_instituer($id_breve, $c) {
 	$champs = array();
@@ -226,9 +260,42 @@ function breve_instituer($id_breve, $c) {
 	return ''; // pas d'erreur
 }
 
+
+// Fonctions Dépréciées
+// --------------------
+
+/**
+ * Insertion d'une brève dans une rubrique
+ *
+ * @deprecated Utiliser breve_inserer()
+ * @see breve_inserer()
+ * 
+ * @param int $id_rubrique
+ *     Identifiant de la rubrique
+ * @return int
+ *     Identifiant de la nouvelle brève.
+ */
 function insert_breve($id_rubrique) {
 	return breve_inserer($id_rubrique);
 }
+
+/**
+ * Créer une révision de brève
+ *
+ * @deprecated Utiliser breve_modifier()
+ * @see breve_modifier()
+ * 
+ * @param int $id_breve
+ *     Identifiant de la brève à modifier
+ * @param array|null $set
+ *     Couples (colonne => valeur) de données à modifier.
+ *     En leur absence, on cherche les données dans les champs éditables
+ *     qui ont été postés (via _request())
+ * @return string|null
+ *     Chaîne vide si aucune erreur,
+ *     Null si aucun champ à modifier,
+ *     Chaîne contenant un texte d'erreur sinon.
+ */
 function revisions_breves ($id_breve, $set=false) {
 	return breve_modifier($id_breve,$set);
 }

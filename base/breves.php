@@ -10,13 +10,22 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Déclarations relatives à la base de données
+ * 
+ * @package SPIP\Breves\Pipelines
+**/
+
 if (!defined('_ECRIRE_INC_VERSION')) return;
 
 /**
- * Interfaces des tables breves pour le compilateur
+ * Déclare les alias de boucle et traitements automatiques de certaines balises
  *
+ * @pipeline declarer_tables_interfaces
  * @param array $interfaces
+ *     Déclarations d'interface pour le compilateur
  * @return array
+ *     Déclarations d'interface pour le compilateur
  */
 function breves_declarer_tables_interfaces($interfaces) {
 	$interfaces['table_des_tables']['breves'] = 'breves';
@@ -32,7 +41,15 @@ function breves_declarer_tables_interfaces($interfaces) {
 	return $interfaces;
 }
 
-
+/**
+ * Déclarer l'objet éditorial de brèves
+ *
+ * @pipeline declarer_tables_objets_sql
+ * @param array $tables
+ *     Description des tables
+ * @return array
+ *     Description complétée des tables
+ */
 function breves_declarer_tables_objets_sql($tables){
 	$tables['spip_breves'] = array(
 		'texte_retour' => 'icone_retour',
