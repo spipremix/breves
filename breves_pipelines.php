@@ -21,6 +21,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 /**
  * Définir les meta de configuration liées aux brèves
  *
+ * @pipeline configurer_liste_metas
  * @param array $metas
  *     Couples nom de la méta => valeur par défaut
  * @return array
