@@ -35,8 +35,7 @@ function breves_autoriser(){}
  * @return bool          true s'il a le droit, false sinon
  */
 function autoriser_breves_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
-	return 	($GLOBALS['meta']["activer_breves"] != "non")
-		AND (sql_countsel('spip_rubriques')>0);
+	return 	($GLOBALS['meta']["activer_breves"] != "non");
 }
 
 /**
@@ -51,7 +50,7 @@ function autoriser_breves_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt =
  */
 function autoriser_brevecreer_menu_dist($faire, $type, $id, $qui, $opt){
 	return 	($GLOBALS['meta']["activer_breves"] != "non")
-		AND (sql_countsel('spip_rubriques')>0);
+		AND verifier_table_non_vide();
 }
 
  /**
