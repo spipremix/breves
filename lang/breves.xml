@@ -1,6 +1,6 @@
 <traduction module="breves" gestionnaire="salvatore" url="http://trad.spip.net" source="svn://zone.spip.org/spip-zone/_core_/plugins/breves/lang/" reference="fr">
 	<langue code="ar" url="http://trad.spip.net/tradlang_module/breves?lang_cible=ar">
-		<traducteur nom="&lt;span lang=&#039;fr&#039;&gt;George&lt;/span&gt;" lien="http://trad.spip.net/auteur/جورج-قندلفت" />
+		<traducteur nom="George" lien="http://trad.spip.net/auteur/جورج-قندلفت" />
 	</langue>
 	<langue code="ast" url="http://trad.spip.net/tradlang_module/breves?lang_cible=ast">
 		<traducteur nom="Xuacu" lien="http://trad.spip.net/auteur/xuacu" />
@@ -33,9 +33,12 @@
 		<traducteur nom="Davood Hossein" lien="http://trad.spip.net/auteur/davood-hossein" />
 	</langue>
 	<langue code="en_hx" />
-	<langue code="eo" />
+	<langue code="eo" url="http://trad.spip.net/tradlang_module/breves?lang_cible=eo">
+		<traducteur nom="Matthieu Marcillaud" lien="http://trad.spip.net/auteur/matthieu-marcillaud" />
+	</langue>
 	<langue code="es" url="http://trad.spip.net/tradlang_module/breves?lang_cible=es">
 		<traducteur nom="dani" lien="http://trad.spip.net/auteur/dani" />
+		<traducteur nom="Raquel S. Bujaldón" lien="http://trad.spip.net/auteur/raquel" />
 		<traducteur nom="severo" lien="http://trad.spip.net/auteur/severo" />
 	</langue>
 	<langue code="eu" />
@@ -65,7 +68,9 @@
 	<langue code="ja" />
 	<langue code="km" />
 	<langue code="la" />
-	<langue code="lb" />
+	<langue code="lb" url="http://trad.spip.net/tradlang_module/breves?lang_cible=lb">
+		<traducteur nom="jwander" lien="http://trad.spip.net/auteur/jwander" />
+	</langue>
 	<langue code="lt" />
 	<langue code="my" />
 	<langue code="nb" />
