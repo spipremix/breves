@@ -8,45 +8,43 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breve' => 'Brève', # NEW
-	'breves' => 'Notícias',
+	'breve' => 'Not', # NEW
+	'breves' => 'Not',
 
 	// E
-	'entree_breve_publiee' => 'Deve-se publicar esta notícia?', # MODIF
-	'entree_texte_breve' => 'Texto da notícia',
+	'entree_breve_publiee' => 'Colocar a not', # MODIF
+	'entree_texte_breve' => 'Escrever o texto da not',
 
 	// I
 	'icone_breves' => 'Notícias',
-	'icone_ecrire_nouvel_article' => 'As notícias contidas nesta rubrica',
+	'icone_ecrire_nouvel_article' => 'As not',
 	'icone_modifier_breve' => 'Modificar esta notícia',
 	'icone_nouvelle_breve' => 'Escrever uma notícia curta',
 	'info_1_breve' => '1 notícia',
-	'info_aucun_breve' => 'Aucune brève', # NEW
+	'info_aucun_breve' => 'Sem not', # NEW
 	'info_breves' => 'O seu sítio utiliza o sistema de notícias',
-	'info_breves_02' => 'Notícias',
+	'info_breves_02' => 'Not',
 	'info_breves_valider' => 'Notícias a validar',
 	'info_gauche_numero_breve' => 'NOTÍCIA NÚMERO', # MODIF
 	'info_nb_breves' => '@nb@ brèves', # NEW
-	'item_breve_proposee' => 'Notícia proposta', # MODIF
-	'item_breve_refusee' => 'NÃO - Notícia recusada', # MODIF
-	'item_breve_validee' => 'SIM - Notícia validada', # MODIF
+	'item_breve_proposee' => 'not', # MODIF
+	'item_breve_refusee' => 'Not', # MODIF
+	'item_breve_validee' => 'Not', # MODIF
 	'item_non_utiliser_breves' => 'Não utilizar as notícias',
-	'item_utiliser_breves' => 'Utilizar as notícias',
+	'item_utiliser_breves' => 'Utilizar as not',
 
 	// L
-	'logo_breve' => 'LOGOTIPO DA NOTÍCIA', # MODIF
+	'logo_breve' => 'Logotipo da not', # MODIF
 
 	// T
-	'texte_breves' => 'As notícias são textos curtos e simples que permitem
- pôr rapidamente em linha informações concisas, gerir
-uma revista de imprensa, um calendário dos acontecimentos...',
+	'texte_breves' => 'As not',
 	'titre_breve_proposee' => 'Notícia proposta',
-	'titre_breve_publiee' => 'Notícia publicada',
-	'titre_breve_refusee' => 'Notícia recusada',
-	'titre_breves' => 'As notícias',
-	'titre_langue_breve' => 'LÍNGUA DA NOTÍCIA', # MODIF
+	'titre_breve_publiee' => 'T',
+	'titre_breve_refusee' => 'T',
+	'titre_breves' => 'T',
+	'titre_langue_breve' => 'Idioma da not', # MODIF
 	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
-	'titre_page_breves' => 'Notícias'
+	'titre_page_breves' => 'T'
 );
 
 ?>
