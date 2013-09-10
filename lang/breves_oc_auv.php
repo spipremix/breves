@@ -8,7 +8,6 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breve' => 'Brève', # NEW
 	'breves' => 'Brèvas',
 
 	// E
@@ -21,12 +20,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_modifier_breve' => 'Modificar aquela brèva',
 	'icone_nouvelle_breve' => 'Escriure una brèva nuòva',
 	'info_1_breve' => '1 brèva',
-	'info_aucun_breve' => 'Aucune brève', # NEW
 	'info_breves' => 'Vòstre sit utiliza lo sistèma de brèvas?',
 	'info_breves_02' => 'Brèvas',
 	'info_breves_valider' => 'Brèvas de validar',
 	'info_gauche_numero_breve' => 'BRÈVA NUMÈRO', # MODIF
-	'info_nb_breves' => '@nb@ brèves', # NEW
 	'item_breve_proposee' => 'Brèva prepausada', # MODIF
 	'item_breve_refusee' => 'NON PAS - Brèva refusada', # MODIF
 	'item_breve_validee' => 'ÒC BE - Brèva validada', # MODIF
@@ -44,7 +41,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_refusee' => 'Brèva refusada',
 	'titre_breves' => 'Las brèvas',
 	'titre_langue_breve' => 'LENGA DE LA BRÈVA', # MODIF
-	'titre_nouvelle_breve' => 'Nouvelle brève', # NEW
 	'titre_page_breves' => 'Brèvas'
 );
 
