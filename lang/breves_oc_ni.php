@@ -34,8 +34,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'logo_breve' => 'LÒGO DE LA BRÈVA', # MODIF
 
 	// T
-	'texte_breves' => 'Li brèvas son de tèxtes corts e simples que permeton de metre en linha lèu d\'informacions concisi, de gerar
- una revista de premsa, un calendier d\'aveniments...',
+	'texte_breves' => 'Li brèvas son de tèxtes corts e simples que permeton de metre en linha lèu d’informacions concisi, de gerar
+ una revista de premsa, un calendier d’aveniments...',
 	'titre_breve_proposee' => 'Breva prepauada',
 	'titre_breve_publiee' => 'Breva publicada',
 	'titre_breve_refusee' => 'Brèva refudada',

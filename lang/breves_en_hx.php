@@ -31,7 +31,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_utiliser_breves' => 'U53 7h3 n3w5',
 
 	// L
-	'logo_breve' => 'N3W5 173M\'5 10G0', # MODIF
+	'logo_breve' => 'N3W5 173M’5 10G0', # MODIF
 
 	// T
 	'texte_breves' => 'N3w5 4r3 5h0r7 4nd 51mp13 73x75 wh1ch 4110w

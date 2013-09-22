@@ -25,7 +25,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_breve_validee' => 'DA - vijest odobrena', # MODIF
 
 	// L
-	'logo_breve' => 'NEWS ITEM\'S LOGO', # MODIF
+	'logo_breve' => 'NEWS ITEM’S LOGO', # MODIF
 
 	// T
 	'titre_breve_proposee' => 'podnešena vijest',

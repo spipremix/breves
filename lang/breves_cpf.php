@@ -11,7 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Bann tite-nouvèl',
 
 	// E
-	'entree_breve_publiee' => 'Pour pibliyé tit nouvèl-la ?', # MODIF
+	'entree_breve_publiee' => 'Pour pibliyé tit nouvèl-la ?', # MODIF
 	'entree_texte_breve' => 'Lo tèks pou tit-nouvèl',
 
 	// I
