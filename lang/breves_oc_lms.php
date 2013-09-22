@@ -35,7 +35,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// T
 	'texte_breves' => 'Las brevas son daus texts corts e simples que permeten de metre en linha regde de las informacions concisas, de gerir
- una revista de premsa, un chalendier d\'eveniments...',
+ una revista de premsa, un chalendier d’eveniments...',
 	'titre_breve_proposee' => 'Breva prepausada',
 	'titre_breve_publiee' => 'Breva publicada',
 	'titre_breve_refusee' => 'Breva refusada',

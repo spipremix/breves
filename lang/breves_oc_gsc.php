@@ -27,7 +27,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_breve_proposee' => 'Brèva perpausada', # MODIF
 	'item_breve_refusee' => 'NON - Brèva arrefusada', # MODIF
 	'item_breve_validee' => 'ÒC- Brèva validada', # MODIF
-	'item_non_utiliser_breves' => 'N\'utilizar pas las brèvas',
+	'item_non_utiliser_breves' => 'N’utilizar pas las brèvas',
 	'item_utiliser_breves' => 'Utilizar las brèvas',
 
 	// L
@@ -35,7 +35,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// T
 	'texte_breves' => 'Las brèvas que son tèxtes corts e simples qui permeten de hicar en linha lèu informacions concisas, de gerir
- ua revista de premsa, un calendèr d\'eveniments...',
+ ua revista de premsa, un calendèr d’eveniments...',
 	'titre_breve_proposee' => 'Brèva perpausada',
 	'titre_breve_publiee' => 'Brèva publicada',
 	'titre_breve_refusee' => 'Brèva arrefusada',

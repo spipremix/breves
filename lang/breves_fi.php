@@ -28,7 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_utiliser_breves' => 'Käytä uutisia',
 
 	// L
-	'logo_breve' => 'NEWS ITEM\'S LOGO', # MODIF
+	'logo_breve' => 'NEWS ITEM’S LOGO', # MODIF
 
 	// T
 	'titre_langue_breve' => 'UUTISOTSIKON KIELI', # MODIF

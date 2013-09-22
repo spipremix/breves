@@ -35,7 +35,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// T
 	'texte_breves' => 'I dispacci sò testi corti è sèmplici chì permettenu di mette in ligna nutizie assai in furia, è di gestisce una rivista di stampa, 
-	un almanaccu d\'evenimenti, ecc.',
+	un almanaccu d’evenimenti, ecc.',
 	'titre_breve_proposee' => 'Dispacciu prupostu',
 	'titre_breve_publiee' => 'Dispacciu pubblicatu',
 	'titre_breve_refusee' => 'Dispacciu rifiutatu',
