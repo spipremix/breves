@@ -21,6 +21,9 @@
 	</langue>
 	<langue code="fr" url="http://trad.spip.net/tradlang_module/paquet-breves?lang_cible=fr" total="2" traduits="2" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 	</langue>
+	<langue code="fr_fem" url="http://trad.spip.net/tradlang_module/paquet-breves?lang_cible=fr_fem" total="2" traduits="2" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
+		<traducteur nom="denisb" lien="http://trad.spip.net/auteur/denisb" />
+	</langue>
 	<langue code="fr_tu" url="http://trad.spip.net/tradlang_module/paquet-breves?lang_cible=fr_tu" total="2" traduits="2" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="RealET" lien="http://trad.spip.net/auteur/realet" />
 	</langue>
