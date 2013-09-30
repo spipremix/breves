@@ -11,7 +11,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves' => 'Nauji straipsniai',
 
 	// E
-	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?', # MODIF
 	'entree_texte_breve' => 'Santraukos tekstas',
 
 	// I
@@ -24,8 +23,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves_02' => 'Santraukos',
 	'info_breves_valider' => 'Santraukos patvirtinimui',
 	'info_gauche_numero_breve' => 'SANTRAUKOS NUMERIS', # MODIF
-	'item_breve_proposee' => 'Brève proposée', # MODIF
-	'item_breve_refusee' => 'NE - Santrauka atmesta', # MODIF
 	'item_breve_validee' => 'TAIP - Santrauka patvirtinta', # MODIF
 
 	// L
@@ -34,8 +31,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// T
 	'titre_breve_proposee' => 'Pasiūlyta santrauka',
 	'titre_breve_publiee' => 'Publikuojama santrauka',
-	'titre_breve_refusee' => 'Atmesta santrauka',
-	'titre_langue_breve' => 'LANGUE DE LA BRÈVE' # MODIF
+	'titre_breve_refusee' => 'Atmesta santrauka'
 );
 
 ?>

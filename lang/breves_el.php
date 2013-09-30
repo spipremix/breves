@@ -25,8 +25,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves_valider' => 'Σύντομα νέα για επικύρωση',
 	'info_gauche_numero_breve' => 'ΝΟΥΜΕΡΟ ΣΤΟΙΧΕΙΟΥ ΕΙΔΗΣΕΩΝ', # MODIF
 	'item_breve_proposee' => 'Προτεινόμενη είδηση', # MODIF
-	'item_breve_refusee' => 'NO - News item rejected', # MODIF
-	'item_breve_validee' => 'YES - News item validated', # MODIF
 
 	// L
 	'logo_breve' => 'NEWS ITEM’S LOGO', # MODIF

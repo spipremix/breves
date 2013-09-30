@@ -37,8 +37,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// T
 	'titre_breve_proposee' => 'מבזק מוצע',
 	'titre_breve_publiee' => 'מבזק מפורסם',
-	'titre_breve_refusee' => 'מבזק מסורב',
-	'titre_langue_breve' => 'LANGUE DE LA BRÈVE' # MODIF
+	'titre_breve_refusee' => 'מבזק מסורב'
 );
 
 ?>

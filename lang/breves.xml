@@ -8,10 +8,10 @@
 	</langue>
 	<langue code="ay" url="http://trad.spip.net/tradlang_module/breves?lang_cible=ay" total="29" traduits="13" relire="0" modifs="3" nouveaux="13" pourcent="44.83">
 	</langue>
-	<langue code="bg" url="http://trad.spip.net/tradlang_module/breves?lang_cible=bg" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
+	<langue code="bg" url="http://trad.spip.net/tradlang_module/breves?lang_cible=bg" total="29" traduits="18" relire="0" modifs="6" nouveaux="5" pourcent="62.07">
 		<traducteur nom="akomarani" lien="http://trad.spip.net/auteur/akomarani" />
 	</langue>
-	<langue code="br" url="http://trad.spip.net/tradlang_module/breves?lang_cible=br" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
+	<langue code="br" url="http://trad.spip.net/tradlang_module/breves?lang_cible=br" total="29" traduits="18" relire="0" modifs="6" nouveaux="5" pourcent="62.07">
 		<traducteur nom="akomarani" lien="http://trad.spip.net/auteur/akomarani" />
 	</langue>
 	<langue code="bs" url="http://trad.spip.net/tradlang_module/breves?lang_cible=bs" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
@@ -32,7 +32,7 @@
 	<langue code="de" url="http://trad.spip.net/tradlang_module/breves?lang_cible=de" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="klaus++" lien="http://trad.spip.net/auteur/klaus" />
 	</langue>
-	<langue code="el" url="http://trad.spip.net/tradlang_module/breves?lang_cible=el" total="29" traduits="15" relire="0" modifs="7" nouveaux="7" pourcent="51.72">
+	<langue code="el" url="http://trad.spip.net/tradlang_module/breves?lang_cible=el" total="29" traduits="15" relire="0" modifs="5" nouveaux="9" pourcent="51.72">
 		<traducteur nom="Yannick Bailly" lien="http://trad.spip.net/auteur/yannick-bailly" />
 	</langue>
 	<langue code="en" url="http://trad.spip.net/tradlang_module/breves?lang_cible=en" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
@@ -54,8 +54,6 @@
 	<langue code="fa" url="http://trad.spip.net/tradlang_module/breves?lang_cible=fa" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Davood Hossein" lien="http://trad.spip.net/auteur/davood-hossein" />
 	</langue>
-	<langue code="fi" url="http://trad.spip.net/tradlang_module/breves?lang_cible=fi" total="29" traduits="10" relire="0" modifs="7" nouveaux="12" pourcent="34.48">
-	</langue>
 	<langue code="fon" url="http://trad.spip.net/tradlang_module/breves?lang_cible=fon" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
 	</langue>
 	<langue code="fr" url="http://trad.spip.net/tradlang_module/breves?lang_cible=fr" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
@@ -71,10 +69,8 @@
 	<langue code="hac" url="http://trad.spip.net/tradlang_module/breves?lang_cible=hac" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="akomarani" lien="http://trad.spip.net/auteur/akomarani" />
 	</langue>
-	<langue code="he" url="http://trad.spip.net/tradlang_module/breves?lang_cible=he" total="29" traduits="16" relire="0" modifs="7" nouveaux="6" pourcent="55.17">
+	<langue code="he" url="http://trad.spip.net/tradlang_module/breves?lang_cible=he" total="29" traduits="16" relire="0" modifs="6" nouveaux="7" pourcent="55.17">
 		<traducteur nom="akomarani" lien="http://trad.spip.net/auteur/akomarani" />
-	</langue>
-	<langue code="hr" url="http://trad.spip.net/tradlang_module/breves?lang_cible=hr" total="29" traduits="9" relire="0" modifs="7" nouveaux="13" pourcent="31.03">
 	</langue>
 	<langue code="hu" url="http://trad.spip.net/tradlang_module/breves?lang_cible=hu" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
 	</langue>
@@ -89,16 +85,14 @@
 	</langue>
 	<langue code="km" url="http://trad.spip.net/tradlang_module/breves?lang_cible=km" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
 	</langue>
-	<langue code="la" url="http://trad.spip.net/tradlang_module/breves?lang_cible=la" total="29" traduits="8" relire="0" modifs="7" nouveaux="14" pourcent="27.59">
-	</langue>
 	<langue code="lb" url="http://trad.spip.net/tradlang_module/breves?lang_cible=lb" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="jwander" lien="http://trad.spip.net/auteur/jwander" />
 	</langue>
-	<langue code="lt" url="http://trad.spip.net/tradlang_module/breves?lang_cible=lt" total="29" traduits="13" relire="0" modifs="7" nouveaux="9" pourcent="44.83">
+	<langue code="lt" url="http://trad.spip.net/tradlang_module/breves?lang_cible=lt" total="29" traduits="13" relire="0" modifs="3" nouveaux="13" pourcent="44.83">
 	</langue>
 	<langue code="my" url="http://trad.spip.net/tradlang_module/breves?lang_cible=my" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
 	</langue>
-	<langue code="nb" url="http://trad.spip.net/tradlang_module/breves?lang_cible=nb" total="29" traduits="12" relire="0" modifs="7" nouveaux="10" pourcent="41.38">
+	<langue code="nb" url="http://trad.spip.net/tradlang_module/breves?lang_cible=nb" total="29" traduits="12" relire="0" modifs="3" nouveaux="14" pourcent="41.38">
 	</langue>
 	<langue code="nl" url="http://trad.spip.net/tradlang_module/breves?lang_cible=nl" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="mpossoz" lien="http://trad.spip.net/auteur/mpossoz" />
@@ -137,8 +131,6 @@
 	</langue>
 	<langue code="sk" url="http://trad.spip.net/tradlang_module/breves?lang_cible=sk" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="jaro" lien="http://trad.spip.net/auteur/jaro" />
-	</langue>
-	<langue code="sq" url="http://trad.spip.net/tradlang_module/breves?lang_cible=sq" total="29" traduits="8" relire="0" modifs="7" nouveaux="14" pourcent="27.59">
 	</langue>
 	<langue code="sv" url="http://trad.spip.net/tradlang_module/breves?lang_cible=sv" total="29" traduits="17" relire="0" modifs="7" nouveaux="5" pourcent="58.62">
 	</langue>

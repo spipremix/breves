@@ -7,9 +7,6 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
-	// E
-	'entree_breve_publiee' => 'Cette brève doit-elle être publiée ?', # MODIF
-
 	// I
 	'icone_breves' => 'Nyheter',
 	'icone_ecrire_nouvel_article' => 'Nyheter i denne seksjonen',
@@ -18,10 +15,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_1_breve' => '1 nyhet',
 	'info_breves_02' => 'Nyheter',
 	'info_breves_valider' => 'Nye elementer som må godkjennes',
-	'info_gauche_numero_breve' => 'BRÈVE NUMÉRO', # MODIF
 	'item_breve_proposee' => 'Nyheter lagt inn', # MODIF
-	'item_breve_refusee' => 'NON - Brève refusée', # MODIF
-	'item_breve_validee' => 'OUI - Brève validée', # MODIF
 
 	// L
 	'logo_breve' => 'NYHETENS LOGO', # MODIF
