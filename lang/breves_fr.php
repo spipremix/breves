@@ -35,9 +35,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'logo_breve' => 'Logo de la brève',
 
 	// T
-	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de
-	mettre en ligne rapidement des informations concises, de gérer
-	une revue de presse, un calendrier d’événements...',
+	'texte_breves' => 'Les brèves sont des textes courts et simples permettant de mettre en ligne rapidement des informations concises, de gérer une revue de presse, un calendrier d’événements...',
 	'titre_breve_proposee' => 'Brève proposée',
 	'titre_breve_publiee' => 'Brève publiée',
 	'titre_breve_refusee' => 'Brève refusée',
