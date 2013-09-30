@@ -25,7 +25,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves_valider' => 'Berrskridoù da gadarnaat',
 	'info_gauche_numero_breve' => 'BERRSKRID NIVERENN', # MODIF
 	'item_breve_proposee' => 'Berrskrid bet kinniget', # MODIF
-	'item_breve_refusee' => 'refusée', # MODIF
 	'item_breve_validee' => 'YA - Berrskrid asantet', # MODIF
 	'item_non_utiliser_breves' => 'Na implijout ar berrskridoù',
 	'item_utiliser_breves' => 'Implijout ar berrskridoù',

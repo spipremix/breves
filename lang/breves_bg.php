@@ -25,7 +25,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves_valider' => 'Новини за одобрение',
 	'info_gauche_numero_breve' => 'НОМЕР НА НОВИНАТА', # MODIF
 	'item_breve_proposee' => 'Изпратени новини', # MODIF
-	'item_breve_refusee' => 'rejected', # MODIF
 	'item_breve_validee' => 'Да - одобряване на новината', # MODIF
 	'item_non_utiliser_breves' => 'Не',
 	'item_utiliser_breves' => 'Да',
