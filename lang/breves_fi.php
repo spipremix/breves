@@ -21,14 +21,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves' => 'Käyttääkö sivustosi uutisjärjestelmää?',
 	'info_breves_02' => 'Uutisia',
 	'info_breves_valider' => 'Hyväksyttäviä uutisotsikoita',
-	'info_gauche_numero_breve' => 'NEWS ITEM NUMBER', # MODIF
-	'item_breve_proposee' => 'News item submitted', # MODIF
-	'item_breve_refusee' => 'NO - News item rejected', # MODIF
-	'item_breve_validee' => 'YES - News item validated', # MODIF
 	'item_utiliser_breves' => 'Käytä uutisia',
-
-	// L
-	'logo_breve' => 'NEWS ITEM’S LOGO', # MODIF
 
 	// T
 	'titre_langue_breve' => 'UUTISOTSIKON KIELI', # MODIF
