@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// I
 	'info_aucun_breve' => 'Aucune brève',
-	'item_breve_proposee' => ' Brève proposée', # MODIF
+	'item_breve_proposee' => ' Brève proposée',
 	'item_breve_refusee' => ' NON - Brève refusée', # MODIF
 	'item_breve_validee' => ' OUI - Brève validée', # MODIF
 
