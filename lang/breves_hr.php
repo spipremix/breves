@@ -19,19 +19,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_nouvelle_breve' => 'napisati novu vijest',
 	'info_breves_02' => 'vijesti',
 	'info_breves_valider' => 'vijesti za provjeru',
-	'info_gauche_numero_breve' => 'NEWS ITEM NUMBER', # MODIF
 	'item_breve_proposee' => 'predložena vijest', # MODIF
 	'item_breve_refusee' => 'NE - vijest odbačena', # MODIF
 	'item_breve_validee' => 'DA - vijest odobrena', # MODIF
 
-	// L
-	'logo_breve' => 'NEWS ITEM’S LOGO', # MODIF
-
 	// T
 	'titre_breve_proposee' => 'podnešena vijest',
 	'titre_breve_publiee' => 'objavljena vijest',
-	'titre_breve_refusee' => 'odbačena vijest',
-	'titre_langue_breve' => 'NEWS ITEM LANGUAGE' # MODIF
+	'titre_breve_refusee' => 'odbačena vijest'
 );
 
 ?>
