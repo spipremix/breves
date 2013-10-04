@@ -26,15 +26,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_gauche_numero_breve' => 'ΝΟΥΜΕΡΟ ΣΤΟΙΧΕΙΟΥ ΕΙΔΗΣΕΩΝ', # MODIF
 	'item_breve_proposee' => 'Προτεινόμενη είδηση', # MODIF
 
-	// L
-	'logo_breve' => 'NEWS ITEM’S LOGO', # MODIF
-
 	// T
 	'titre_breve_proposee' => 'Προτεινόμενη είδηση',
 	'titre_breve_publiee' => 'Δημοσιευμένη είδηση',
 	'titre_breve_refusee' => 'Είδηση που απορρίφθηκε',
 	'titre_breves' => 'Οι ειδήσεις',
-	'titre_langue_breve' => 'NEWS ITEM LANGUAGE', # MODIF
 	'titre_page_breves' => 'Ειδήσεις'
 );
 

@@ -16,7 +16,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_breves_02' => 'Skicat',
 	'info_breves_valider' => 'Skicat qe presin pranimin',
 	'item_breve_proposee' => 'Propozim i shkurtër', # MODIF
-	'item_breve_validee' => 'validée',
 
 	// T
 	'titre_breve_proposee' => 'Skicë e propozuar',

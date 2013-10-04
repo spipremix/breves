@@ -16,8 +16,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_modifier_breve' => 'Змінити ці короткі новини',
 	'info_1_breve' => '1 коротка новина',
 	'info_aucun_breve' => 'Ніякої короткої новини',
-	'info_breves' => 'Чи використовує ваш сайт систему новин?',
-	'item_breve_validee' => 'validée'
+	'info_breves' => 'Чи використовує ваш сайт систему новин?'
 );
 
 ?>
