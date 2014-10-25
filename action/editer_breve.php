@@ -59,10 +59,11 @@ function action_editer_breve_dist($arg=null) {
  * 
  * @param int $id_rubrique
  *     Identifiant de la rubrique
+ * @param array|null $set
  * @return int
  *     Identifiant de la nouvelle brève.
  */
-function breve_inserer($id_rubrique) {
+function breve_inserer($id_rubrique, $set=null) {
 
 	include_spip('inc/rubriques');
 
@@ -84,6 +85,9 @@ function breve_inserer($id_rubrique) {
 		'lang' => $lang,
 		'langue_choisie' => 'non');
 	
+	if ($set)
+		$champs = array_merge($champs, $set);
+
 	// Envoyer aux plugins
 	$champs = pipeline('pre_insertion',
 		array(
