@@ -65,6 +65,7 @@ function breves_declarer_tables_objets_sql($tables){
 		'titre' => 'titre, lang',
 		'date' => 'date_heure',
 		'principale' => 'oui',
+		'introduction_longueur' => '300',
 		'field'=> array(
 			"id_breve"	=> "bigint(21) NOT NULL",
 			"date_heure"	=> "datetime DEFAULT '0000-00-00 00:00:00' NOT NULL",
