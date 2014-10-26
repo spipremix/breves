@@ -198,7 +198,10 @@ function breves_trig_calculer_langues_rubriques($flux){
  */
 function breves_calculer_rubriques($flux){
 
-	$r = sql_select("R.id_rubrique AS id, max(A.date_heure) AS date_h", "spip_rubriques AS R, spip_breves AS A", "R.id_rubrique = A.id_rubrique AND R.date_tmp <= A.date_heure AND A.statut='publie' ", "R.id_rubrique");
+	$r = sql_select(
+		"R.id_rubrique AS id, max(A.date_heure) AS date_h",
+		"spip_rubriques AS R JOIN spip_breves AS A ON R.id_rubrique = A.id_rubrique",
+		"A.date_heure>R.date_tmp AND A.statut='publie' ", "R.id_rubrique");
 	while ($row = sql_fetch($r))
 	  sql_updateq('spip_rubriques', array('statut_tmp'=>'publie', 'date_tmp'=>$row['date_h']), "id_rubrique=".$row['id']);	
 		
