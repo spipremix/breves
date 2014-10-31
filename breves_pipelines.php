@@ -251,7 +251,7 @@ function breves_optimiser_base_disparus($flux){
 		        LEFT JOIN spip_rubriques AS R
 		          ON B.id_rubrique=R.id_rubrique",
 			"R.id_rubrique IS NULL
-		         AND B.maj < $mydate");
+		         AND B.maj < ".sql_quote($mydate));
 
 	$n+= optimiser_sansref('spip_breves', 'id_breve', $res);
 
