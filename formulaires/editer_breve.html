@@ -7,7 +7,7 @@
 		parametre : url d'action ]
 		#ACTION_FORMULAIRE{#ENV{action}}
 	  <input type='hidden' name='id_breve' value='#ENV{id_breve}' />
-	  <ul>
+	  <ul class="editer-groupe">
 	    <li class="editer editer_titre obligatoire[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur]">
 		    	<label for="titre"><:info_titre:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{titre})</span>
@@ -31,7 +31,7 @@
 	  	<li class="editer editer_liens_sites fieldset">
 			<fieldset>
 			<h3 class="legend"><:entree_liens_sites:></h3>
-			<ul>
+			<ul class="editer-groupe">
 				<li class="editer editer_lien_titre[ (#ENV**{erreurs}|table_valeur{lien_titre}|oui)erreur]">
 						<label for="lien_titre"><:info_titre:><em class='aide'>#AIDER{lien_titre}</em></label>[
 						<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{lien_titre})</span>
@@ -49,7 +49,7 @@
 	    [(#SESSION{statut}|=={0minirezo}|oui)
 	    <li class="fieldset">
 			<fieldset>
-			<ul>
+			<ul class="editer-groupe">
 			<li class="editer editer_statut obligatoire">
 				<label for='statut'><:breves:entree_breve_publiee:><em class='aide'>#AIDER{statut}</em>
 				</label><select name='statut' id='statut' size='1'>
