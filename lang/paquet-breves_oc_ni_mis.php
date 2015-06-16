@@ -8,7 +8,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breves_description' => 'Li brèva soun dei infourmacioun courti, sensa autour.',
+	'breves_description' => 'Li brèva soun de infourmacioun courti, sensa autour.',
 	'breves_slogan' => 'Gestioun dei brèva en SPIP'
 );
 
