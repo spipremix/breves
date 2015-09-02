@@ -138,6 +138,9 @@ function breve_modifier ($id_breve, $set=null) {
 		$set
 	);
 
+	$invalideur = '';
+	$indexation = false;
+
 	// Si la breve est publiee, invalider les caches et demander sa reindexation
 	$t = sql_getfetsel("statut", "spip_breves", "id_breve=$id_breve");
 	if ($t == 'publie') {
@@ -184,7 +187,8 @@ function breve_instituer($id_breve, $c) {
 	$langue_old = $row['lang'];
 	$langue_choisie_old = $row['langue_choisie'];
 
-	if ($c['statut']
+	if (isset($c['statut'])
+	AND $c['statut']
 	AND $c['statut'] != $statut
 	AND autoriser('publierdans', 'rubrique', $id_rubrique)) {
 		$statut = $champs['statut'] = $c['statut'];
