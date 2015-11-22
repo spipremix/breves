@@ -27,7 +27,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
  * @param string $version_cible
  *     Version du schéma de données dans ce plugin (déclaré dans paquet.xml)
  */
-function breves_upgrade($nom_meta_base_version,$version_cible){
+function breves_upgrade($nom_meta_base_version, $version_cible){
 	// cas particulier :
 	// si plugin pas installe mais que la table existe
 	// considerer que c'est un upgrade depuis v 1.0.0

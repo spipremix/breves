@@ -34,7 +34,7 @@ function breves_autoriser(){}
  * @param  array  $opt   Options de cette autorisation
  * @return bool          true s'il a le droit, false sinon
  */
-function autoriser_breves_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
+function autoriser_breves_menu_dist($faire, $type = '', $id = 0, $qui = NULL, $opt = NULL){
 	return 	($GLOBALS['meta']["activer_breves"] != "non");
 }
 
