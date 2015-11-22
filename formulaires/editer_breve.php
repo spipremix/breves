@@ -42,7 +42,7 @@ include_spip('inc/editer');
  * @return array
  *     Environnement du formulaire
 **/
-function formulaires_editer_breve_charger_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
+function formulaires_editer_breve_charger_dist($id_breve = 'new', $id_rubrique = 0, $retour = '', $lier_trad = 0, $config_fonc = 'breves_edit_config', $row = array(), $hidden = ''){
 	$valeurs = formulaires_editer_objet_charger('breve',$id_breve,$id_rubrique,$lier_trad,$retour,$config_fonc,$row,$hidden);
 	// un bug a permis a un moment que des breves soient dans des sous rubriques
 	// lorsque ce cas se presente, il faut relocaliser la breve dans son secteur, plutot que n'importe ou
@@ -73,7 +73,7 @@ function formulaires_editer_breve_charger_dist($id_breve='new', $id_rubrique=0, 
  * @return string
  *     Hash du formulaire
 **/
-function formulaires_editer_breve_identifier_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
+function formulaires_editer_breve_identifier_dist($id_breve = 'new', $id_rubrique = 0, $retour = '', $lier_trad = 0, $config_fonc = 'breves_edit_config', $row = array(), $hidden = ''){
 	return serialize(array(intval($id_breve),$lier_trad));
 }
 
@@ -120,7 +120,7 @@ function breves_edit_config($row)
  * @return array
  *     Tableau des erreurs
  */
-function formulaires_editer_breve_verifier_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
+function formulaires_editer_breve_verifier_dist($id_breve = 'new', $id_rubrique = 0, $retour = '', $lier_trad = 0, $config_fonc = 'breves_edit_config', $row = array(), $hidden = ''){
 	// auto-renseigner le titre si il n'existe pas
 	titre_automatique('titre',array('texte'));
 	// on ne demande pas le titre obligatoire : il sera rempli a la volee dans editer_article si vide
@@ -150,7 +150,7 @@ function formulaires_editer_breve_verifier_dist($id_breve='new', $id_rubrique=0,
  * @return array
  *     Tableau des erreurs
  */
-function formulaires_editer_breve_traiter_dist($id_breve='new', $id_rubrique=0, $retour='', $lier_trad=0, $config_fonc='breves_edit_config', $row=array(), $hidden=''){
+function formulaires_editer_breve_traiter_dist($id_breve = 'new', $id_rubrique = 0, $retour = '', $lier_trad = 0, $config_fonc = 'breves_edit_config', $row = array(), $hidden = ''){
 	return formulaires_editer_objet_traiter('breve',$id_breve,$id_rubrique,$lier_trad,$retour,$config_fonc,$row,$hidden);
 }
 

@@ -30,7 +30,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
  * @return array
  *     Liste : identifiant de la brève, texte d'erreur éventuel
 **/
-function action_editer_breve_dist($arg=null) {
+function action_editer_breve_dist($arg = null) {
 
 	if (is_null($arg)){
 		$securiser_action = charger_fonction('securiser_action', 'inc');
@@ -63,7 +63,7 @@ function action_editer_breve_dist($arg=null) {
  * @return int
  *     Identifiant de la nouvelle brève.
  */
-function breve_inserer($id_rubrique, $set=null) {
+function breve_inserer($id_rubrique, $set = null) {
 
 	include_spip('inc/rubriques');
 
@@ -126,7 +126,7 @@ function breve_inserer($id_rubrique, $set=null) {
  *     Null si aucun champ à modifier,
  *     Chaîne contenant un texte d'erreur sinon.
  */
-function breve_modifier ($id_breve, $set=null) {
+function breve_modifier ($id_breve, $set = null) {
 
 	include_spip('inc/modifier');
 	$c = collecter_requests(
@@ -304,7 +304,7 @@ function insert_breve($id_rubrique) {
  *     Null si aucun champ à modifier,
  *     Chaîne contenant un texte d'erreur sinon.
  */
-function revisions_breves ($id_breve, $set=false) {
+function revisions_breves ($id_breve, $set = false) {
 	return breve_modifier($id_breve,$set);
 }
 ?>
