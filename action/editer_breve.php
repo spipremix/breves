@@ -150,6 +150,7 @@ function breve_modifier ($id_breve, $set = null) {
 
 	if ($err = objet_modifier_champs('breve', $id_breve,
 		array(
+			'data' => $set,
 			'nonvide' => array('titre' => _T('breves:titre_nouvelle_breve')." "._T('info_numero_abbreviation').$id_breve),
 			'invalideur' => $invalideur,
 			'indexation' => $indexation
