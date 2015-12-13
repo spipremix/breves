@@ -197,9 +197,9 @@ function breve_instituer($id_breve, $c) {
 	$langue_choisie_old = $row['langue_choisie'];
 
 	if (isset($c['statut'])
-		AND $c['statut']
-		AND $c['statut'] != $statut
-		AND autoriser('publierdans', 'rubrique', $id_rubrique)
+		and $c['statut']
+		and $c['statut'] != $statut
+		and autoriser('publierdans', 'rubrique', $id_rubrique)
 	) {
 		$statut = $champs['statut'] = $c['statut'];
 	}
@@ -208,8 +208,8 @@ function breve_instituer($id_breve, $c) {
 	// Verifier que la rubrique demandee est a la racine et differente
 	// de la rubrique actuelle
 	if ($id_parent = intval($c['id_parent'])
-		AND $id_parent != $id_rubrique
-		AND (null !== ($lang = sql_getfetsel('lang', 'spip_rubriques',
+		and $id_parent != $id_rubrique
+		and (null !== ($lang = sql_getfetsel('lang', 'spip_rubriques',
 				"id_parent=0 AND id_rubrique=" . intval($id_parent))))
 	) {
 		$champs['id_rubrique'] = $id_parent;
@@ -323,5 +323,3 @@ function insert_breve($id_rubrique) {
 function revisions_breves($id_breve, $set = false) {
 	return breve_modifier($id_breve, $set);
 }
-
-?>

@@ -74,9 +74,9 @@ function breves_rubrique_encours($flux) {
  **/
 function breves_affiche_enfants($flux) {
 	if (isset($flux['args']['exec'])
-		AND $e = trouver_objet_exec($flux['args']['exec'])
-		AND $e['type'] == 'rubrique'
-		AND $e['edition'] == false
+		and $e = trouver_objet_exec($flux['args']['exec'])
+		and $e['type'] == 'rubrique'
+		and $e['edition'] == false
 	) {
 		$id_rubrique = $flux['args']['id_rubrique'];
 
@@ -172,7 +172,7 @@ function breves_accueil_informations($texte) {
  */
 function breves_objet_compte_enfants($flux) {
 	if ($flux['args']['objet'] == 'rubrique'
-		AND $id_rubrique = intval($flux['args']['id_objet'])
+		and $id_rubrique = intval($flux['args']['id_objet'])
 	) {
 		// juste les publies ?
 		if (array_key_exists('statut', $flux['args']) and ($flux['args']['statut'] == 'publie')) {
@@ -328,6 +328,3 @@ function breves_affiche_milieu($flux) {
 
 	return $flux;
 }
-
-
-?>

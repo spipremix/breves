@@ -27,5 +27,3 @@ function breves_ieconfig_metas($table) {
 
 	return $table;
 }
-
-?>
