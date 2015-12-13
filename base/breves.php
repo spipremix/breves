@@ -12,11 +12,13 @@
 
 /**
  * Déclarations relatives à la base de données
- * 
+ *
  * @package SPIP\Breves\Pipelines
-**/
+ **/
 
-if (!defined('_ECRIRE_INC_VERSION')) return;
+if (!defined('_ECRIRE_INC_VERSION')) {
+	return;
+}
 
 /**
  * Déclare les alias de boucle et traitements automatiques de certaines balises
@@ -35,9 +37,9 @@ function breves_declarer_tables_interfaces($interfaces) {
 	$interfaces['exceptions_des_tables']['breves']['nom_site'] = 'lien_titre';
 	$interfaces['exceptions_des_tables']['breves']['url_site'] = 'lien_url';
 
-	$interfaces['table_des_traitements']['LIEN_TITRE'][]= _TRAITEMENT_TYPO;
-	$interfaces['table_des_traitements']['LIEN_URL'][]= 'vider_url(%s)';
-	
+	$interfaces['table_des_traitements']['LIEN_TITRE'][] = _TRAITEMENT_TYPO;
+	$interfaces['table_des_traitements']['LIEN_URL'][] = 'vider_url(%s)';
+
 	return $interfaces;
 }
 
@@ -50,14 +52,14 @@ function breves_declarer_tables_interfaces($interfaces) {
  * @return array
  *     Description complétée des tables
  */
-function breves_declarer_tables_objets_sql($tables){
+function breves_declarer_tables_objets_sql($tables) {
 	$tables['spip_breves'] = array(
 		'texte_retour' => 'icone_retour',
 		'texte_objets' => 'breves:breves',
 		'texte_objet' => 'breves:breve',
 		'texte_modifier' => 'breves:icone_modifier_breve',
 		'texte_creer' => 'breves:icone_nouvelle_breve',
-		'info_aucun_objet'=> 'breves:info_aucun_breve',
+		'info_aucun_objet' => 'breves:info_aucun_breve',
 		'info_1_objet' => 'breves:info_1_breve',
 		'info_nb_objets' => 'breves:info_nb_breves',
 		'texte_logo_objet' => 'breves:logo_breve',
@@ -66,33 +68,33 @@ function breves_declarer_tables_objets_sql($tables){
 		'date' => 'date_heure',
 		'principale' => 'oui',
 		'introduction_longueur' => '300',
-		'field'=> array(
-			"id_breve"	=> "bigint(21) NOT NULL",
-			"date_heure"	=> "datetime DEFAULT '0000-00-00 00:00:00' NOT NULL",
-			"titre"	=> "text DEFAULT '' NOT NULL",
-			"texte"	=> "longtext DEFAULT '' NOT NULL",
-			"lien_titre"	=> "text DEFAULT '' NOT NULL",
-			"lien_url"	=> "text DEFAULT '' NOT NULL",
-			"statut"	=> "varchar(6)  DEFAULT '0' NOT NULL",
-			"id_rubrique"	=> "bigint(21) DEFAULT '0' NOT NULL",
-			"lang"	=> "VARCHAR(10) DEFAULT '' NOT NULL",
-			"langue_choisie"	=> "VARCHAR(3) DEFAULT 'non'",
-			"maj"	=> "TIMESTAMP"
+		'field' => array(
+			"id_breve" => "bigint(21) NOT NULL",
+			"date_heure" => "datetime DEFAULT '0000-00-00 00:00:00' NOT NULL",
+			"titre" => "text DEFAULT '' NOT NULL",
+			"texte" => "longtext DEFAULT '' NOT NULL",
+			"lien_titre" => "text DEFAULT '' NOT NULL",
+			"lien_url" => "text DEFAULT '' NOT NULL",
+			"statut" => "varchar(6)  DEFAULT '0' NOT NULL",
+			"id_rubrique" => "bigint(21) DEFAULT '0' NOT NULL",
+			"lang" => "VARCHAR(10) DEFAULT '' NOT NULL",
+			"langue_choisie" => "VARCHAR(3) DEFAULT 'non'",
+			"maj" => "TIMESTAMP"
 		),
 		'key' => array(
-			"PRIMARY KEY"	=> "id_breve",
-			"KEY id_rubrique"	=> "id_rubrique",
+			"PRIMARY KEY" => "id_breve",
+			"KEY id_rubrique" => "id_rubrique",
 		),
 		'join' => array(
-			"id_breve"=>"id_breve",
-			"id_rubrique"=>"id_rubrique"
+			"id_breve" => "id_breve",
+			"id_rubrique" => "id_rubrique"
 		),
-		'statut' =>  array(
+		'statut' => array(
 			array(
-				'champ'=>'statut',
-				'publie'=>'publie',
-				'previsu'=>'publie,prop',
-				'exception'=>'statut'
+				'champ' => 'statut',
+				'publie' => 'publie',
+				'previsu' => 'publie,prop',
+				'exception' => 'statut'
 			)
 		),
 		'texte_changer_statut' => 'breves:entree_breve_publiee',
@@ -102,14 +104,17 @@ function breves_declarer_tables_objets_sql($tables){
 			'publie' => 'breves:titre_breve_publiee',
 			'refuse' => 'breves:titre_breve_refusee',
 		),
-		'statut_textes_instituer' => 	array(
+		'statut_textes_instituer' => array(
 			'prop' => 'breves:item_breve_proposee', //_T('texte_statut_propose_evaluation')
 			'publie' => 'breves:item_breve_validee', //_T('texte_statut_publie')
 			'refuse' => 'breves:item_breve_refusee', //_T('texte_statut_refuse')
 		),
 
 		'rechercher_champs' => array(
-		  'titre' => 8, 'texte' => 2, 'lien_titre' => 1, 'lien_url' => 1
+			'titre' => 8,
+			'texte' => 2,
+			'lien_titre' => 1,
+			'lien_url' => 1
 		),
 		'rechercher_jointures' => array(
 			'document' => array('titre' => 2, 'descriptif' => 1)
