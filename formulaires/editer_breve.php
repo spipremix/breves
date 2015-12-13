@@ -193,5 +193,3 @@ function formulaires_editer_breve_traiter_dist(
 	return formulaires_editer_objet_traiter('breve', $id_breve, $id_rubrique, $lier_trad, $retour, $config_fonc, $row,
 		$hidden);
 }
-
-?>

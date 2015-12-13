@@ -53,7 +53,7 @@ function autoriser_breves_menu_dist($faire, $type = '', $id = 0, $qui = null, $o
  */
 function autoriser_brevecreer_menu_dist($faire, $type, $id, $qui, $opt) {
 	return ($GLOBALS['meta']["activer_breves"] != "non")
-	AND verifier_table_non_vide();
+	and verifier_table_non_vide();
 }
 
 /**
@@ -71,7 +71,7 @@ function autoriser_brevecreer_menu_dist($faire, $type, $id, $qui, $opt) {
 function autoriser_breve_creer_dist($faire, $type, $id, $qui, $opt) {
 	return
 		($GLOBALS['meta']["activer_breves"] != "non")
-		AND (sql_countsel('spip_rubriques') > 0);
+		and (sql_countsel('spip_rubriques') > 0);
 }
 
 /**
@@ -89,9 +89,9 @@ function autoriser_rubrique_creerbrevedans_dist($faire, $type, $id, $qui, $opt) 
 
 	return
 		$id
-		AND ($r['id_parent'] == 0)
-		AND ($GLOBALS['meta']["activer_breves"] != "non")
-		AND autoriser('voir', 'rubrique', $id);
+		and ($r['id_parent'] == 0)
+		and ($GLOBALS['meta']["activer_breves"] != "non")
+		and autoriser('voir', 'rubrique', $id);
 }
 
 
@@ -112,12 +112,9 @@ function autoriser_breve_modifier_dist($faire, $type, $id, $qui, $opt) {
 	$r = sql_fetsel("id_rubrique,statut", "spip_breves", "id_breve=" . intval($id));
 
 	return
-		$r AND (
-		($r['statut'] == 'publie' OR (isset($opt['statut']) AND $opt['statut'] == 'publie'))
+		$r and (
+		($r['statut'] == 'publie' or (isset($opt['statut']) and $opt['statut'] == 'publie'))
 			? autoriser('publierdans', 'rubrique', $r['id_rubrique'], $qui, $opt)
 			: in_array($qui['statut'], array('0minirezo', '1comite'))
 		);
 }
-
-
-?>

@@ -55,4 +55,3 @@ function formulaires_configurer_breves_traiter_dist() {
 
 	return $res;
 }
-
