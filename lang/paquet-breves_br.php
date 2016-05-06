@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'Ar pennadoù-berr a zo kemennadoù berr, hep aozer ebet.',
 	'breves_slogan' => 'Ardeiñ ar pennadoù-berr e-barzh SPIP'
 );
-

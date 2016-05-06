@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'As notas são informações curtas, sem autor.',
 	'breves_slogan' => 'Gerenciamento de notas no SPIP'
 );
-

@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'Li brèva soun de infourmacioun courti, sensa autour.',
 	'breves_slogan' => 'Gestioun dei brèva en SPIP'
 );
-

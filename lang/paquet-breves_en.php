@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'News items are short informations, without authors.',
 	'breves_slogan' => 'Management of news items in SPIP'
 );
-

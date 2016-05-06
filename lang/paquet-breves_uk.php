@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'Новина - це коротка стаття без вкізівки на автора.',
 	'breves_slogan' => 'Налаштування стрічки новин'
 );
-

@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'Novinky sú krátke informácie bez autora.',
 	'breves_slogan' => 'Správa noviniek v SPIPe'
 );
-
