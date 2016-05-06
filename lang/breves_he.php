@@ -41,4 +41,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'מבזק מפורסם',
 	'titre_breve_refusee' => 'מבזק מסורב'
 );
-

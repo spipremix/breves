@@ -44,4 +44,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_langue_breve' => 'Gbèzán xó kléwún ɔ tɔn', # MODIF
 	'titre_page_breves' => 'xó kléwún lɛ'
 );
-

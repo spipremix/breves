@@ -44,4 +44,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_langue_breve' => 'သတင်းအချက်အလက် ဘာသာစကား', # MODIF
 	'titre_page_breves' => 'သတင်းများ'
 );
-

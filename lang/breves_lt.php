@@ -35,4 +35,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Publikuojama santrauka',
 	'titre_breve_refusee' => 'Atmesta santrauka'
 );
-

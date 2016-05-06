@@ -46,4 +46,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_nouvelle_breve' => 'Nouvelle brève',
 	'titre_page_breves' => 'Brèves'
 );
-

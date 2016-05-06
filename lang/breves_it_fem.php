@@ -46,4 +46,3 @@ di gestire una rassegna stampa o un calendario di eventi, ecc.',
 	'titre_langue_breve' => 'LINGUA DELLA BREVE', # MODIF
 	'titre_page_breves' => 'Brevi'
 );
-

@@ -34,4 +34,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Jisk’aptat iyaw sata',
 	'titre_breve_refusee' => 'Jisk’aptat janiw sata'
 );
-

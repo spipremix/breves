@@ -49,4 +49,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_nouvelle_breve' => 'هەۋاڵی تازە',
 	'titre_page_breves' => 'هەۋاڵ'
 );
-

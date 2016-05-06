@@ -21,4 +21,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Xibaar tuut bu ñu siiwal.',
 	'titre_breve_refusee' => 'Xibaar bu ñu nanguwul.'
 );
-

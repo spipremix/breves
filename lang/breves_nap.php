@@ -30,4 +30,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_refusee' => 'Nfròmma refutata',
 	'titre_langue_breve' => 'LINGUA DELLA BREVE' # MODIF
 );
-
