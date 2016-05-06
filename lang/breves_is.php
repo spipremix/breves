@@ -23,4 +23,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'logo_breve' => 'TÁKN STUTTU FRÉTTARINNAR' # MODIF
 );
 
-?>

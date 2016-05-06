@@ -47,4 +47,3 @@ di gestire una rassegna stampa o un calendario di eventi, ecc.',
 	'titre_page_breves' => 'Brevi'
 );
 
-?>

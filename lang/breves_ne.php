@@ -24,4 +24,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_refusee' => 'खबर अस्वीकारेको'
 );
 
-?>
