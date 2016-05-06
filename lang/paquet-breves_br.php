@@ -14,4 +14,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_slogan' => 'Ardeiñ ar pennadoù-berr e-barzh SPIP'
 );
 
-?>
