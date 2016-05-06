@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'Новость - это краткая статья без указания автора.',
 	'breves_slogan' => 'Настройки ленты новостей'
 );
-

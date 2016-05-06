@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'اين خبرها اطلاعات كوتاه و بدون مؤلف هستند',
 	'breves_slogan' => 'مديريت خبرها در اسپيپ'
 );
-

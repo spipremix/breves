@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'La fulm-informoj estas mallongaj enhavo, sen aŭtoro.',
 	'breves_slogan' => 'Mastrumado de fulm-informoj en SPIP'
 );
-

@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'breves_description' => 'Meldungen sind kurze Informationen, deren Autor nicht gespeichert wird.',
 	'breves_slogan' => 'Meldungen in  SPIP verwalten'
 );
-
