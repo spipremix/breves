@@ -21,4 +21,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_modifier_breve' => 'Guhindura iyi ncamake',
 	'icone_nouvelle_breve' => 'Kwandika iyindi inkuru iciye bugufi'
 );
-

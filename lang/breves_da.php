@@ -44,4 +44,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_langue_breve' => 'NYHEDENS SPROG', # MODIF
 	'titre_page_breves' => 'Nyheder'
 );
-

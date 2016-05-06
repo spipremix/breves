@@ -48,4 +48,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_nouvelle_breve' => 'Назва новини',
 	'titre_page_breves' => 'Новини'
 );
-
