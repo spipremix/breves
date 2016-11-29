@@ -15,7 +15,7 @@
  *
  * @package SPIP\Breves\Formulaires
  **/
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -26,9 +26,10 @@ if (!defined("_ECRIRE_INC_VERSION")) {
  *     Environnement du formulaire
  **/
 function formulaires_configurer_breves_charger_dist() {
+	$valeurs = array();
 	foreach (array(
-		         "activer_breves",
-	         ) as $m) {
+		'activer_breves',
+	) as $m) {
 		$valeurs[$m] = $GLOBALS['meta'][$m];
 	}
 
@@ -44,8 +45,8 @@ function formulaires_configurer_breves_charger_dist() {
 function formulaires_configurer_breves_traiter_dist() {
 	$res = array('editable' => true);
 	foreach (array(
-		         "activer_breves",
-	         ) as $m) {
+		'activer_breves',
+	) as $m) {
 		if (!is_null($v = _request($m))) {
 			ecrire_meta($m, $v == 'oui' ? 'oui' : 'non');
 		}

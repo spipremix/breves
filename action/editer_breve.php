@@ -15,7 +15,7 @@
  *
  * @package SPIP\Breves\Actions
  */
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -73,11 +73,11 @@ function breve_inserer($id_rubrique, $set = null) {
 	// Si id_rubrique vaut 0 ou n'est pas definie, creer la breve
 	// dans la premiere rubrique racine
 	if (!$id_rubrique = intval($id_rubrique)) {
-		$id_rubrique = sql_getfetsel("id_rubrique", "spip_rubriques", "id_parent=0", '', '0+titre,titre', "1");
+		$id_rubrique = sql_getfetsel('id_rubrique', 'spip_rubriques', 'id_parent=0', '', '0+titre,titre', '1');
 	}
 
 	// La langue a la creation : c'est la langue de la rubrique
-	$row = sql_fetsel("lang, id_secteur", "spip_rubriques", "id_rubrique=$id_rubrique");
+	$row = sql_fetsel('lang, id_secteur', 'spip_rubriques', 'id_rubrique='.intval($id_rubrique));
 	$lang = $row['lang'];
 	$id_rubrique = $row['id_secteur']; // garantir la racine
 
@@ -94,7 +94,8 @@ function breve_inserer($id_rubrique, $set = null) {
 	}
 
 	// Envoyer aux plugins
-	$champs = pipeline('pre_insertion',
+	$champs = pipeline(
+		'pre_insertion',
 		array(
 			'args' => array(
 				'table' => 'spip_breves',
@@ -102,8 +103,9 @@ function breve_inserer($id_rubrique, $set = null) {
 			'data' => $champs
 		)
 	);
-	$id_breve = sql_insertq("spip_breves", $champs);
-	pipeline('post_insertion',
+	$id_breve = sql_insertq('spip_breves', $champs);
+	pipeline(
+		'post_insertion',
 		array(
 			'args' => array(
 				'table' => 'spip_breves',
@@ -135,7 +137,7 @@ function breve_modifier($id_breve, $set = null) {
 
 	include_spip('inc/modifier');
 	$c = collecter_requests(
-	// white list
+		// white list
 		array('titre', 'texte', 'lien_titre', 'lien_url'),
 		// black list
 		array('id_parent', 'statut'),
@@ -147,21 +149,23 @@ function breve_modifier($id_breve, $set = null) {
 	$indexation = false;
 
 	// Si la breve est publiee, invalider les caches et demander sa reindexation
-	$t = sql_getfetsel("statut", "spip_breves", "id_breve=$id_breve");
+	$t = sql_getfetsel('statut', 'spip_breves', 'id_breve='.intval($id_breve));
 	if ($t == 'publie') {
 		$invalideur = "id='breve/$id_breve'";
 		$indexation = true;
 	}
 
-	if ($err = objet_modifier_champs('breve', $id_breve,
+	if ($err = objet_modifier_champs(
+		'breve',
+		$id_breve,
 		array(
 			'data' => $set,
-			'nonvide' => array('titre' => _T('breves:titre_nouvelle_breve') . " " . _T('info_numero_abbreviation') . $id_breve),
+			'nonvide' => array('titre' => _T('breves:titre_nouvelle_breve') . ' ' . _T('info_numero_abbreviation') . $id_breve),
 			'invalideur' => $invalideur,
 			'indexation' => $indexation
 		),
-		$c)
-	) {
+		$c
+	)) {
 		return $err;
 	}
 
@@ -189,7 +193,7 @@ function breve_instituer($id_breve, $c) {
 	$champs = array();
 
 	// Changer le statut de la breve ?
-	$row = sql_fetsel("statut, id_rubrique,lang, langue_choisie", "spip_breves", "id_breve=" . intval($id_breve));
+	$row = sql_fetsel('statut, id_rubrique,lang, langue_choisie', 'spip_breves', 'id_breve=' . intval($id_breve));
 	$id_rubrique = $row['id_rubrique'];
 
 	$statut_ancien = $statut = $row['statut'];
@@ -209,12 +213,14 @@ function breve_instituer($id_breve, $c) {
 	// de la rubrique actuelle
 	if ($id_parent = intval($c['id_parent'])
 		and $id_parent != $id_rubrique
-		and (null !== ($lang = sql_getfetsel('lang', 'spip_rubriques',
-				"id_parent=0 AND id_rubrique=" . intval($id_parent))))
-	) {
+		and (null !== ($lang = sql_getfetsel(
+			'lang',
+			'spip_rubriques',
+			'id_parent=0 AND id_rubrique=' . intval($id_parent)
+		)))) {
 		$champs['id_rubrique'] = $id_parent;
 		// - changer sa langue (si heritee)
-		if ($langue_choisie_old != "oui") {
+		if ($langue_choisie_old != 'oui') {
 			if ($lang != $langue_old) {
 				$champs['lang'] = $lang;
 			}
@@ -230,7 +236,8 @@ function breve_instituer($id_breve, $c) {
 	}
 
 	// Envoyer aux plugins
-	$champs = pipeline('pre_edition',
+	$champs = pipeline(
+		'pre_edition',
 		array(
 			'args' => array(
 				'table' => 'spip_breves',
@@ -246,7 +253,7 @@ function breve_instituer($id_breve, $c) {
 		return;
 	}
 
-	sql_updateq('spip_breves', $champs, "id_breve=" . intval($id_breve));
+	sql_updateq('spip_breves', $champs, 'id_breve=' . intval($id_breve));
 
 	//
 	// Post-modifications
@@ -256,12 +263,13 @@ function breve_instituer($id_breve, $c) {
 	include_spip('inc/invalideur');
 	suivre_invalideur("id='breve/$id_breve'");
 
-	// Au besoin, changer le statut des rubriques concernees 
+	// Au besoin, changer le statut des rubriques concernees
 	include_spip('inc/rubriques');
 	calculer_rubriques_if($id_rubrique, $champs, $statut_ancien);
 
 	// Pipeline
-	pipeline('post_edition',
+	pipeline(
+		'post_edition',
 		array(
 			'args' => array(
 				'table' => 'spip_breves',
