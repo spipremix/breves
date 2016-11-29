@@ -24,7 +24,8 @@ if (!defined('_ECRIRE_INC_VERSION')) {
  *
  * @pipeline autoriser
  */
-function breves_autoriser() { }
+function breves_autoriser() {
+}
 
 
 /**
@@ -38,7 +39,7 @@ function breves_autoriser() { }
  * @return bool          true s'il a le droit, false sinon
  */
 function autoriser_breves_menu_dist($faire, $type = '', $id = 0, $qui = null, $opt = null) {
-	return ($GLOBALS['meta']["activer_breves"] != "non");
+	return ($GLOBALS['meta']['activer_breves'] != 'non');
 }
 
 /**
@@ -52,7 +53,7 @@ function autoriser_breves_menu_dist($faire, $type = '', $id = 0, $qui = null, $o
  * @return bool          true s'il a le droit, false sinon
  */
 function autoriser_brevecreer_menu_dist($faire, $type, $id, $qui, $opt) {
-	return ($GLOBALS['meta']["activer_breves"] != "non")
+	return ($GLOBALS['meta']['activer_breves'] != 'non')
 	and verifier_table_non_vide();
 }
 
@@ -70,7 +71,7 @@ function autoriser_brevecreer_menu_dist($faire, $type, $id, $qui, $opt) {
  **/
 function autoriser_breve_creer_dist($faire, $type, $id, $qui, $opt) {
 	return
-		($GLOBALS['meta']["activer_breves"] != "non")
+		($GLOBALS['meta']['activer_breves'] != 'non')
 		and (sql_countsel('spip_rubriques') > 0);
 }
 
@@ -85,12 +86,12 @@ function autoriser_breve_creer_dist($faire, $type, $id, $qui, $opt) {
  * @return bool          true s'il a le droit, false sinon
  */
 function autoriser_rubrique_creerbrevedans_dist($faire, $type, $id, $qui, $opt) {
-	$r = sql_fetsel("id_parent", "spip_rubriques", "id_rubrique=" . intval($id));
+	$r = sql_fetsel('id_parent', 'spip_rubriques', 'id_rubrique=' . intval($id));
 
 	return
 		$id
 		and ($r['id_parent'] == 0)
-		and ($GLOBALS['meta']["activer_breves"] != "non")
+		and ($GLOBALS['meta']['activer_breves'] != 'non')
 		and autoriser('voir', 'rubrique', $id);
 }
 
@@ -109,7 +110,7 @@ function autoriser_rubrique_creerbrevedans_dist($faire, $type, $id, $qui, $opt) 
  * @return bool          true s'il a le droit, false sinon
  */
 function autoriser_breve_modifier_dist($faire, $type, $id, $qui, $opt) {
-	$r = sql_fetsel("id_rubrique,statut", "spip_breves", "id_breve=" . intval($id));
+	$r = sql_fetsel('id_rubrique,statut', 'spip_breves', 'id_breve=' . intval($id));
 
 	return
 		$r and (

@@ -63,9 +63,7 @@ function breves_upgrade($nom_meta_base_version, $version_cible) {
  *     Nom de la meta informant de la version du schéma de données du plugin installé dans SPIP
  **/
 function breves_vider_tables($nom_meta_base_version) {
-	sql_drop_table("spip_breves");
-
-	effacer_meta("activer_breves");
-
+	sql_drop_table('spip_breves');
+	effacer_meta('activer_breves');
 	effacer_meta($nom_meta_base_version);
 }

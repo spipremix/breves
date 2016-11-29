@@ -15,7 +15,7 @@
  *
  * @package SPIP\Breves\Formulaires
  **/
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -53,13 +53,24 @@ function formulaires_editer_breve_charger_dist(
 	$row = array(),
 	$hidden = ''
 ) {
-	$valeurs = formulaires_editer_objet_charger('breve', $id_breve, $id_rubrique, $lier_trad, $retour, $config_fonc, $row,
-		$hidden);
+	$valeurs = formulaires_editer_objet_charger(
+		'breve',
+		$id_breve,
+		$id_rubrique,
+		$lier_trad,
+		$retour,
+		$config_fonc,
+		$row,
+		$hidden
+	);
 	// un bug a permis a un moment que des breves soient dans des sous rubriques
 	// lorsque ce cas se presente, il faut relocaliser la breve dans son secteur, plutot que n'importe ou
 	if ($valeurs['id_parent']) {
-		$valeurs['id_parent'] = sql_getfetsel('id_secteur', 'spip_rubriques',
-			'id_rubrique=' . intval($valeurs['id_parent']));
+		$valeurs['id_parent'] = sql_getfetsel(
+			'id_secteur',
+			'spip_rubriques',
+			'id_rubrique=' . intval($valeurs['id_parent'])
+		);
 	}
 
 	return $valeurs;
@@ -190,6 +201,14 @@ function formulaires_editer_breve_traiter_dist(
 	$row = array(),
 	$hidden = ''
 ) {
-	return formulaires_editer_objet_traiter('breve', $id_breve, $id_rubrique, $lier_trad, $retour, $config_fonc, $row,
-		$hidden);
+	return formulaires_editer_objet_traiter(
+		'breve',
+		$id_breve,
+		$id_rubrique,
+		$lier_trad,
+		$retour,
+		$config_fonc,
+		$row,
+		$hidden
+	);
 }

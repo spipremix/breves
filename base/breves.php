@@ -69,25 +69,25 @@ function breves_declarer_tables_objets_sql($tables) {
 		'principale' => 'oui',
 		'introduction_longueur' => '300',
 		'field' => array(
-			"id_breve" => "bigint(21) NOT NULL",
-			"date_heure" => "datetime DEFAULT '0000-00-00 00:00:00' NOT NULL",
-			"titre" => "text DEFAULT '' NOT NULL",
-			"texte" => "longtext DEFAULT '' NOT NULL",
-			"lien_titre" => "text DEFAULT '' NOT NULL",
-			"lien_url" => "text DEFAULT '' NOT NULL",
-			"statut" => "varchar(6)  DEFAULT '0' NOT NULL",
-			"id_rubrique" => "bigint(21) DEFAULT '0' NOT NULL",
-			"lang" => "VARCHAR(10) DEFAULT '' NOT NULL",
-			"langue_choisie" => "VARCHAR(3) DEFAULT 'non'",
-			"maj" => "TIMESTAMP"
+			'id_breve' => 'bigint(21) NOT NULL',
+			'date_heure' => "datetime DEFAULT '0000-00-00 00:00:00' NOT NULL",
+			'titre' => "text DEFAULT '' NOT NULL",
+			'texte' => "longtext DEFAULT '' NOT NULL",
+			'lien_titre' => "text DEFAULT '' NOT NULL",
+			'lien_url' => "text DEFAULT '' NOT NULL",
+			'statut' => "varchar(6)  DEFAULT '0' NOT NULL",
+			'id_rubrique' => "bigint(21) DEFAULT '0' NOT NULL",
+			'lang' => "VARCHAR(10) DEFAULT '' NOT NULL",
+			'langue_choisie' => "VARCHAR(3) DEFAULT 'non'",
+			'maj' => 'TIMESTAMP'
 		),
 		'key' => array(
-			"PRIMARY KEY" => "id_breve",
-			"KEY id_rubrique" => "id_rubrique",
+			'PRIMARY KEY' => 'id_breve',
+			'KEY id_rubrique' => 'id_rubrique',
 		),
 		'join' => array(
-			"id_breve" => "id_breve",
-			"id_rubrique" => "id_rubrique"
+			'id_breve' => 'id_breve',
+			'id_rubrique' => 'id_rubrique'
 		),
 		'statut' => array(
 			array(
