@@ -211,13 +211,16 @@ function breve_instituer($id_breve, $c) {
 	// Changer de rubrique ?
 	// Verifier que la rubrique demandee est a la racine et differente
 	// de la rubrique actuelle
-	if ($id_parent = intval($c['id_parent'])
+	if (
+		isset($c['id_parent'])
+		and $id_parent = intval($c['id_parent'])
 		and $id_parent != $id_rubrique
 		and (null !== ($lang = sql_getfetsel(
 			'lang',
 			'spip_rubriques',
 			'id_parent=0 AND id_rubrique=' . intval($id_parent)
-		)))) {
+		)))
+	) {
 		$champs['id_rubrique'] = $id_parent;
 		// - changer sa langue (si heritee)
 		if ($langue_choisie_old != 'oui') {
