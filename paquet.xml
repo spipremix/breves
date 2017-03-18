@@ -6,9 +6,9 @@
 	compatibilite="[3.0.0;3.0.*]"
 	logo="prive/themes/spip/images/breve-32.png"
 	schema="1.0.0"
->	
+>
 
-	<nom>Br&#232;ves</nom>
+	<nom>Bréves</nom>
 	<!-- Gestion des brèves dans SPIP -->
 
 	<auteur>Collectif SPIP</auteur>
@@ -31,7 +31,7 @@
 	<pipeline nom="affiche_milieu" inclure="breves_pipelines.php" />
 	<pipeline nom="ieconfig_metas" inclure="breves_ieconfig.php" />
 
-	<utilise nom="mots" />
+	<utilise nom="mots" compatibilite="[2.4.6;]" />
 
 	<menu nom="breves" titre="breves:icone_breves" parent="menu_edition" icone="images/breve-16.png" />
 	<menu nom="breve_creer" titre="breves:icone_nouvelle_breve" parent="outils_rapides" icone="images/breve-new-16.png" action="breve_edit" parametres="new=oui&amp;id_rubrique=@id_secteur@" />
