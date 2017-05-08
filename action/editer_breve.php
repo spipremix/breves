@@ -12,7 +12,7 @@
 
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
-// http://code.spip.net/@action_editer_breve_dist
+// https://code.spip.net/@action_editer_breve_dist
 function action_editer_breve_dist($arg=null) {
 
 	if (is_null($arg)){
@@ -35,7 +35,7 @@ function action_editer_breve_dist($arg=null) {
 
 /**
  * Inserer une breve en base
- * http://code.spip.net/@insert_breve
+ * https://code.spip.net/@insert_breve
  *
  * @param int $id_rubrique
  * @return int
@@ -89,7 +89,7 @@ function breve_inserer($id_rubrique) {
  * Modifier une breve en base
  * $c est un contenu (par defaut on prend le contenu via _request())
  *
- * http://code.spip.net/@revisions_breves
+ * https://code.spip.net/@revisions_breves
  *
  * @param int $id_breve
  * @param array $set
