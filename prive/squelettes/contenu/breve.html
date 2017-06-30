@@ -24,7 +24,7 @@
 #PIPELINE{afficher_complement_objet,#ARRAY{args,#ARRAY{type,breve,id,#ID_BREVE},data,'<div class="nettoyeur"></div>'}}
 
 #BOITE_FERMER
-[(#EVAL{_AJAX}|oui)
+[(#CONST{_AJAX}|oui)
 <script type="text/javascript">if (window.jQuery)
 jQuery(function(){jQuery('#navigation>div').ajaxReload({args:{exec:'breve'}});})
 </script>
