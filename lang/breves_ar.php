@@ -36,7 +36,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_utiliser_breves' => 'إستخدام الأخبار',
 
 	// L
-	'logo_breve' => 'شعار الخبر',
+	'logo_breve' => 'رمز الخبر',
 
 	// T
 	'texte_breves' => 'الأخيار هي نصوص قصيرة تسمح
