@@ -3,10 +3,10 @@
 	categorie="edition"
 	version="1.4.0"
 	etat="stable"
-	compatibilite="[3.2.0-dev;3.2.*]"
+	compatibilite="[3.2.0;3.2.*]"
 	logo="prive/themes/spip/images/breve-32.png"
 	schema="1.0.0"
->	
+>
 
 	<nom>Brèves</nom>
 	<!-- Gestion des brèves dans SPIP -->
