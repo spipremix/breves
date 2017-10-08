@@ -31,7 +31,7 @@
 	<pipeline nom="affiche_milieu" inclure="breves_pipelines.php" />
 	<pipeline nom="ieconfig_metas" inclure="breves_ieconfig.php" />
 
-	<utilise nom="mots" compatibilite="[2.8.2;]" />
+	<utilise nom="mots" compatibilite="[2.9.0;]" />
 
 	<menu nom="breves" titre="breves:icone_breves" parent="menu_edition" icone="images/breve-16.png" />
 	<menu nom="breve_creer" titre="breves:icone_nouvelle_breve" parent="outils_rapides" icone="images/breve-new-16.png" action="breve_edit" parametres="new=oui&amp;id_rubrique=@id_secteur@" />
