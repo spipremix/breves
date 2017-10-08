@@ -1,12 +1,12 @@
 <paquet
 	prefix="breves"
 	categorie="edition"
-	version="1.4.0"
+	version="1.5.0"
 	etat="stable"
-	compatibilite="[3.2.0-dev;3.2.*]"
+	compatibilite="[3.3.0-dev;3.3.*]"
 	logo="prive/themes/spip/images/breve-32.png"
 	schema="1.0.0"
->	
+>
 
 	<nom>Brèves</nom>
 	<!-- Gestion des brèves dans SPIP -->
