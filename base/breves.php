@@ -85,6 +85,7 @@ function breves_declarer_tables_objets_sql($tables) {
 			'PRIMARY KEY' => 'id_breve',
 			'KEY id_rubrique' => 'id_rubrique',
 		),
+		'parent' => array('type' => 'rubrique', 'champ' => 'id_rubrique'),
 		'join' => array(
 			'id_breve' => 'id_breve',
 			'id_rubrique' => 'id_rubrique'
