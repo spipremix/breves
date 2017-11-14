@@ -10,33 +10,33 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breve' => 'Breve',
-	'breves' => 'Breves',
+	'breve' => 'Noticia curtia',
+	'breves' => 'Noticies curties',
 
 	// E
-	'entree_breve_publiee' => '¿Hai qu’espublizar esta breve?', # MODIF
-	'entree_texte_breve' => 'Testu de la breve',
+	'entree_breve_publiee' => 'Esta noticia curtia ta:',
+	'entree_texte_breve' => 'Testu de la noticia curtia',
 
 	// I
-	'icone_breves' => 'Breves',
+	'icone_breves' => 'Noticies curties',
 	'icone_ecrire_nouvel_article' => 'Les breves conteníes nesta estaya',
 	'icone_modifier_breve' => 'Iguar esta breve',
 	'icone_nouvelle_breve' => 'Escribir una breve nueva',
 	'info_1_breve' => '1 breve',
 	'info_aucun_breve' => 'Denguna breve',
 	'info_breves' => '¿Utiliza’l to sitiu el sistema de breves?',
-	'info_breves_02' => 'Breves',
+	'info_breves_02' => 'Noticies curties',
 	'info_breves_valider' => 'Curties por validar',
-	'info_gauche_numero_breve' => 'BREVE NÚMBERU', # MODIF
+	'info_gauche_numero_breve' => 'Curtia númberu',
 	'info_nb_breves' => '@nb@ breves',
-	'item_breve_proposee' => 'Breve propuesta', # MODIF
-	'item_breve_refusee' => 'NON - Breve refugada', # MODIF
-	'item_breve_validee' => 'SI - Breve validada', # MODIF
+	'item_breve_proposee' => 'propuesta pa evaluación',
+	'item_breve_refusee' => 'refugada',
+	'item_breve_validee' => 'validada',
 	'item_non_utiliser_breves' => 'Nun utilizar les breves',
 	'item_utiliser_breves' => 'Utilizar les breves',
 
 	// L
-	'logo_breve' => 'LOGO DE LA BREVE', # MODIF
+	'logo_breve' => 'Logo de la noticia curtia',
 
 	// T
 	'texte_breves' => 'Les breves son testos curtios y simples que permiten
@@ -46,6 +46,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_breve_publiee' => 'Breve publicada',
 	'titre_breve_refusee' => 'Breve refugada',
 	'titre_breves' => 'Les breves',
-	'titre_langue_breve' => 'LLINGUA DE LA BREVE', # MODIF
-	'titre_page_breves' => 'Breves'
+	'titre_langue_breve' => 'Llingua de la noticia curtia',
+	'titre_nouvelle_breve' => 'Nueva noticia curtia',
+	'titre_page_breves' => 'Noticies curties'
 );
