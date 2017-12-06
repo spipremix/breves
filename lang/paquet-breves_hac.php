@@ -10,5 +10,6 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breves_description' => 'هەواڵەکۍ کوڵە زانیاریینی، بەبۍ نۋیسەر'
+	'breves_description' => 'هەواڵەکۍ، کوڵە زانیاریینۍ بەبۍ نۋیسەر.',
+	'breves_slogan' => 'SPIP ڕاۋەبەری بابەتە هەواڵییەکا چە'
 );
