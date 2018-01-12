@@ -10,6 +10,6 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'breves_description' => 'Nieuwsberichten zijn kort nieuws zonder auteur.',
-	'breves_slogan' => 'Beheer van nieuwsberichten in SPIP'
+	'breves_description' => 'Nieuwsflitsen bevatten kort nieuws zonder auteur.',
+	'breves_slogan' => 'Beheer van nieuwsflitsen in SPIP'
 );
