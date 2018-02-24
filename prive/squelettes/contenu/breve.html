@@ -24,6 +24,10 @@
 #PIPELINE{afficher_complement_objet,#ARRAY{args,#ARRAY{type,breve,id,#ID_BREVE},data,'<div class="nettoyeur"></div>'}}
 
 #BOITE_FERMER
+
+#SET{enfants,''}
+[(#PIPELINE{affiche_enfants,[(#ARRAY{args,#ARRAY{exec,#ENV**{exec},objet,breve,id_objet,#ID_BREVE},data,#GET{enfants}})]})]
+
 [(#CONST{_AJAX}|oui)
 <script type="text/javascript">if (window.jQuery)
 jQuery(function(){jQuery('#navigation>div').ajaxReload({args:{exec:'breve'}});})
