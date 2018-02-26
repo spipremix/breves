@@ -10,10 +10,11 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
+	'breve' => 'Berrskrid',
 	'breves' => 'Berrskridoù',
 
 	// E
-	'entree_breve_publiee' => 'Ha ret eo embann ar berrskrid-mañ ?', # MODIF
+	'entree_breve_publiee' => 'Ar berrskrid zo :',
 	'entree_texte_breve' => 'Testenn ar berrskrid',
 
 	// I
@@ -22,24 +23,28 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_modifier_breve' => 'Kemmañ ar berrskrid-mañ',
 	'icone_nouvelle_breve' => 'Skrivañ ur berrskrid nevez',
 	'info_1_breve' => '1 berrskrid',
+	'info_aucun_breve' => 'Berrskridoù ebet',
 	'info_breves' => 'Hag implijout a ra ho lec’hienn ar reizhiad berrskridoù ?',
 	'info_breves_02' => 'Berrskridoù',
-	'info_breves_valider' => 'Berrskridoù da gadarnaat',
-	'info_gauche_numero_breve' => 'BERRSKRID NIVERENN', # MODIF
-	'item_breve_proposee' => 'Berrskrid bet kinniget', # MODIF
-	'item_breve_validee' => 'YA - Berrskrid asantet', # MODIF
+	'info_breves_valider' => 'Berrskridoù da wiriekaat',
+	'info_gauche_numero_breve' => 'Berrskrid niverenn',
+	'info_nb_breves' => '@nb@ berrskridoù',
+	'item_breve_proposee' => 'kinniget evit bezañ priziet',
+	'item_breve_refusee' => 'nac’het',
+	'item_breve_validee' => ' gwiriekaet',
 	'item_non_utiliser_breves' => 'Na implijout ar berrskridoù',
 	'item_utiliser_breves' => 'Implijout ar berrskridoù',
 
 	// L
-	'logo_breve' => 'LOGO AR BERRSKRID', # MODIF
+	'logo_breve' => 'Logo ar berrskrid',
 
 	// T
-	'texte_breves' => 'Skridoù berr ha simpl eo ar berrskridoù. Drezo e c’haller lakaat enlinenn fonnus-tre keleier berr-ha-berr, merañ ur strobad pennadoù, un deiziataer darvoudoù, hag all.',
-	'titre_breve_proposee' => 'Berrskrid bet kinniget',
-	'titre_breve_publiee' => 'Berrskrid bet embannet',
-	'titre_breve_refusee' => 'Berrskrid bet nac’het',
+	'texte_breves' => 'Skridoù berr ha simpl eo ar berrskridoù. Drezo e c’haller lakaat enlinenn fonnus-tre keleier berr-ha-berr, merañ ur strobad pennadoù, un deiziataer darvoudoù, hag all...',
+	'titre_breve_proposee' => 'Berrskrid kinniget',
+	'titre_breve_publiee' => 'Berrskrid embannet',
+	'titre_breve_refusee' => 'Berrskrid nac’het',
 	'titre_breves' => 'Ar berrskridoù',
-	'titre_langue_breve' => 'YEZH AR BERRSKRID', # MODIF
+	'titre_langue_breve' => 'Yezh ar berrskrid',
+	'titre_nouvelle_breve' => 'Berrskrid nevez',
 	'titre_page_breves' => 'Berrskridoù'
 );

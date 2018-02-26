@@ -11,8 +11,9 @@
 	<langue code="bg" url="https://trad.spip.net/tradlang_module/breves?lang_cible=bg" total="29" traduits="18" relire="0" modifs="6" nouveaux="5" pourcent="62.07">
 		<traducteur nom="akomarani" lien="https://trad.spip.net/auteur/akomarani" />
 	</langue>
-	<langue code="br" url="https://trad.spip.net/tradlang_module/breves?lang_cible=br" total="29" traduits="18" relire="0" modifs="6" nouveaux="5" pourcent="62.07">
+	<langue code="br" url="https://trad.spip.net/tradlang_module/breves?lang_cible=br" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="akomarani" lien="https://trad.spip.net/auteur/akomarani" />
+		<traducteur nom="nonobreizh" lien="https://trad.spip.net/auteur/nonobreizh" />
 	</langue>
 	<langue code="bs" url="https://trad.spip.net/tradlang_module/breves?lang_cible=bs" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
 	</langue>
