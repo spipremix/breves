@@ -30,7 +30,7 @@ function breves_autoriser() {
 /**
  * Autorisation de voir la page breves
  *
- * Toujours OK
+ * Toujours OK, si les brèves sont activées
  *
  * @param  string $faire Action demandée
  * @param  string $type Type d'objet sur lequel appliquer l'action
