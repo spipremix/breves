@@ -88,7 +88,8 @@
 	</langue>
 	<langue code="it_fem" url="https://trad.spip.net/tradlang_module/breves?lang_cible=it_fem" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
 	</langue>
-	<langue code="ja" url="https://trad.spip.net/tradlang_module/breves?lang_cible=ja" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
+	<langue code="ja" url="https://trad.spip.net/tradlang_module/breves?lang_cible=ja" total="29" traduits="29" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
+		<traducteur nom="origenius" lien="https://trad.spip.net/auteur/origenius" />
 	</langue>
 	<langue code="km" url="https://trad.spip.net/tradlang_module/breves?lang_cible=km" total="29" traduits="18" relire="0" modifs="7" nouveaux="4" pourcent="62.07">
 	</langue>
