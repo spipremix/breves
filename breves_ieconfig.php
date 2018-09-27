@@ -21,9 +21,9 @@ if (!defined('_ECRIRE_INC_VERSION')) {
  *     Déclaration des sauvegardes complétées
  **/
 function breves_ieconfig_metas($table) {
-	$table['breves']['titre'] = _T('breves:titre_breves');
-	$table['breves']['icone'] = 'breve-16.png';
-	$table['breves']['metas_brutes'] = 'activer_breves';
+	$table['breves_meta']['titre'] = _T('breves:titre_breves');
+	$table['breves_meta']['icone'] = 'breve-16.png';
+	$table['breves_meta']['metas_brutes'] = 'activer_breves';
 
 	return $table;
 }
