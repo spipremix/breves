@@ -136,7 +136,7 @@ function breves_accueil_informations($texte) {
 			"objet='rubrique' AND id_auteur=" . intval($GLOBALS['visiteur_session']['id_auteur'])
 		);
 		if ($where) {
-			$where = sql_in('id_rubrique', array_map('reset', $where));
+			$where = sql_in('id_rubrique', array_column($where, 'id_objet'));
 		}
 	}
 	$defaut = $where ? '0/' : '';
