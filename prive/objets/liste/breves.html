@@ -19,7 +19,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<BOUCLE_liste_bre(BREVES){id_breve?}{id_secteur?}{id_mot?}{id_rubrique?}{where?}{recherche?}{statut?}{tri #ENV{par,date},#GET{defaut_tri}}{pagination #ENV{nb,10}}>
+	<BOUCLE_liste_bre(BREVES){id_?}{where?}{recherche?}{statut?}{tri #ENV{par,date},#GET{defaut_tri}}{pagination #ENV{nb,10}}>
 		<tr class="[(#COMPTEUR_BOUCLE|alterner{row_odd,row_even})]">
 			<td class='statut'>[(#STATUT|puce_statut{'breve',#ID_BREVE,#ID_RUBRIQUE})]</td>
 			<td class='titre principale'>[(#LOGO_BREVE|image_reduire{20,26})

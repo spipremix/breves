@@ -348,3 +348,19 @@ function breves_affiche_milieu($flux) {
 
 	return $flux;
 }
+
+
+
+/**
+ * Ajouter `{id_secteur?}` sur la table brèves lors de l’utilisation
+ * du critère de selections conditionnelles `{id_?}`.
+ *
+ * @param array $flux
+ * @return array
+ */
+function breves_lister_champs_selection_conditionnelle($flux) {
+	if ($flux['args']['table'] === 'spip_breves') {
+		$flux['data'][] = 'id_secteur';
+	}
+	return $flux;
+}
