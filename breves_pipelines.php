@@ -3,7 +3,7 @@
 /***************************************************************************\
  *  SPIP, Systeme de publication pour l'internet                           *
  *                                                                         *
- *  Copyright (c) 2001-2018                                                *
+ *  Copyright (c) 2001-2019                                                *
  *  Arnaud Martin, Antoine Pitrou, Philippe Riviere, Emmanuel Saint-James  *
  *                                                                         *
  *  Ce programme est un logiciel libre distribue sous licence GNU/GPL.     *
@@ -136,7 +136,7 @@ function breves_accueil_informations($texte) {
 			"objet='rubrique' AND id_auteur=" . intval($GLOBALS['visiteur_session']['id_auteur'])
 		);
 		if ($where) {
-			$where = sql_in('id_rubrique', array_map('reset', $where));
+			$where = sql_in('id_rubrique', array_column($where, 'id_objet'));
 		}
 	}
 	$defaut = $where ? '0/' : '';
@@ -346,5 +346,21 @@ function breves_affiche_milieu($flux) {
 		$flux['data'] .= recuperer_fond('prive/squelettes/inclure/configurer', array('configurer' => 'configurer_breves'));
 	}
 
+	return $flux;
+}
+
+
+
+/**
+ * Ajouter `{id_secteur?}` sur la table brèves lors de l’utilisation
+ * du critère de selections conditionnelles `{id_?}`.
+ *
+ * @param array $flux
+ * @return array
+ */
+function breves_lister_champs_selection_conditionnelle($flux) {
+	if ($flux['args']['table'] === 'spip_breves') {
+		$flux['data'][] = 'id_secteur';
+	}
 	return $flux;
 }

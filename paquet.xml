@@ -18,6 +18,7 @@
 	<pipeline nom="configurer_liste_metas" inclure="breves_pipelines.php" />
 	<pipeline nom="declarer_tables_interfaces" inclure="base/breves.php" />
 	<pipeline nom="declarer_tables_objets_sql" inclure="base/breves.php" />
+	<pipeline nom="lister_champs_selection_conditionnelle" inclure="breves_pipelines.php" />
 	<pipeline nom="autoriser" inclure="breves_autoriser.php" />
 	<pipeline nom="rubrique_encours" inclure="breves_pipelines.php" />
 	<pipeline nom="affiche_enfants" inclure="breves_pipelines.php" />
