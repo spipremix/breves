@@ -1,0 +1,11 @@
+{
+    "name": "spip/breves",
+    "type": "spip-plugin",
+    "description": "Brèves",
+    "license": "GPL-3.0-or-later",
+    "authors": [{
+        "name": "Collectif SPIP",
+        "email": "spip-dev@rezo.net"
+    }],
+    "require": {}
+}
